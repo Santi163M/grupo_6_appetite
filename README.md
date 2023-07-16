@@ -17,6 +17,6 @@ Por la decoración y el contraste de la paleta de colores.
 Por todas las ubicaciones desde donde uno puede entrar.
 
 
-##### Todos los lugares referentes a los Appetite se direcciona cuentas con un buen contraste en la paleta de colores, amigable para la vista; la comodidad del cliente como prioridad, desde las ubicaciones, formas de pago y acceso a servicios en general; y por último el tono amigable de cada una de estas páginas.
+##### De todos los sitios de los que nos inspiramos para crear Appetite, tuvimos en cuenta lo siguiente:<br>- Los colores que se usaron en el sitio web.<br>- La comodidad del cliente como prioridad, desde las ubicaciones, formas de pago y acceso a servicios en general.<br>- El atractivo visual de cada una de estas páginas.
 
 ## Integrantes
