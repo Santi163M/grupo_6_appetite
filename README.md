@@ -1,8 +1,9 @@
  # Appetite
-En Appetite reunimos una amplia gama de comidas que se adaptan a todos los gustos y antojos.
-
-Nuestra plataforma digital cuenta con una gran variedad de alimentos para todas las personas, como así también agregados a selección, combos y menú del día.
-Brindamos un servicio rápido y seguro. Además, ¡podrás realizar pedidos con facilidad y recibir tu comida favorita en la puerta de tu casa!
+ En Appetite, nos enorgullece ofrecer una amplia variedad de deliciosas comidas que satisfacen todos los gustos y antojos.
+ 
+ La plataforma digital cuenta con una extensa selección de alimentos para todos, incluyendo opciones personalizadas, combos y un menú del día, siempre fresco y lleno de sabor.
+ 
+ El servicio es rápido, confiable, fácil de usar y con tan solo unos pocos clics, podrás realizar tu pedido y recibir tu comida favorita, directamente en la puerta de tu casa. Para garantizar una experiencia culinaria inolvidable, el equipo de chefs profesionales de Appetite se asegura de que cada plato sea preparado con ingredientes de alta calidad y con el máximo cuidado. ¡Prueba Appetite hoy mismo y deleita tus sentidos con nuestra exquisita comida!
 
 ## Sitios de los que nos inspiramos
 ### Burger King
