@@ -1,4 +1,4 @@
- # Appetite
+ # Appetite🍟
  En Appetite, nos enorgullece ofrecer una amplia variedad de deliciosas comidas que satisfacen todos los gustos y antojos.
  
  La plataforma digital cuenta con una extensa selección de alimentos para todos, incluyendo opciones personalizadas, combos y un menú del día, siempre fresco y lleno de sabor.
