@@ -3,3 +3,212 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* -------------------- HEADER -------------------- */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.barra-de-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.buscar {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.icono-busqueda {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+}
+
+.accesos {
+    list-style: none;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    gap: 15px;
+    margin-right: 12px;
+}
+
+.accesos a {
+    color: inherit;
+}
+
+.accesos i {
+    font-size: 20px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* -------------------- MAIN -------------------- */
+
+/* ----- categorías ----- */
+
+.categorias {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categorias-producto {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.texto-categorias {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+.img-categoria {
+    width: 100%;
+}
+
+.nombre-categoria {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* ----- menú del día ----- */
+
+.menu-del-dia {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texto-menu {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.menu-producto {
+    width: 80%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-menu {
+    width: 100%;
+}
+
+.descripcion {
+    padding: 10px 0;
+}
+
+.precio {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.añadir {
+    width: 50%;
+    padding: 10px;
+    right: 0;
+}
+
+/* ----- combos ----- */
+
+.combos {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.texto-combos {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.combos-producto {
+    width: 80%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-combo {
+    width: 100%;
+}
+
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.contactos {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.texto-contactos {
+    width: 100%;
+    text-align: center;
+}
+
+.informacion {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #eee;
+}
+
+.informacion a {
+    text-align: center;
+}
+
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+/* calc(90% - 23px) */
