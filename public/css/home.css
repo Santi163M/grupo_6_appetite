@@ -172,6 +172,11 @@
     width: 100%;
 }
 
+.combo-nombre {
+    width: 100%;
+    text-align: center;
+}
+
 
 /* -------------------- FOOTER -------------------- */
 
@@ -217,7 +222,43 @@ footer {
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media (min-width: 481px) {
+    .categorias-producto {
+        width: 30%;
+    }
 
+    .menu-del-dia {
+        justify-content: space-around;
+    }
+
+    .menu-producto {
+        width: 40%;
+    }
 }
 
-/* calc(90% - 23px) */
+@media (min-width: 769px) {
+    .categorias-producto {
+        width: 22.5%;
+    }
+
+    .menu-del-dia {
+        justify-content: space-around;
+    }
+
+    .menu-producto {
+        width: 26.6%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .categorias-producto {
+        width: 18%;
+    }
+
+    .menu-del-dia {
+        justify-content: space-around;
+    }
+
+    .menu-producto {
+        width: 20%;
+    }
+}
