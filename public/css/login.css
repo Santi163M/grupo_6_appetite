@@ -1,100 +1,98 @@
-head, body{
-    width: 100%;
-    box-sizing: content-box;
-}
-
-.logo{
-    padding-left: 30px;
+*{
+    font-family: 'REM';
+    box-sizing: border-box;
 }
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    position: relative;
-    bottom: 60px;
+    padding-bottom: 30px;
+    width: 100%;
 }
 
-.navBar{
-    position: relative;
-    left: 60px;
-    height: 30px;
+.barra-de-busqueda {
+    height: 80px;
+    display: flex;
+    align-items: center;
     gap: 10px;
-}
-
-.navBar2{
     padding-left: 30px;
-    padding-right: 30px;
-    background-color: gray;
-    padding: 10px 70px;
-    text-decoration: none;
-
 }
 
-i{
+.buscar {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.lupa{
+    position: relative;
+    right: 18px;
+    top: 5px;
+    margin-right: 35%;
+}
+
+.logo, .barra-de-busqueda{
+    position: relative;
+    right: 7px;
+}
+
+.Iniciodesesión, .Registro, .Traductor, .Carrito{
+    margin-left: 10px;
     text-decoration: underline;
 }
 
-.lupaimg, .inicioimg, .userimg, .traductorimg, .Carritoimg{
+.inicioimg, .userimg, .traductorimg, .carritoimg{
+    margin-left: 5px;
+}
+
+.barra-de-busqueda, .inicioimg, .userimg, .traductorimg, .carritoimg{
     position: relative;
     top: 8px;
-    left: 3px;
+}
+
+
+body{
+    padding-bottom: 30px;
+    width: 100%;
 }
 
 .none{
-    font-size: 60px;
-    padding-left: 40px;
+    font-size: 50px;
+    padding-left: 30px;
 }
 
-.modos, .container, .container2{
+.modos{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    padding-bottom: 20px;
 }
 
-.modos .img1{
-    padding-right: 170px;
+.img1{
+    padding-right: 70px;
 }
 
-.container, .container2{
+.container{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .modo1{
-    background-color: gray;
-    padding: 10px 90px;
-    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
 }
 
 .container .container2{
-    background-color: gray;
-    padding: 10px 148px;
-    font-size: 18px;
+    margin-bottom: 20px;
+    gap: 10px;
 }
 
-.container .modo1 .formdelusuario{
-    background-color: gray;
-    color: black;
-    margin: gray;
-    border: gray;
-}
-
-.container .container2 .formdelpassword{
-    background-color: gray;
-    color: black;
-    margin: gray;
-    border: gray;
-}
-
-.container .Pregunta{
+.Pregunta{
     position: relative;
-    right: 70px;
-    padding-top: 20px;
-}
-
-@media (min-width:361px){
+    right: 10px;
 }
