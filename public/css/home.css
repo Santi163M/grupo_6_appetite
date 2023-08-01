@@ -61,12 +61,12 @@
     font-size: 20px;
 }
 
+
+/* -------------------- MAIN -------------------- */
+
 .banner img {
     width: 100%;
 }
-
-
-/* -------------------- MAIN -------------------- */
 
 /* ----- categorías ----- */
 
@@ -185,13 +185,18 @@ footer {
     width: 65%;
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
-    gap: 10px;
+    align-items: center;
 }
 
 .texto-contactos {
-    width: 100%;
     text-align: center;
+    padding: 10px 0;
+}
+
+.cuentas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .informacion {
@@ -210,5 +215,9 @@ footer {
 
 
 /* -------------------- MEDIA QUERIES -------------------- */
+
+@media (min-width: 481px) {
+
+}
 
 /* calc(90% - 23px) */
