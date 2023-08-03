@@ -63,7 +63,7 @@
 
 /* -------------------- MAIN -------------------- */
 /* --> Product <-- */
-.product {
+.product-main{
     display: flex;
     background-color: rgb(243, 255, 134);
 }
@@ -118,26 +118,29 @@
 }
 
 /* -------------------- SECCION OTROS PRODUCTOS -------------------- */
-
-.similar-products .product-list-menu {
+.similar-products{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    display: inline;
+    justify-content: space-between;
 }
-.similar-products h2 {
-    display: block;
-    font-size: 5vw;
-    font-weight: bold;
+.similar-products .title{
+    margin: 5%;
 }
-.similar-products img {
-    border: 2px red solid;
-    width: 20%;
+.similar-products .product-list-menu{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
 }
-.similar-products h3 {
-    font-size: 3vw;
-    display: inline;
+.similar-products .product-list-menu .product {
+    margin-bottom: 10%;
+    border: 1px red solid;
+    padding: 3vw;
 }
-.similar-products .product-list-menu article {
-    width: 100%;
-    display: inline;
+.similar-products .product-list-menu .product img {
+width: 220px;
+height: 180px;
 }
