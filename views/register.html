@@ -3,52 +3,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="https://kit.fontawesome.com/c85042c871.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
     <header class="menu">
-        <img class="logo" src="img/logo.png" alt="logo">
-        <nav> Buscar... </nav> 
+        <img class="logo" src="/img/logo.png" alt="logo">
+        <nav> <input placeholder="Buscar..." type="text" name="Buscar" id="Buscar" class="busqueda"></nav> 
         <section>
-            <div> <i class="fa-solid fa-right-to-bracket"></i> <div>Iniciar sesion </div> </div>
-            <div> <i class="fa-solid fa-user-plus"></i>  <div> Registrar </div>  </div>
-            <div>  <i class="fa-solid fa-language"></i> <div> Idiomas </div> </div>
-            <div> <i class="fa-solid fa-cart-shopping"></i>  <div> Carrito  </div>  </div>
+            <div>
+                <a href="/login">
+                <i class="fa-solid fa-right-to-bracket"></i> 
+                <div>Iniciar sesion </div> 
+                </a>
+            </div>
+            <div> 
+                <a href="/register">
+                    <i class="fa-solid fa-user-plus"></i>  
+                    <div> Registrar </div> 
+                </a>
+            </div>
+            <div>  
+                <a href="#">
+                    <i class="fa-solid fa-language"></i> 
+                    <div> Idiomas </div> 
+                </a>
+                
+            </div>
+            <div> 
+                <a href="/carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>  
+                <div> Carrito</div>
+                </a>
+            </div>
+
         </section>
     </header>
     <h1> Registrate con:</h1>
     <section class="externos">
         <div>
-            <a href="#"><img src="img/Google.png" alt="Google"></a>
+            <a href="#"><img src="/img/Google.png" alt="Google"></a>
         </div>
         <div>
-            <a href="#"><img src="img/Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/img/Facebook.png" alt="Facebook"></a>
         </div>
     </section>
-    <section class="registro">
-    <div>
-        <form action="" method="post">
-            <label for="nombre"> Nombre</label>
-            <input type="text" name="Nombre" id="nombre">
-        </form>
-    </div>
-    <div>
-        <form action="" method="post">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-        </form>
-    </div>
-    <div>
-        <form action="" method="post">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña">
-        </form>
-    </div>
-    <div>
-        <form action="" method="post">
-            <label for="rcontraseña">Repetir Contraseña</label>
-            <input type="password" name="rcontraseña" id="rcontraseña">
-        </form>
-    </div>
+    <form action="" method="post" class="registro">
+        <section>
+            <div>
+                <label for="nombre"> Nombre</label>
+                <div>
+                    <input type="text" name="Nombre" id="nombre">
+                </div>
+        </div>
+        <div>
+                <label for="apellido">Apellido</label>
+                <div>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+            </div>
+        <div>
+                <label for="contraseña">Contraseña</label>
+                <div>
+                    <input type="password" name="contraseña" id="contraseña">
+                </div>
+            </div>
+        <div>
+                <label for="rcontraseña">Repetir Contraseña</label>
+                <div>
+                    <input type="password" name="rcontraseña" id="rcontraseña">
+                </div>
+            </div>
+            <div class="boton">
+                <button  type="submit">Enviar</button>
+            </div>
     </section>
+</form>
 </body>
