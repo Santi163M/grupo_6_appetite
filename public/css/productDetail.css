@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------- HEADER -------------------- */
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.barra-de-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.buscar {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.icono-busqueda {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+}
+
+.accesos {
+    list-style: none;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    gap: 15px;
+    margin-right: 12px;
+}
+
+.accesos a {
+    color: inherit;
+}
+
+.accesos i {
+    font-size: 20px;
+}
+
+/* -------------------- MAIN -------------------- */
+/* --> Product <-- */
+.product {
+    display: flex;
+    background-color: rgb(243, 255, 134);
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+/* --> Imagen del <-- */
+.product .product-image {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: flex-start;
+    margin-top: 20%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.product .product-image img {
+    width: 100%;
+}
+
+/* --> Detalles <-- */
+.details .product-name h1 {
+    display: inline;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.details .price {
+    font-size: 4vw;
+    color: green;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.details .description h3{
+    font-size: 4vw;
+}
+.details .description p {
+    font-size: 3.6vw;
+}
+.details .añadir {
+   
+    padding: 10px;
+    right: 0;
+}
+
+/* -------------------- SECCION OTROS PRODUCTOS -------------------- */
+
+.similar-products .product-list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline;
+}
+.similar-products h2 {
+    display: block;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.similar-products img {
+    border: 2px red solid;
+    width: 20%;
+}
+.similar-products h3 {
+    font-size: 3vw;
+    display: inline;
+}
+.similar-products .product-list-menu article {
+    width: 100%;
+    display: inline;
+}
