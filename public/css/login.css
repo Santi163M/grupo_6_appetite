@@ -3,20 +3,27 @@
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 30px;
-    width: 100%;
-}
-
-.barra-de-busqueda {
+.nav-bar {
     height: 80px;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-left: 30px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.barra-de-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-grow: 1;
 }
 
 .buscar {
@@ -26,30 +33,29 @@ header{
     width: 90%;
 }
 
-.lupa{
-    position: relative;
-    right: 18px;
-    top: 5px;
-    margin-right: 35%;
+.icono-busqueda {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
 }
 
-.logo, .barra-de-busqueda{
-    position: relative;
-    right: 7px;
+.accesos {
+    list-style: none;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    gap: 15px;
+    margin-right: 12px;
 }
 
-.Iniciodesesión, .Registro, .Traductor, .Carrito{
-    margin-left: 10px;
-    text-decoration: underline;
+.accesos a {
+    color: inherit;
 }
 
-.inicioimg, .userimg, .traductorimg, .carritoimg{
-    margin-left: 5px;
-}
-
-.barra-de-busqueda, .inicioimg, .userimg, .traductorimg, .carritoimg{
-    position: relative;
-    top: 8px;
+.accesos i {
+    font-size: 20px;
 }
 
 
@@ -103,30 +109,4 @@ body{
 .Pregunta{
     position: relative;
     right: 10px;
-}
-
-@media (max-width:822px){
-    .barra-de-busqueda{
-        margin-left: -25px;
-        margin-right: -10px;
-    }
-    .buscar{
-        font-size: 13px;
-    }
-    .lupa{
-        display: none;
-    }
-    i{
-        display: none;
-    }
-    .Pregunta{
-        position: relative;
-        right: 80px;
-    }
-}
-
-@media(min-width=823px){
-    .barra-de-busqueda{
-        width: 100%;
-    }
 }
