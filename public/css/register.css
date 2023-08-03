@@ -1,0 +1,88 @@
+
+
+body{
+    box-sizing: content-box;
+    background-color: rgb(225, 224, 224);
+}
+
+.menu{
+    font-size: large;
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+}
+
+.menu>section{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu>section>div{
+    display: flex;
+}
+
+.menu>nav{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    background-color: #eff0f3;
+}
+
+
+.logo{
+    width: 15%;
+}
+
+.externos{
+    justify-content: space-evenly;
+    display: flex;
+}
+.externos>div{
+    width: 10%;
+}
+.externos>div>a>img{
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 150px;
+}
+.registro{
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 40%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+.registro>div{
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(190, 190, 190);
+
+}
+.registro>form>input{
+
+    background-color: aliceblue;
+}
+
+@media (max-width:768px){
+    .menu>section>div>div{
+        display: none;
+    }
+    .menu>section{
+        width: 25%;
+        justify-content: space-evenly;
+    }
+    .externos{
+        height: 30%;
+    }
+    .externos>div>a>img{
+        width: 100px;
+        height: 110px;
+    }
+}
