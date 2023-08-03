@@ -64,7 +64,7 @@
 
 /* -------------------- MAIN -------------------- */
 /* --> Product <-- */
-.product-main{
+.product-main {
     display: flex;
     background-color: rgb(243, 255, 134);
 }
@@ -108,29 +108,34 @@
     margin-top: 7%;
     margin-bottom: 7%;
 }
-.details .description h3{
+
+.details .description h3 {
     font-size: 4vw;
 }
+
 .details .description p {
     font-size: 3.6vw;
 }
+
 .details .añadir {
-   
+
     padding: 10px;
     right: 0;
 }
 
 /* -------------------- SECCION OTROS PRODUCTOS -------------------- */
-.similar-products{
+.similar-products {
     width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.similar-products .title{
+
+.similar-products .title {
     margin: 5%;
 }
-.similar-products .product-list-menu{
+
+.similar-products .product-list-menu {
     display: flex;
     margin: auto;
     flex-wrap: wrap;
@@ -138,6 +143,7 @@
     justify-content: center;
     justify-content: space-between;
 }
+
 .similar-products .product-list-menu .product {
     margin-bottom: 10%;
     margin-right: 2vw;
@@ -146,9 +152,10 @@
     border-radius: 10px;
 
 }
+
 .similar-products .product-list-menu .product img {
-width: 230px;
-height: 180px;
+    width: 230px;
+    height: 180px;
 }
 
 /* ------------------> Commets/Reviews section <------------------*/
@@ -157,32 +164,135 @@ height: 180px;
     display: flex;
     flex-wrap: wrap;
 }
+
 .reviews .title {
     margin: auto;
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
-.reviews .container-rate-product{
+
+.reviews .container-rate-product {
     display: flex;
     width: 100%;
+    text-align: center;
 }
-.reviews .rate-stars{
+
+.reviews .rate-stars {
 
     margin: auto;
     width: 100%;
-    font-size: 5vw;
+    font-size: 4vw;
     margin-top: 5%;
     margin-bottom: 5%;
-    margin-left: 5%;
+
 }
-.reviews .rate-number{
+
+.reviews .rate-stars i {
+    color: goldenrod;
+}
+
+.reviews .rate-number {
     font-weight: bold;
     margin-left: 5%;
     display: inline;
-    font-size: 7vw;
+    font-size: 4.5vw;
+    color: rgb(52, 166, 52);
 }
-.reviews .comment-example-1{
+
+.reviews .comment-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
 }
+
+.reviews .comment-section .comment-example {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(195, 188, 188, 0.762);
+    width: 47%;
+    height: 30vh;
+
+    margin-bottom: 5%;
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.reviews .comment-section .comment-example .comment-stars {
+    font-size: 3vw;
+    margin: auto;
+    color: goldenrod;
+}
+
+.reviews .comment-section .comment-example .title-comment {
+    margin: auto;
+    font-size: 135%;
+}
+
+/*---------------------> Secccion para dejar el comentario <---------------------*/
+.leave-a-comment {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 5%;
+    justify-content: space-between;
+}
+
+.leave-a-comment .input-comment {
+    width: 90%;
+    height: 50vh;
+}
+.leave-a-comment .button-box {
+    width: 100%;
+}
+.leave-a-comment .button-send {
+    position: relative;
+    width: 20%;
+    height: 5vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*---------------------> Footer <---------------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.contactos {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-contactos {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cuentas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.informacion {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid #eee;
+}
+
+.informacion a {
+    text-align: center;
+}
+
