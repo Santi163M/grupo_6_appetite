@@ -153,3 +153,36 @@ height: 180px;
 
 /* ------------------> Commets/Reviews section <------------------*/
 
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviews .title {
+    margin: auto;
+    font-size: 5vw;
+}
+.reviews .container-rate-product{
+    display: flex;
+    width: 100%;
+}
+.reviews .rate-stars{
+
+    margin: auto;
+    width: 100%;
+    font-size: 5vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.reviews .rate-number{
+    font-weight: bold;
+    margin-left: 5%;
+    display: inline;
+    font-size: 7vw;
+}
+.reviews .comment-example-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
