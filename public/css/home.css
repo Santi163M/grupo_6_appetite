@@ -233,6 +233,14 @@ footer {
     .menu-producto {
         width: 40%;
     }
+
+    .combos-producto {
+        width: 40%;
+    }
+
+    .combos {
+        justify-content: space-around;
+    }
 }
 
 @media (min-width: 769px) {
@@ -247,6 +255,14 @@ footer {
     .menu-producto {
         width: 26.6%;
     }
+
+    .combos-producto {
+        width: 26.6%;
+    }
+
+    .combos {
+        justify-content: space-around;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -260,5 +276,13 @@ footer {
 
     .menu-producto {
         width: 20%;
+    }
+
+    .combos-producto {
+        width: 20%;
+    }
+
+    .combos {
+        justify-content: space-around;
     }
 }
