@@ -5,7 +5,7 @@
 
 header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 30px;
     width: 100%;
@@ -105,7 +105,7 @@ body{
     right: 10px;
 }
 
-@media (min-width:361px){
+@media (max-width:822px){
     .barra-de-busqueda{
         margin-left: -25px;
         margin-right: -10px;
@@ -122,5 +122,11 @@ body{
     .Pregunta{
         position: relative;
         right: 80px;
+    }
+}
+
+@media(min-width=823px){
+    .barra-de-busqueda{
+        width: 100%;
     }
 }
