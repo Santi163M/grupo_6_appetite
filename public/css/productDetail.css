@@ -78,18 +78,20 @@
 }
 
 /* --> Imagen del <-- */
-.product .product-image {
-    display: inline-block;
+.product-main .product-image {
+    display: flex;
     max-width: 100%;
     max-height: 100%;
-    align-self: flex-start;
+    align-items: flex-start;
     margin-top: 20%;
     margin-right: 3%;
     margin-left: 3%;
 }
 
-.product .product-image img {
+.product-main .product-image img {
     width: 100%;
+    border-radius: 10px;
+    border: solid 2px black;
 }
 
 /* --> Detalles <-- */
@@ -123,7 +125,6 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .similar-products .title{
     margin: 5%;
@@ -134,11 +135,13 @@
     flex-wrap: wrap;
     align-self: center;
     justify-content: center;
+    justify-content: space-between;
 }
 .similar-products .product-list-menu .product {
     margin-bottom: 10%;
-    border: 1px red solid;
+    border: 1px rgb(255, 107, 107) solid;
     padding: 3vw;
+    border-radius: 10px;
 }
 .similar-products .product-list-menu .product img {
 width: 220px;
