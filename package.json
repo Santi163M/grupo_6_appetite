@@ -4,6 +4,7 @@
   "description": "En Appetite, nos enorgullece ofrecer una amplia variedad de deliciosas comidas que satisfacen todos los gustos y antojos.",
   "main": "index.js",
   "scripts": {
+    "dev" : "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
