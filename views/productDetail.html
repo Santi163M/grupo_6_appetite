@@ -87,39 +87,47 @@
         <section class="reviews">
             <h2 class="title">COMENTARIOS Y RESEÑAS</h2>
             <div class="container-rate-product">
-            <div class="rate-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <span class="rate-number">4.5</span>
-            </div>
-        </div>
-            <div class="comment-example-1">
-                <div class="product-stars">
+                <div class="rate-stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="rate-number">4.5</span>
                 </div>
-                <h3 class="title-comment">¡Delicioso y Nutritivo!</h3>
+            </div>
+            <article class="comment-section">
+                <div class="comment-example">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="title-comment">¡Delicioso y Nutritivo!</h3>
+                    <p>Es una buena opcion de comida para llenar la barriga!</p>
 
-            </div>
-            <div class="comment-example-2">
-            <div class="product-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
-            <h3 class="title-comment">Una opcion prometedora con espacio para crecer</h3>
-        </div>
+                </div>
+                <div class="comment-example">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="title-comment">Una opcion prometedora con espacio para crecer</h3>
+                    <p>Puede mejorar, pero está bueno!</p>
+                </div>
+            </article>
             <div class="leave-a-comment">
                 <label for="your-comment">Escribe tu comentario:</label>
                 <br>
-                <input type="text" name="comment-text-area" placeholder="Escriba su comentario aquí...">
+                <input type="text" name="comment-text-area" placeholder="Escriba su comentario aquí..."
+                    class="input-comment">
+                <div class="button-box">
+                    <button onclick="submitComment()" class="button-send">Enviar</button>
+                </div>
             </div>
         </section>
     </main>

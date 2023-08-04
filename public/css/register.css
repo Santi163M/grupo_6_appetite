@@ -1,5 +1,4 @@
 
-
 body{
     box-sizing: content-box;
     background-color: rgb(225, 224, 224);
@@ -13,6 +12,9 @@ body{
     display: flex;
 
 }
+.busqueda{
+    width: 100%;
+}
 
 .menu>section{
     width: 50%;
@@ -20,7 +22,9 @@ body{
     justify-content: space-between;
 }
 
-.menu>section>div{
+.menu>section>div>a{
+    color: black;
+    justify-content: space-between;
     display: flex;
 }
 
@@ -49,25 +53,39 @@ body{
     width: 150px;
 }
 .registro{
-    margin-left: 300px;
-    margin-right: 300px;
-    height: 40%;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+    padding-top:20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
 }
-.registro>div{
-    box-sizing: border-box;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: rgb(190, 190, 190);
-
+.registro>section{
+    box-shadow: 1px 1px 10px 1px black ;
+    background-color: #d7c8eb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
 }
-.registro>form>input{
-
-    background-color: aliceblue;
+.registro>section>div>label{
+    font-size: large;
+}
+.registro>section>div>div>input{
+    border: 1px solid gray;
+    font-size: large;
+    width: 100%;
+}
+.boton{
+    display: flex;
+    justify-content: end;
+}
+.boton>button{
+    color: white;
+    background-color: blue;
+    height: 30px;
+    width: 80px;
 }
 
 @media (max-width:768px){
