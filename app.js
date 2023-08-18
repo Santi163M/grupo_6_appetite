@@ -2,23 +2,30 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
+const port = 3030
 
-app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/index.html'))
-});
-
-app.get('/login', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, './views/login.html'))
-})
-
-app.get('/productDetail', (req,res) => {
-    res.sendFile(path.resolve(__dirname, './views/productDetail.html'))
-})
 app.use(express.static('public'));
 
+app.set("view engine","ejs")
+app.set("views","./src/views")
+
+const home = require("./src/routes/home")
+const product = require("./src/routes/products")
+
+app.use(home)
+app.use(product)
+
+
+
+
+
+/*
 app.get('/carrito', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/productCart.html'))
 });
-app.use(express.static('public'));
+app.get("/register",(req,res)=>{
+    res.sendFile(path.resolve(__dirname,"./src/views/register.html"))
+})
+*/
 
-app.listen('8000', console.log('Servidor iniciado en el puerto 8000.'))
+app.listen(port, console.log('Servidor iniciado en el puerto '))
