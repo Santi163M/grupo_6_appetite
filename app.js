@@ -9,6 +9,9 @@ app.use(express.static('public'));
 app.set("view engine","ejs")
 app.set("views","./src/views")
 
+app.use(express.urlencoded({extended:false}))
+app.use(express.json())
+
 const home = require("./src/routes/home")
 const product = require("./src/routes/products")
 

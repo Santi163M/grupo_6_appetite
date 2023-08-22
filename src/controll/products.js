@@ -8,7 +8,7 @@ function leerjson (data) {
     let convertir;
     convertir = JSON.parse(data)
     return convertir
-}
+} 
 
 console.log(`Datos entrantes : `, leerjson(datos))
 let informacion = leerjson(datos)

@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 
 
@@ -11,6 +12,9 @@ const homecontrol = {
     },
     login:(req,res)=>{
         res.render("login")
+    },
+    crearproducto:(req, res)=>{
+        res.render("crearproducto")
     }
 }
 module.exports = homecontrol

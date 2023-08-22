@@ -9,4 +9,4 @@ productrouter.get("/product",productcontrol.cart)
 productrouter.get("/productdetail",productcontrol.details)
 productrouter.get("/productdetail/:id",productcontrol.detailsn)
 
-module.exports = productrouter
+module.exports = productrouter 

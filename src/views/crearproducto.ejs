@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Crear producto</title>
+</head>
+<body>
+
+    <%- include('partial/header.ejs') %>
+
+<form action="" method="POST">
+
+<label for="Nombre">Nombre</label>
+<input type="text" name="Nombre"></input>
+<br>
+<label for="Descripción">Descripción</label>
+<input type="text" name="Descripción"></input>
+<br>
+
+<label for="Imagen">Imagen</label>
+<input type="file" name="Imagen"></input>
+<br>
+
+<label for="Precio">Precio  $</label>
+<input type="number" name="Precio"></input>
+<br>
+
+<label for="Categoría">Categoría</label>
+<input type="text" name="Categoría"></input>
+
+<br>
+<button type="submit">Crear producto</button>
+</form>
+
+<%- include('partial/footer.ejs') %>
+
+</body>
+</html>
