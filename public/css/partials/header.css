@@ -1,0 +1,54 @@
+.nav-bar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.barra-de-busqueda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.buscar {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.icono-busqueda {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+}
+
+.accesos {
+    list-style: none;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    gap: 15px;
+    margin-right: 12px;
+}
+
+.accesos a {
+    color: inherit;
+}
+
+.accesos i {
+    font-size: 20px;
+}
