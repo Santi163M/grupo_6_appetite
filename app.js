@@ -28,4 +28,4 @@ app.get("/register",(req,res)=>{
 })
 */
 
-app.listen(port, console.log('Servidor iniciado en el puerto '))
+app.listen(port, console.log(`servidor Coriendo en el puerto ${port}`))
