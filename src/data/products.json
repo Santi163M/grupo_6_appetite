@@ -1,0 +1,30 @@
+[
+{
+    "id": 1,
+    "producto": "Hamburguesa",
+    "precio": 2000,
+    "img": "/img/Hamburguesa.jpg",
+    "link": "/productdetail/1"
+},
+{
+    "id": 2,
+    "producto": "Pizza",
+    "precio": 1800,
+    "img":"/img/pizza.jpg",
+    "link":"/productdetail/2"
+},
+{
+    "id": 3,
+    "producto": "Papas",
+    "precio": 550,
+    "img":"/img/papas.jpg",
+    "link":"/productdetail/3"
+},
+{
+    "id": 4,
+    "producto": "Panchos",
+    "precio": 900,
+    "img":"/img/pancho.jpg",
+    "link":"/productdetail/2"
+}
+]

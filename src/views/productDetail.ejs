@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/productDetail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product</title>
+</head>
+
+<body>
+
+    <%- include('partial/header.ejs') %>
+
+    <main>
+        <section class="product-main">
+            <picture class="product-image">
+                <img src="/img/product-example.jpeg" alt="hamburguesa">
+            </picture>
+            <div class="details">
+                <div class="product-name">
+                    <h1 class="product-name">HAMBURGUESA DOBLE CON CHEDDAR</h1>
+                </div>
+                <div class="price">
+                    <h2>$2000</h2>
+                </div>
+                <div class="description">
+                    <h3>Descripcion:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugit ut illum asperiores cupiditate iste dolorem
+                    </p>
+                </div>
+                <button class="añadir">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    AÑADIR AL CARRITO
+                </button>
+            </div>
+        </section>
+        <section class="similar-products">
+            <h2 class="title">PRODUCTOS SIMILARES</h2>
+            <div class="product-list-menu">
+                <article class="product">
+                    <a href="#"> <img src="/img/hamburguesa-1.jpeg" alt="hamburguesa 1"></a>
+                    <h3>PRODUCTO 1</h3>
+                </article>
+                <article class="product">
+                    <img src="/img/hamburguesa-2.jpeg" alt="hamburguesa 2">
+                    <h3>PRODUCTO 2</h3>
+                </article>
+                <article class="product">
+                    <img src="/img/hamburguesa-3.jpeg" alt="hamburguesa 3">
+                    <h3>PRODUCTO 3</h3>
+                </article>
+                <article class="product">
+                    <img src="/img/hamburguesa-4.jpeg" alt="hamburguesa 4">
+                    <h3>PRODUCTO 4</h3>
+                </article>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2 class="title">COMENTARIOS Y RESEÑAS</h2>
+            <div class="container-rate-product">
+                <div class="rate-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="rate-number">4.5</span>
+                </div>
+            </div>
+            <article class="comment-section">
+                <div class="comment-example">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="title-comment">¡Delicioso y Nutritivo!</h3>
+                    <p>Es una buena opcion de comida para llenar la barriga!</p>
+
+                </div>
+                <div class="comment-example">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="title-comment">Una opcion prometedora con espacio para crecer</h3>
+                    <p>Puede mejorar, pero está bueno!</p>
+                </div>
+            </article>
+            <div class="leave-a-comment">
+                <label for="your-comment">Escribe tu comentario:</label>
+                <br>
+                <input type="text" name="comment-text-area" placeholder="Escriba su comentario aquí..."
+                    class="input-comment">
+                <div class="button-box">
+                    <button onclick="submitComment()" class="button-send">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partial/footer.ejs') %>
+    
+</body>
+
+</html>
