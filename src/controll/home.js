@@ -15,6 +15,9 @@ const homecontrol = {
     },
     crearproducto:(req, res)=>{
         res.render("crearproducto")
+    },
+    listadeproductos:(req, res)=>{
+        res.sendFile(path.resolve(__dirname,'../data/products.json'))
     }
 }
 module.exports = homecontrol
