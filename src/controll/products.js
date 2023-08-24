@@ -11,7 +11,7 @@ function leerjson (data) {
 } 
 
 console.log(`Datos entrantes : `, leerjson(datos))
-let informacion = leerjson(datos)
+const informacion = leerjson(datos)
 
 const productcontrol = {
     cart:(req,res)=>{
@@ -25,12 +25,18 @@ const productcontrol = {
         let product = informacion.find(p => p.id == n)
         res.render("productDetail")
     },
+    editarproducto:(req, res)=>{
+        res.render("editarproducto")
+    },
+    editarproductopost:(req, res)=>{
+        res.redirect("/")
+    },
     crearproducto:(req, res)=>{
         res.render("crearproducto")
     },
     crearproductopost:(req, res)=>{
-        const nuevoproducto=req.body
-        res.send(nuevoproducto)    }
+        res.redirect("/")    
+    }
 }
 
 module.exports = productcontrol
