@@ -1,31 +1,39 @@
-Retrospectiva sprint 2
+<div align="center">
 
-Luego de la entrega del primer sprint, podemos analizar que nuestro equipo trabaja a un buen ritmo, hay una comunicación rápida y confiable, y una muy linda convivencia. Nos complementamos y estamos cómodos unos con otros, pero también tenemos cosas que mejorar.
+# 🚀 Retrospectiva Sprint 2
 
-Aspectos
+_Es evidente que el equipo está trabajando bien juntos y la comunicación fluye de manera efectiva. Sin embargo, hay ciertos puntos que necesitan atención para mejorar aún más._
 
-Comenzar a hacer: Tenemos que acostumbrarnos a usar sitios de planificación, para el mejor registro de actividades
+</div>
 
-Hacer más: Tenemos que empezar a programar mejor nuestras reuniones virtuales
+<div align="center">
 
-Continuar haciendo: Tenemos que seguir comunicándonos y participando en los trabajos
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | Implementar el uso de sitios de planificación para registrar y rastrear las actividades. Esto puede ayudar a mantener un seguimiento más claro de las tareas y los avances. |
+| **🚀 Hacer más**     | Mejorar la programación de las reuniones virtuales para asegurarse de que sean efectivas y aborden los puntos necesarios. Una buena organización puede aumentar la productividad. |
+| **👏 Continuar haciendo** | Mantener la comunicación y la participación activa en las tareas. Esto es un aspecto positivo que debe mantenerse en marcha. |
+| **👀 Hacer menos** | Reducir la duda a la hora de pedir ayuda. La colaboración y el apoyo entre los miembros del equipo son fundamentales para el éxito. |
+| **❌ Dejar de hacer** | Evitar acumular tareas y trabajar en momentos de urgencia. Una mejor distribución del trabajo puede reducir el estrés y mejorar la calidad del resultado final. |
 
-Hacer menos: Tenemos que empezar a dejar de dudar en pedir ayuda 
+</div>
 
-Dejar de hacer: Tenemos que dejar de amontonar las cosas, porque si bien terminamos a tiempo, podríamos evitar el estrés de última semana
+<div align="center">
 
-Retrospectiva sprint 3
+# 🏁 Retrospectiva Sprint 3
 
-Definitivamente, este no fue el mejor ritmo de trabajo de hemos llevado con nuestro equipo para este sprint. Si bien nos mantuvimos conectados, la no interperetación del nuevo módulo (express) nos costó la entrega a tiempo. Sin embargo, pese a la tardanza pudimos realizar, pocos commits, pero la entrega a fin de cuentas
+_Aunque hubo desafíos durante este sprint, el equipo logró realizar la entrega a pesar de algunos obstáculos. Aquí hay oportunidades para mejorar._
 
-Aspectos
+</div>
 
-Comenzar a hacer: si no entendemos un módulo, preguntar por esto
+<div align="center">
 
-Hacer más: empezar a programar más sesiones virtuales y organizarnos mejor
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | Si un módulo o concepto es difícil de entender, es esencial preguntar por ayuda o clarificaciones. La comunicación abierta puede evitar problemas a largo plazo. |
+| **🚀 Hacer más**     | Aumentar la frecuencia de las sesiones virtuales puede ayudar a mantener a todos en la misma página y a abordar los problemas a medida que surgen. |
+| **👏 Continuar haciendo** | Seguir poniéndose al día con las instrucciones del trabajo es crucial para evitar retrasos y malentendidos. |
+| **👀 Hacer menos** | Evitar retrasos en las actividades para mantener un flujo de trabajo constante y cumplir con los plazos. |
+| **❌ Dejar de hacer** | Dejar de entregar apresuradamente. Aunque se logró la entrega, hacerlo en el último momento puede generar estrés y disminuir la calidad del trabajo. |
 
-Continuar haciendo: tenemos que seguir poniéndonos al día con las consignas del trabajo
-
-Hacer menos: retrasar las actividades
-
-Dejar de hacer: entregar de forma apurada, a tardía
+</div>
