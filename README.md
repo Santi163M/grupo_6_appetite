@@ -1,30 +1,29 @@
- # Appetite🍟
- En Appetite, nos enorgullece ofrecer una amplia variedad de deliciosas comidas que satisfacen todos los gustos y antojos.
- 
- La plataforma digital cuenta con una extensa selección de alimentos para todos, incluyendo opciones personalizadas, combos y un menú del día, siempre fresco y lleno de sabor.
- 
- El servicio es rápido, confiable, fácil de usar y con tan solo unos pocos clics, podrás realizar tu pedido y recibir tu comida favorita, directamente en la puerta de tu casa. Para garantizar una experiencia culinaria inolvidable, el equipo de chefs profesionales de Appetite se asegura de que cada plato sea preparado con ingredientes de alta calidad y con el máximo cuidado. ¡Prueba Appetite hoy mismo y deleita tus sentidos con nuestra exquisita comida!
+# ¡Despierta tus Sentidos con Appetite! 🍔🍟
 
-## Sitios de los que nos inspiramos
-### Burger King
-Por la calidad del sitio y la simpatía de las categorías.
-### Rappi
-Por la disposición del acceso para el cliente, desde registros hasta pedidos.
-### Mc Donald´s
-Por sus tonos cálidos y la relación productos con tendencias.
-### Mostaza
-Por la decoración y el contraste de la paleta de colores.
-### Pedidos Ya
-Por todas las ubicaciones desde donde uno puede entrar.
+En el **vibrante universo de Appetite**, nos enorgullecemos de desatar una **sinfonía de Sabores** que conquistan los paladares más exigentes. Nuestro lema es claro: **"Satisface tus Deseos, Despierta tu Apetito"**.
 
+## 🍽️ Un Banquete para tus Sentidos
 
-##### De todos los sitios de los que nos inspiramos para crear Appetite, tuvimos en cuenta lo siguiente:<br>- Los colores que se usaron en el sitio web.<br>- La comodidad del cliente como prioridad, desde las ubicaciones, formas de pago y acceso a servicios en general.<br>- El atractivo visual de cada una de estas páginas.
-[Burger King](https://www.burgerking.com.ar/), [Rappi](https://www.rappi.com.ar/), [Mc Donald´s](https://www.mcdonalds.com.ar/), [Mostaza](https://www.mostazaweb.com.ar/), [Pedidos ya](https://www.pedidosya.com.ar/).
+Adéntrate en nuestra **plataforma digital**, donde la **Culinaria se fusiona con la Tecnología** en una danza de satisfacción. Explora una **Variedad Culinaria Ecléctica** diseñada para complacer todos los gustos y caprichos imaginables. Desde opciones personalizadas meticulosamente confeccionadas hasta tentadores **Combos** y un **Menú del Día en constante cambio**, cada bocado está impregnado de autenticidad y frescura.
 
-## Integrantes del Equipo 
-Nuestro equipo de venta de comida rápida está formado por personas comprometidas, profesionales, responsables y entusiastas. Cada uno de ellos desempeña un rol importante y aporta su talento y experiencia para brindar el mejor servicio a nuestros clientes.
-### ° Juan Villalobos
-### ° Giuliana Nahir Bazzi
-### ° Santiago Martin
-### ° Lucía Aymé Andrade
-### ° Leonardo Pinto
+## 🚀 Servicio más Veloz que tus Antojos
+
+Nuestro servicio se mueve a la **Velocidad de tus Deseos**. Olvídate de esperas interminables. Con **pocos clics**, materializa tus antojos y recibe la esencia de la delicia en la comodidad de tu hogar. Nosotros lideramos el camino para que tu experiencia culinaria sea **Inolvidable**. El equipo de maestros culinarios de Appetite fusiona ingredientes de la **más Alta Calidad** con pasión ardiente, asegurando que cada plato sea una **Obra Maestra de Sabor**.
+
+## 💡 Inspiración: Los Mejores
+
+- [**Burger King**](https://www.burgerking.com.ar/): Diseño noble y categorías amigables.
+- [**Rappi**](https://www.rappi.com.ar/): Acceso fluido desde registro hasta pedido.
+- [**Mc Donald's**](https://www.mcdonalds.com.ar/): Tonos cálidos y productos en tendencia.
+- [**Mostaza**](https://www.mostazaweb.com.ar/): Paleta cromática y atención a la decoración.
+- [**Pedidos Ya**](https://www.pedidosya.com.ar/): Abanico de opciones desde cualquier entrada.
+
+## 👨‍🍳 Los Artífices del Sabor
+
+- [**Juan Villalobos**](https://discord.com/users/juanchovilla) 
+- [**Giuliana Nahir Bazzi**](https://discord.com/users/giuliananahirbazzi)
+- [**Santiago Martin**](https://discord.com/users/santi.martin)
+- [**Lucía Aymé Andrade**](https://discord.com/users/luciaaymeandrade)
+- [**Leonardo Pinto**](https://discord.com/users/leonardopinto_)
+
+En Appetite, no solo saciamos el hambre, sino que también alimentamos la pasión por la comida **Excepcional**. ¡Únete a nosotros en este **Festín Sensorial**! 🍽️💫
