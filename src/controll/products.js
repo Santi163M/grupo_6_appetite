@@ -24,7 +24,13 @@ const productcontrol = {
         const n = req.params.id
         let product = informacion.find(p => p.id == n)
         res.render("productDetail")
-    }
+    },
+    crearproducto:(req, res)=>{
+        res.render("crearproducto")
+    },
+    crearproductopost:(req, res)=>{
+        const nuevoproducto=req.body
+        res.send(nuevoproducto)    }
 }
 
 module.exports = productcontrol
