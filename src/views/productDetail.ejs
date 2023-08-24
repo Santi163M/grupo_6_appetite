@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/productDetail.css">
+    <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,23 +14,22 @@
 <body>
 
     <%- include('partial/header.ejs') %>
-
+    
     <main>
         <section class="product-main">
             <picture class="product-image">
-                <img src="/img/product-example.jpeg" alt="hamburguesa">
+                <img src="<%= productoelegido.img %> " alt="hamburguesa">
             </picture>
             <div class="details">
                 <div class="product-name">
-                    <h1 class="product-name">HAMBURGUESA DOBLE CON CHEDDAR</h1>
+                    <h1 class="product-name"> <%= productoelegido.producto  %></h1>
                 </div>
                 <div class="price">
-                    <h2>$2000</h2>
+                    <h2> $ <%= productoelegido.precio  %></h2>
                 </div>
                 <div class="description">
                     <h3>Descripcion:</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugit ut illum asperiores cupiditate iste dolorem
+                    <p> <%= productoelegido.descripcion %>
                     </p>
                 </div>
                 <button class="añadir">
