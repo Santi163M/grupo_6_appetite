@@ -37,3 +37,27 @@ _Aunque hubo desafíos durante este sprint, el equipo logró realizar la entrega
 | **❌ Dejar de hacer** | Dejar de entregar apresuradamente. Aunque se logró la entrega, hacerlo en el último momento puede generar estrés y disminuir la calidad del trabajo. |
 
 </div>
+<div align="center">
+
+# 🎒 Retrospectiva Sprint 4
+
+_A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre nuestro progreso y encontrar formas de mejorar continuamente._
+
+</div>
+
+<div align="center">
+
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | (Escribe aquí) |
+| **🚀 Hacer más**     | (Escribe aquí) |
+| **👏 Continuar haciendo** | (Escribe aquí) |
+| **👀 Hacer menos** | (Escribe aquí) |
+| **❌ Dejar de hacer** | (Escribe aquí) |
+
+</div>
+
+
+
+
+
