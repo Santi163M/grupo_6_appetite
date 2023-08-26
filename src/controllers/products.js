@@ -8,22 +8,36 @@ function leerjson (data) {
     let convertir;
     convertir = JSON.parse(data)
     return convertir
-}
+} 
 
-//console.log(`Datos entrantes products : `, leerjson(datos))
-let informacion = leerjson(datos)
+console.log(`Datos entrantes : `, leerjson(datos))
+const informacion = leerjson(datos)
 
 const productcontrol = {
     cart:(req,res)=>{
         res.render("productCart",{informacion})
     },
-    /* details:(req,res)=>{
+    details:(req,res)=>{
         res.render("productDetail")
-    }, */
+    },
     detailsn: (req,res)=>{
         const n = req.params.id
         let productoelegido = informacion.find(p => p.id == n)
         res.render("productDetail",{productoelegido})
+    },
+    editarproducto:(req, res)=>{
+        const n = req.params.id
+        let productoelegido = informacion.find(p => p.id == n)
+        res.render("editarproducto",{productoelegido})
+    },
+    editarproductopost:(req, res)=>{
+        res.redirect("/")
+    },
+    crearproducto:(req, res)=>{
+        res.render("crearproducto")
+    },
+    crearproductopost:(req, res)=>{
+        res.redirect("/")    
     }
 }
 
