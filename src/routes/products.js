@@ -2,8 +2,6 @@ const express = require("express")
 const productcontrol = require("../controll/products")
 const productrouter = express.Router()
 
-
-<<<<<<< HEAD
 productrouter.get("/product",productcontrol.cart)
 productrouter.get("/productdetail",productcontrol.details)
 productrouter.get("/productdetail/:id",productcontrol.detailsn)
@@ -25,4 +23,3 @@ productrouter.get("/products/create",productcontrol.crearproducto)
 
 
 module.exports = productrouter
->>>>>>> e13213d3da92d913a5dbdb404ee750ec08a2c8c2
