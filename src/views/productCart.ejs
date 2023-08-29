@@ -44,7 +44,7 @@
 <div class="productos-container">
     <!-- Productos -->
     <!-- Producto 1 -->
-    <a href="<%= informacion[0].link %>">
+    <a href="/product/details/<%= informacion[0].id %>">
       <div class="producto">
         <div class="producto-info">
           <img src = <%= informacion[0].img %> alt="Hamburguesa">
@@ -102,24 +102,26 @@
 
 
     <!-- Producto 2 -->
-<div class="producto">
-    <div class="producto-info">
-      <img src="<%= informacion[1].img %>" alt="PIZZA">
-      <div class="producto-detalle">
-        <h2 class="descripciones"><%= informacion[1].producto %></h2>
-        <p class="precios">$<%= informacion[1].precio %></p>
-        <p class="descuentos">Nuestras pizzas están hechas con masa casera, preparada con los mejores 
-            ingredientes para lograr una textura y sabor únicos. Cada pizza es una obra de arte culinaria, 
-            creada con pasión y dedicación para ofrecerte una experiencia gastronómica inolvidabl</p>
-        <!-- Contenedor de los botones y el contador -->
-        <div class="cantidad-productos">
-          <button class="disminuir-btn">Menos Productos</button>
-          <span class="contador">1</span>
-          <button class="aumentar-btn">Mas Productos</button>
+    <a href="/product/detais/<%= informacion[1].id %>">
+      <div class="producto">
+        <div class="producto-info">
+          <img src="<%= informacion[1].img %>" alt="PIZZA">
+          <div class="producto-detalle">
+            <h2 class="descripciones"><%= informacion[1].producto %></h2>
+            <p class="precios">$<%= informacion[1].precio %></p>
+            <p class="descuentos">Nuestras pizzas están hechas con masa casera, preparada con los mejores 
+                ingredientes para lograr una textura y sabor únicos. Cada pizza es una obra de arte culinaria, 
+                creada con pasión y dedicación para ofrecerte una experiencia gastronómica inolvidabl</p>
+            <!-- Contenedor de los botones y el contador -->
+            <div class="cantidad-productos">
+              <button class="disminuir-btn">Menos Productos</button>
+              <span class="contador">1</span>
+              <button class="aumentar-btn">Mas Productos</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </a>
   <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i></button>
   <script>
     // Obtener los botones y el contador
@@ -155,23 +157,25 @@
 
 
     <!-- Producto 3 -->
-    <div class="producto">
-    <div class="producto-info">
-      <img src="<%= informacion[2].img %>" alt="PAPAS">
-      <div class="producto-detalle">
-        <h2 class="descripciones"><%= informacion[2].producto %></h2>
-        <p class="precios">$ <%= informacion[2].precio %></p>
-        <p class="descuentos">Nuestras papas fritas son el acompañamiento perfecto para cualquier comida. C
-            ortadas en finas rodajas y fritas hasta alcanzar una textura crocante y dorada, 
-            estas deliciosas papas son irresistibles</p>
-        <!-- Contenedor de los botones y el contador -->
-        <div class="cantidad-productos">
-          <button class="disminuir-btn">Menos Productos</button>
-          <span class="contador">1</span>
-          <button class="aumentar-btn">Mas Productos</button>
+    <a href="/product/details/<%= informacion[2].id %>">
+      <div class="producto">
+        <div class="producto-info">
+          <img src="<%= informacion[2].img %>" alt="PAPAS">
+          <div class="producto-detalle">
+            <h2 class="descripciones"><%= informacion[2].producto %></h2>
+            <p class="precios">$ <%= informacion[2].precio %></p>
+            <p class="descuentos">Nuestras papas fritas son el acompañamiento perfecto para cualquier comida. C
+                ortadas en finas rodajas y fritas hasta alcanzar una textura crocante y dorada, 
+                estas deliciosas papas son irresistibles</p>
+            <!-- Contenedor de los botones y el contador -->
+            <div class="cantidad-productos">
+              <button class="disminuir-btn">Menos Productos</button>
+              <span class="contador">1</span>
+              <button class="aumentar-btn">Mas Productos</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+    </a>
   </div>
   <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i></button>
   <script>
@@ -209,12 +213,14 @@
 
 
 <!-- Producto 4 -->
-<div class="producto">
+
+<a href="/product/details/<%= informacion[3].id %>">
+  <div class="producto">
     <div class="producto-info">
       <img src="<%= informacion[3].img %>" alt="PANCHO">
       <div class="producto-detalle">
-        <h2 class="descripciones"><%= informacion[2].producto %></h2>
-        <p class="precios"><%= informacion[2].precio %></p>
+        <h2 class="descripciones"><%= informacion[3].producto %></h2>
+        <p class="precios"><%= informacion[3].precio %></p>
         <p class="descuentos">Nuestros panchos son la opción perfecta para una comida rápida y deliciosa. 
             Hechos con salchichas de alta calidad y servidos en un pan suave y esponjoso, nuestros panchos son una explosión 
             de sabor en cada bocado.
@@ -228,6 +234,8 @@
       </div>
     </div>
   </div>
+</a>
+
   <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i></button>
   <script>
     // Obtener los botones y el contador

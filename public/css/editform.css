@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    margin: 10px 0px 10px 0px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    background-color: #AAB7B8 ;
+    border: 1px solid #839192  ;
+    box-shadow: 0px 0px 10px 2px #2C3E50 ;
+    margin: 10px 0px 10px 0px;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.product-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-image{
+    width: 30%;
+}
+.edit{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.edit>div{
+    display: flex;
+    flex-direction: column;
+}
+.edit>div>input{
+    transition: background-color;
+}
+.edit>div>button:hover{
+    color: white;
+    background-color: blue;
+    transition: 1s;
+}
