@@ -35,7 +35,10 @@ const productcontrol = {
         res.render("crearproducto")
     },
     crearproductopost:(req, res)=>{
-        res.redirect("/")    
+        res.redirect("/listadeproductos")    
+    },
+    listadeproductos:(req, res)=>{
+        res.render("listadeproductos")
     }
 }
 
