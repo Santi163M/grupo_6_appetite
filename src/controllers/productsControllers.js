@@ -22,11 +22,13 @@ const productcontrol = {
     },
     detailsn: (req,res)=>{
         const n = req.params.id
-        let product = informacion.find(p => p.id == n)
-        res.render("productDetail")
+        let productoelegido = informacion.find(p => p.id == n)
+        res.render("productDetail",{productoelegido})
     },
     editarproducto:(req, res)=>{
-        res.render("editarproducto")
+        const n = req.params.id
+        let productoelegido = informacion.find(p => p.id == n)
+        res.render("editarproducto",{productoelegido})
     },
     editarproductopost:(req, res)=>{
         res.redirect("/")
@@ -35,10 +37,10 @@ const productcontrol = {
         res.render("crearproducto")
     },
     crearproductopost:(req, res)=>{
-        res.redirect("/listadeproductos")    
+        res.redirect("/")    
     },
     listadeproductos:(req, res)=>{
-        res.render("listadeproductos")
+        req.send(req.body)
     }
 }
 
