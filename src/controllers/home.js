@@ -3,7 +3,7 @@ const path = require('path');
 
 const controller = {
     home: (req, res) => {
-        res.render("index");
+        res.render("home");
     },
 
     register: (req, res) => {

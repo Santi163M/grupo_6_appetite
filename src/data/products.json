@@ -1,30 +1,33 @@
 [
-{
-    "id": 1,
-    "producto": "Hamburguesa",
-    "precio": 2000,
-    "img": "/img/Hamburguesa.jpg",
-    "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
-},
-{
-    "id": 2,
-    "producto": "Pizza",
-    "precio": 1800,
-    "img":"/img/pizza.jpg",
-    "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
-},
-{
-    "id": 3,
-    "producto": "Papas",
-    "precio": 550,
-    "img":"/img/papas.jpg",
-    "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
-},
-{
-    "id": 4,
-    "producto": "Panchos",
-    "precio": 900,
-    "img":"/img/pancho.jpg",
-    "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
-}
+    {
+        "id": 1,
+        "producto": "Hamburguesa",
+        "precio": 2000,
+        "img": "/img/Hamburguesa.jpg",
+        "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
+    },
+
+    {
+        "id": 2,
+        "producto": "Pizza",
+        "precio": 1800,
+        "img":"/img/pizza.jpg",
+        "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
+    },
+
+    {
+        "id": 3,
+        "producto": "Papas",
+        "precio": 550,
+        "img":"/img/papas.jpg",
+        "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
+    },
+
+    {
+        "id": 4,
+        "producto": "Panchos",
+        "precio": 900,
+        "img":"/img/pancho.jpg",
+        "descripcion":"Texto de ejemplo Texto de ejemplo Texto de ejemplo"
+    }
 ]
