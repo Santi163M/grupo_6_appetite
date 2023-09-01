@@ -8,9 +8,33 @@
     <title>Crear producto</title>
 </head>
 <body>
+    <%- include('partials/header.ejs') %>
 
-    <%- include('partial/header.ejs') %>
+    <form action="" method="POST">
 
+<<<<<<< HEAD
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="Nombre"></input>
+    <br>
+    <label for="Descripción">Descripción</label>
+    <input type="text" name="Descripción"></input>
+    <br>
+
+    <label for="Imagen">Imagen</label>
+    <input type="file" name="Imagen"></input>
+    <br>
+
+    <label for="Precio">Precio  $</label>
+    <input type="number" name="Precio"></input>
+    <br>
+
+    <label for="Categoría">Categoría</label>
+    <input type="text" name="Categoría"></input>
+
+    <br>
+    <button type="submit">Crear producto</button>
+    </form>
+=======
 <main>
     <section class="create">
         <form action="/products/listadeproductos" method="POST" enctype="multipart/form-data">
@@ -53,6 +77,8 @@
 </main>
 
 <%- include('partial/footer.ejs') %>
+>>>>>>> 89eb6e1f56db38ff449af978548fe3198eddf982
 
+<%- include('partials/footer.ejs') %>
 </body>
 </html>
