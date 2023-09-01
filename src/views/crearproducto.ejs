@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/create.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Crear producto</title>
@@ -11,6 +12,7 @@
 
     <form action="" method="POST">
 
+<<<<<<< HEAD
     <label for="Nombre">Nombre</label>
     <input type="text" name="Nombre"></input>
     <br>
@@ -32,6 +34,50 @@
     <br>
     <button type="submit">Crear producto</button>
     </form>
+=======
+<main>
+    <section class="create">
+        <form>
+            <div>
+            <label for="Nombre">Nombre</label>
+        <input class="input" type="text" name="Nombre" placeholder="Ingresar Nombre del producto..."></input>
+        <br>
+        </div>
+
+        <div>
+            <label for="Descripción">Descripción</label>
+        <input type="text" name="Descripción" placeholder="Ingresar Descripción del nuevo producto..."></input>
+        <br>
+        </div>
+        
+        <div>
+            <label for="Imagen">Imagen</label>
+        <input type="image" name="Imagen" placeholder="Ingresar Imagen del nuevo producto..."></input>
+        <br>
+        </div>
+        
+        <div>
+            <label for="Precio">Precio  $</label>
+            <input type="number" name="Precio"placeholder="Ingresar Precio del nuevo producto..."></input>
+            <br>
+        </div>
+        
+        <div>
+            <label for="Categoría">Categoría</label>
+            <input type="text" name="Categoría" placeholder="Ingresar Categoría del nuevo producto..."></input>
+            <br>
+        </div>
+        
+        <div class="button-container">
+            <button type="submit">Crear producto</button>
+        </div>
+        
+        </form>
+    </section>
+</main>
+
+<%- include('partial/footer.ejs') %>
+>>>>>>> 89eb6e1f56db38ff449af978548fe3198eddf982
 
 <%- include('partials/footer.ejs') %>
 </body>

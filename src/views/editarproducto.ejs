@@ -2,35 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/editform.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
     <%- include('partials/header.ejs') %>
+=======
+    <%- include('partial/header.ejs') %>
+    <main>
+        <form action="" method="POST" class="formulario">
+            <section class="product-information">
+                <h2>Editar Producto : <%= productoelegido.producto %></h2>
+                <div>
+                    <img class="product-image" src="<%= productoelegido.img %>" >
+                </div>
+
+                
+
+            </section> 
+
+            <section class="edit">
+                <div class="form">
+                    <label for="Nombre">Nombre</label>
+                <input class="input" type="text" name="Nombre" placeholder="Editar Nombre producto..."></input>
+                <br>
+                </div>
+>>>>>>> 89eb6e1f56db38ff449af978548fe3198eddf982
     
-    <form action="" method="POST">
+                <div>
+                    <label for="Descripción">Descripción</label>
+                <input type="text" name="Descripción" placeholder="Editar Descripción del producto..."></input>
+                <br>
+                </div>
+                
+                <div>
+                    <label for="Imagen">Imagen</label>
+                <input type="image" name="Imagen" placeholder="Editar Imagen del producto..."></input>
+                <br>
+                </div>
+                
+                <div>
+                    <label for="Precio">Precio  $</label>
+                    <input type="number" name="Precio"placeholder="Editar Precio del producto..."></input>
+                    <br>
+                </div>
+                
+                <div>
+                    <label for="Categoría">Categoría</label>
+                    <input type="text" name="Categoría" placeholder="Editar Categoría del producto..."></input>
+                    <br>
+                </div>
+                
+                <div>
+                    <button type="submit">Crear producto</button>
+                </div>
+                
+                </form>
+
+            </section>
+            
+    </main>
     
-    <label for="Nombre">Nombre</label>
-    <input type="text" name="Nombre"></input>
-    <br>
-    <label for="Descripción">Descripción</label>
-    <input type="text" name="Descripción"></input>
-    <br>
-    
-    <label for="Imagen">Imagen</label>
-    <input type="file" name="Imagen"></input>
-    <br>
-    
-    <label for="Precio">Precio  $</label>
-    <input type="number" name="Precio"></input>
-    <br>
-    
-    <label for="Categoría">Categoría</label>
-    <input type="text" name="Categoría"></input>
-    
-    <br>
-    <button type="submit">Crear producto</button>
-    </form>
     
     <%- include('partials/footer.ejs') %>
 </body>
