@@ -8,51 +8,44 @@
     <title>Document</title>
 </head>
 <body>
-<<<<<<< HEAD
-    <%- include('partials/header.ejs') %>
-=======
     <%- include('partial/header.ejs') %>
     <main>
-        <form action="" method="POST" class="formulario">
+        <form action="/products/<%= productoelegido.id %>/edit" method="POST" class="formulario">
             <section class="product-information">
                 <h2>Editar Producto : <%= productoelegido.producto %></h2>
                 <div>
                     <img class="product-image" src="<%= productoelegido.img %>" >
                 </div>
-
-                
-
             </section> 
 
             <section class="edit">
                 <div class="form">
                     <label for="Nombre">Nombre</label>
-                <input class="input" type="text" name="Nombre" placeholder="Editar Nombre producto..."></input>
+                <input value="<%= productoelegido.producto %>" class="input" type="text" name="nombre" placeholder="Editar Nombre producto..."></input>
                 <br>
                 </div>
->>>>>>> 89eb6e1f56db38ff449af978548fe3198eddf982
     
                 <div>
                     <label for="Descripción">Descripción</label>
-                <input type="text" name="Descripción" placeholder="Editar Descripción del producto..."></input>
+                <input value="<%= productoelegido.descripcion %>" type="text" name="Descripcion" placeholder="Editar Descripción del producto..."></input>
                 <br>
                 </div>
                 
                 <div>
                     <label for="Imagen">Imagen</label>
-                <input type="image" name="Imagen" placeholder="Editar Imagen del producto..."></input>
+                <input value="<%= productoelegido.img %>" type="file" name="Imagen" placeholder="Editar Imagen del producto..."></input>
                 <br>
                 </div>
                 
                 <div>
                     <label for="Precio">Precio  $</label>
-                    <input type="number" name="Precio"placeholder="Editar Precio del producto..."></input>
+                    <input value="<%= productoelegido.precio %>" type="number" name="Precio"placeholder="Editar Precio del producto..."></input>
                     <br>
                 </div>
                 
                 <div>
                     <label for="Categoría">Categoría</label>
-                    <input type="text" name="Categoría" placeholder="Editar Categoría del producto..."></input>
+                    <input type="text" name="Categoria" placeholder="Editar Categoría del producto..."></input>
                     <br>
                 </div>
                 
@@ -67,6 +60,7 @@
     </main>
     
     
-    <%- include('partials/footer.ejs') %>
+    <%- include('partial/footer.ejs') %>
+    
 </body>
 </html>
