@@ -67,11 +67,11 @@ _A medida que avanzamos hacia el quinto sprint, es fundamental reflexionar sobre
 
 |                   |                             |
 | ----------------- | --------------------------- |
-| **🌱 Comenzar a hacer** | (Escribe aquí) |
-| **🚀 Hacer más**     | (Escribe aquí) |
-| **👏 Continuar haciendo** | (Escribe aquí) |
-| **👀 Hacer menos** | (Escribe aquí) |
-| **❌ Dejar de hacer** | (Escribe aquí) |
+| **🌱 Comenzar a hacer** | Asignar un tiempo específico para la revisión y mejora continua del código; y planificar más reuniones informativas. |
+| **🚀 Hacer más**     | Que las sesiones informativas que tengamos sean, algunas de ellas, destinadas específicamente al control y revisión de lo que hicimos, antes de entregar todo el sprint. También empezar a escribir los archicos entregables de las daily. |
+| **👏 Continuar haciendo** | Este fue nuestro mejor sprint. Hubo una muy buena administración del tiempo, de las consignas y de las reuniones. Continuar con este ritmo, y comunicación abierta y efectiva, nos va a resultar muy favorecedor para todos. |
+| **👀 Hacer menos** | Tendríamos que dejar de dispersarnos en las daily/weekly standups, debido a que tenemos que presentar informes sobre estas reuniones, y distraernos solo nos aleja de cumplir ese objetivo |
+| **❌ Dejar de hacer** | Fue un buen trabajo en equipo, así que no encontramos nada que tendríamos que dejar de hacer. |
 
 </div>
 
