@@ -8,45 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <%- include('partials/header.ejs') %>
 
-<main class="formulario">
-
-    <div class="none">Iniciar sesión con:</div>
-<div class="modos">
-    <img class="img1" src="/img/google.svg" alt="" weigth="100px" height="100px">
-    <img class="img2" src="/img/facebook.svg" alt="" weigth="110px" height="110px">
-</div>
-<div class="container">
-
-<div class="modo1"><form action="">
-    <input type="text" placeholder="E-mail o nombre de usuario" class="formdelusuario">
-</form>
-<input type="radio" name="completar">
-    <label for="completar">"jxskjxsijcs@xgmail.com"</label>
-
-<div>
-    <input type="radio" name="completar">
-    <label for="completar">"jsjaisads@xgmail.com"</label>
-</div>
-
-<div>
-    <input type="radio" name="completar">
-    <label for="completar">"Gestionar cuentas"</label>
-</div>
-</div>
-
-
-<div class="container2"><form action="">
-    <input type="Password" placeholder="Contraseña" class="formdelpassword">
-</form>
-    <input type="radio" name="mensaje">
-    <label for="mensaje">********** Completar contraseña</label>
-</div>
-
-    <div class="Pregunta"><a href="#">¿Olvidaste tu contraseña?</a></div>
-</div>
-
+    <main class="formulario">
+    <h1 class="main-title">Iniciar sesión con:</h1>
+    <div class="modos">
+        <a href="#">
+            <img class="img1" src="/img/google-logo.png" alt="">
+        </a>
+        <a href="#">
+            <img class="img2" src="/img/facebook-logo.png" alt="">
+        </a>
+    </div>
+    <div class="main-container">
+        <form action="/login/user" method="POST">
+            <div class="container">
+                <input type="text" placeholder="E-mail o nombre de usuario" class="username-field">
+            </div>
+            <div class="container">
+                <input type="password" placeholder="Contraseña" class="password-field">
+            </div>
+            <div class="remember-button">
+                <input type="checkbox" >Recordar contraseña
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Iniciar Sesion">
+            </div>
+            <div class="forgot-password">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </form>
+    </div>
 </main>
 
     <%- include('partials/footer.ejs') %>

@@ -5,7 +5,7 @@
 
 footer {
     display: flex;
-    background-color: #D7DBDD ;
+    background-color: #aac5d2 ;
     border-top: 2px solid black;
 }
 
@@ -13,7 +13,6 @@ footer {
 
 .contactos {
     margin-bottom: 10px;
-    border-right: 4px solid white;
     height: 100%;
     width: 50%;
     display: flex;
@@ -31,7 +30,7 @@ footer {
     justify-content: space-evenly;
     gap: 10px;
 }
-.cuentas>a{
+.cuentas a{
     color: black;
 }
 
@@ -42,7 +41,6 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-left: 1px solid #eee;
     margin-bottom: 10px;
 }
 

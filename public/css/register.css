@@ -1,8 +1,10 @@
 
 body{
-    box-sizing: content-box;
+ 
     background-color: rgb(225, 224, 224);
 }
+
+
 
 .menu{
     font-size: large;
