@@ -57,6 +57,23 @@ _A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre
 
 </div>
 
+# 💁 Retrospectiva Sprint 5
+
+_A medida que avanzamos hacia el quinto sprint, es fundamental reflexionar sobre nuestro progreso y encontrar formas de mejorar continuamente._
+
+</div>
+
+<div align="center">
+
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | (Escribe aquí) |
+| **🚀 Hacer más**     | (Escribe aquí) |
+| **👏 Continuar haciendo** | (Escribe aquí) |
+| **👀 Hacer menos** | (Escribe aquí) |
+| **❌ Dejar de hacer** | (Escribe aquí) |
+
+</div>
 
 
 
