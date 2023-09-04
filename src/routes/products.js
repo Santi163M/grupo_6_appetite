@@ -7,7 +7,7 @@ const productrouter = express.Router()
 
 productrouter.get("/products",productcontrol.cart)
 
-productrouter.get("/products/:id/details",productcontrol.detailsn)
+productrouter.get("/products/details/:id",productcontrol.detailsn)
 
 productrouter.get("/products/:id/edit",productcontrol.editarproducto)
 
