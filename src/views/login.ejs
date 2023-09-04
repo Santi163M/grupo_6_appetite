@@ -13,14 +13,7 @@
 
     <main class="formulario">
     <h1 class="main-title">Iniciar sesión con:</h1>
-    <div class="modos">
-        <a href="#">
-            <img class="img1" src="/img/google-logo.png" alt="">
-        </a>
-        <a href="#">
-            <img class="img2" src="/img/facebook-logo.png" alt="">
-        </a>
-    </div>
+    <%- include('partials/login-register-modes.ejs') %>
     <div class="main-container">
         <form action="/login/user" method="POST">
             <div class="container">

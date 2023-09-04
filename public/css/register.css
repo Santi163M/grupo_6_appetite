@@ -1,108 +1,76 @@
-
 body{
- 
-    background-color: rgb(225, 224, 224);
+    box-sizing: content-box;
 }
 
-
-
-.menu{
-    font-size: large;
-    height: 20%;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-
-}
-.busqueda{
-    width: 100%;
-}
-
-.menu>section{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu>section>div>a{
-    color: black;
-    justify-content: space-between;
-    display: flex;
-}
-
-.menu>nav{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    background-color: #eff0f3;
-}
-
-
-.logo{
-    width: 15%;
-}
-
-.externos{
-    justify-content: space-evenly;
-    display: flex;
-}
-.externos>div{
-    width: 10%;
-}
-.externos>div>a>img{
-    border-radius: 10px;
-    border: 2px solid black;
-    width: 150px;
-}
-.registro{
+.form-section{
     padding-top:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 70vh;
+    margin-bottom: 100px;
 }
-.registro>section{
-    box-shadow: 1px 1px 10px 1px black ;
-    background-color: #d7c8eb;
-    padding: 20px;
+.form-section .registro{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 20%;
+    box-shadow: 1px 1px 10px 1px black ;
+    background-color: #efff62;
+    padding: 35px;
+    width: 40%;
     height: 100%;
 }
-.registro>section>div>label{
+.registro label{
     font-size: large;
 }
-.registro>section>div>div>input{
+.registro input{
     border: 1px solid gray;
     font-size: large;
-    width: 100%;
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px ;
+    margin-bottom: 5px;
 }
 .boton{
     display: flex;
     justify-content: end;
 }
-.boton>button{
+.boton input{
+    border:none;
     color: white;
-    background-color: blue;
-    height: 30px;
-    width: 80px;
+    background-color: rgb(5, 51, 255);
+    margin-top: 25px;
+    border-radius:8px;
+    font-size: 80%;
+    padding: 5px;
+    height: 50px;
+    width: 130px;
 }
 
-@media (max-width:768px){
-    .menu>section>div>div{
-        display: none;
+.boton input:hover{
+    outline: none;
+    background-color: blue;
+}
+.login-link{
+    display: flex;
+    justify-content: end;
+}
+.login-link a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+}
+.login-link a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width:780px){
+    .form-section{
+        margin-bottom: 120px;
+        height: 100vh;
     }
-    .menu>section{
-        width: 25%;
-        justify-content: space-evenly;
-    }
-    .externos{
-        height: 30%;
-    }
-    .externos>div>a>img{
-        width: 100px;
-        height: 110px;
+    .login-link a{
+        font-size: 15px;
     }
 }

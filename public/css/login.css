@@ -1,16 +1,17 @@
-*{
-    font-family: 'REM';
+* {
     box-sizing: border-box;
 }
+
 /* Titulo Principal */
-.main-title{
+.main-title {
     font-size: 50px;
     padding-left: 30px;
     margin-top: 30px;
 }
+
 /* Iconos de modos*/
-.modos{
-    width:50%;
+.modos {
+    width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -20,29 +21,44 @@
     margin-bottom: 7px;
 }
 
-.img1{
+.img1 {
     height: 100px;
     width: 100px;
 
 }
+
 .img2 {
     height: 110px;
     width: 150px;
 }
+
 /* Campos para llenar datos y sus contenedores */
 
+.main-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    margin-bottom: 100px;
+}
 
-.main-container form{
-    width: 100%;
+.main-container form {
+    box-shadow: 1px 1px 10px 1px black;
+    background-color: #efff62;
+    width: 40%;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container{
-    width: 30%;
+
+.container {
+    width: 50%;
     margin-bottom: 35px;
 }
+
 .container input {
     border-radius: 5px;
     width: 100%;
@@ -57,54 +73,79 @@
 }
 
 .remember-button {
-    width: 30%;
+    width: 50%;
     margin-top: -15px;
     margin-bottom: 10px;
 }
-.submit-button{
-    width: 30%;
+
+.submit-button {
+    width: 50%;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.submit-button input{
+
+.submit-button input {
     color: white;
-    font-size: 105%;
+    font-size: 15px;
     background-color: rgb(5, 51, 255);
     border-radius: 8px;
     border: 2px rgb(5, 51, 255) solid;
     padding: 15px;
-    width: 50%;
+    width: 150px;
 }
-.submit-button input:hover{
+
+.submit-button input:hover {
     background-color: blue;
     border-color: blue;
 }
-.submit-button input:focus{
+
+.submit-button input:focus {
     outline: none;
-    border-color: red;
+    border-color: rgb(0, 0, 0);
 }
-.forgot-password{
+
+.forgot-password {
+    margin-top: 15px;
     margin-bottom: 50px;
 }
-@media (max-width: 790px){
-    .submit-button input{
-        width: 70%;
+.forgot-password a{
+    text-decoration: none;
+    color: black;
+}
+.forgot-password a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+@media (max-width: 790px) {
+    .submit-button input {
+        width: 80%;
+        font-size: 13px;
     }
 }
-@media (max-width:480px){
-    .modos{
+
+@media (max-width:480px) {
+    .modos {
         width: 75%;
     }
-    .img1{
+
+    .img1 {
         margin-left: 15px;
     }
-    .container{
+
+    .container {
         width: 70%;
     }
-    .remember-button{
+
+    .remember-button {
         width: 70%;
     }
-    .submit-button{
+
+    .submit-button {
+        font-size: 10px;
+        width: 70%;
+    }
+
+    .forgot-password {
         width: 70%;
     }
 
