@@ -27,7 +27,7 @@ Nuestro servicio se mueve a la **Velocidad de tus Deseos**. Olvídate de esperas
 - [**Leonardo Pinto**](https://discord.com/users/leonardopinto_)
   
 ## 🖍️ Tablero de Trello-APPETITE
-- [**FUENTE DE ORGANIZACION-APPETITE**](https://trello.com/b/kDiEUfCG/sprints):
+- [**FUENTE DE ORGANIZACION-APPETITE**](https://trello.com/b/kDiEUfCG/sprints)
   <br>
   <br>
 En Appetite, no solo saciamos el hambre, sino que también alimentamos la pasión por la comida **Excepcional**. ¡Únete a nosotros en este **Festín Sensorial**! 🍽️💫
