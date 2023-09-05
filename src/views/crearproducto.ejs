@@ -9,38 +9,38 @@
 </head>
 <body>
 
-    <%- include('partial/header.ejs') %>
+    <%- include('partials/header.ejs') %>
 
 <main>
     <section class="create">
-        <form action="/products/create" method="post">
+        <form action="/productos/crear" method="post">
             <div>
             <label for="Nombre">Nombre</label>
-        <input class="input" type="text" name="Nombre" placeholder="Ingresar Nombre del producto..."></input>
+        <input class="input" type="text" name="nombre" placeholder="Ingresar Nombre del producto..."></input>
         <br>
         </div>
 
         <div>
             <label for="Descripción">Descripción</label>
-        <input type="text" name="Descripción" placeholder="Ingresar Descripción del nuevo producto..."></input>
+        <input type="text" name="descripción" placeholder="Ingresar Descripción del nuevo producto..."></input>
         <br>
         </div>
         
         <div>
             <label for="Imagen">Imagen</label>
-        <input type="image" name="Imagen" placeholder="Ingresar Imagen del nuevo producto..."></input>
+        <input type="text" name="imagen" placeholder="Ingresar dirección de la imagen del producto..."></input>
         <br>
         </div>
         
         <div>
             <label for="Precio">Precio  $</label>
-            <input type="number" name="Precio"placeholder="Ingresar Precio del nuevo producto..."></input>
+            <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto..."></input>
             <br>
         </div>
         
         <div>
             <label for="Categoría">Categoría</label>
-            <input type="text" name="Categoría" placeholder="Ingresar Categoría del nuevo producto..."></input>
+            <input type="text" name="categoria" placeholder="Ingresar Categoría del nuevo producto..."></input>
             <br>
         </div>
         
@@ -52,7 +52,7 @@
     </section>
 </main>
 
-<%- include('partial/footer.ejs') %>
+<%- include('partials/footer.ejs') %>
 
 </body>
 </html>

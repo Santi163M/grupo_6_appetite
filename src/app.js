@@ -13,7 +13,6 @@ app.set("views", "src/views");
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-
 app.use(home);
 app.use(products);
 

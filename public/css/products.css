@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.crear-producto {
+    padding: 30px 100px;
+}
+
+.productos {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos article {
+    width: 50%;
+    margin: 30px auto;
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 50%;
+}
+
+.img img {
+    width: 100%;
+}
