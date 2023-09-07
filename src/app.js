@@ -5,6 +5,10 @@ const products = require("./routes/products");
 const app = express();
 const PORT = 3030;
 
+const methodOverride = require('method-override');
+
+app.use(methodOverride('_method'));
+
 app.use(express.static('public'));
 
 app.set("view engine", "ejs")

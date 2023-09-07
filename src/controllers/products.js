@@ -13,10 +13,6 @@ const controller = {
         res.render('crearProducto', { id: datosProductos.length + 1 });
     },
 
-    editar: (req, res) => {
-        res.render('editarProducto');
-    },
-
     productoCreado: (req, res) => {
         let producto = {
             id: req.params.id,
@@ -33,9 +29,31 @@ const controller = {
         fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
 
         res.redirect('/productos');
+    },
+
+    editar: (req, res) => {
+        let id = req.params.id;
+        producto = datosProductos.find(producto => producto.id == id);
+        
+        res.render('editarProducto', { producto });
+    },
+
+    productoEditado: (req, res) => {
+        let id = req.params.id;
+        producto = datosProductos.find(producto => producto.id == id);
+
+        datosProductos[id - 1].nombre = req.body.nombre;
+        datosProductos[id - 1].categoria = req.body.categoria;
+        datosProductos[id - 1].descripcion = req.body.descripcion;
+        datosProductos[id - 1].precio = req.body.precio;
+        datosProductos[id - 1].img = req.body.imagen;
+
+        datosProductos = JSON.stringify(datosProductos);
+    
+        fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
+    
+        res.redirect('/productos');
     }
 };
-
-console.log(__dirname);
 
 module.exports = controller;

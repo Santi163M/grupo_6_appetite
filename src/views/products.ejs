@@ -26,14 +26,17 @@
                     
                     <div class="datos">
                         <h3>ID: <%= producto.id %></h3>
-                        <h3>Categoría: <%= producto.categoria %></h3>
                         <h3>Nombre: <%= producto.nombre %></h3>
+                        <h3>Categoría: <%= producto.categoria %></h3>
+                        <h3>Descripción: <%= producto.descripcion %></h3>
                         <h3>Precio: $<%= producto.precio %></h3>
-                        <p>Descripción: <%= producto.descripcion %></p>
                     </div>
 
                     <div class="botones">
-                        <button>Editar producto</button>
+                        <form action="/productos/editar/<%= producto.id %>" method="get">
+                            <button>Editar producto</button>
+                        </form>
+
                         <button>Eliminar producto</button>
                     </div>
                 </article>
