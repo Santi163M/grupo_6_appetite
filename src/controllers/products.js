@@ -9,6 +9,13 @@ const controller = {
         res.render('products', { datosProductos, id: datosProductos.length + 1 });
     },
 
+    detalleProducto: (req, res) => {
+        let id = req.params.id;
+        producto = datosProductos.find(producto => producto.id == id);
+
+        res.render('productDetails', { producto });
+    },
+
     crear: (req, res) => {
         res.render('crearProducto', { id: datosProductos.length + 1 });
     },
@@ -52,6 +59,18 @@ const controller = {
     
         fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
     
+        res.redirect('/productos');
+    },
+
+    eliminarProducto: (req, res) => {
+        let id = req.params.id;
+
+        datosProductos = datosProductos.filter(producto => producto.id != id);
+
+        datosProductos = JSON.stringify(datosProductos);
+
+        fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
+
         res.redirect('/productos');
     }
 };

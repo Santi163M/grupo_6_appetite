@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de productos</title>
+
+    <link rel="stylesheet" href="/css/productDetails.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <section class="producto">
+            <article>
+                <div class="img">
+                    <img src="<%= producto.img %>" alt="">
+                </div>
+                
+                <div class="datos">
+                    <h3>ID: <%= producto.id %></h3>
+                    <h3>Nombre: <%= producto.nombre %></h3>
+                    <h3>Categoría: <%= producto.categoria %></h3>
+                    <h3>Descripción: <%= producto.descripcion %></h3>
+                    <h3>Precio: $<%= producto.precio %></h3>
+                </div>
+
+                <button><a href="/productos">Volver</a></button>
+            </article>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

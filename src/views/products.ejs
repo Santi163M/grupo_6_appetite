@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Lista de productos</title>
 
     <link rel="stylesheet" href="css/products.css">
 </head>
@@ -33,11 +33,17 @@
                     </div>
 
                     <div class="botones">
-                        <form action="/productos/editar/<%= producto.id %>" method="get">
-                            <button>Editar producto</button>
+                        <form action="/productos/<%= producto.id %>" method="get">
+                            <button type="submit">Ver detalles</button>
                         </form>
 
-                        <button>Eliminar producto</button>
+                        <form action="/productos/editar/<%= producto.id %>" method="get">
+                            <button type="submit">Editar producto</button>
+                        </form>
+
+                        <form action="/productos/eliminar/<%= producto.id %>?_method=DELETE" method="post">
+                            <button type="submit">Eliminar producto</button>
+                        </form>
                     </div>
                 </article>
             <% } %>
