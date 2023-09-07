@@ -14,6 +14,6 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 app.use(home);
-app.use(products);
+app.use('/productos', products);
 
 app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}.`));
