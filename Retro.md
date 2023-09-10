@@ -56,8 +56,8 @@ _A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre
 | **❌ Dejar de hacer** | Fue un buen trabajo en equipo, así que no encontramos nada que tendríamos que dejar de hacer. |
 
 </div>
-
-# 🎒 Retrospectiva Sprint 5
+<div align="center">
+# 👨‍💻 Retrospectiva Sprint 5
 
 _A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre nuestro progreso y encontrar formas de mejorar continuamente._
 
