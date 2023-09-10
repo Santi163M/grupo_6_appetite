@@ -37,6 +37,7 @@ _Aunque hubo desafíos durante este sprint, el equipo logró realizar la entrega
 | **❌ Dejar de hacer** | Dejar de entregar apresuradamente. Aunque se logró la entrega, hacerlo en el último momento puede generar estrés y disminuir la calidad del trabajo. |
 
 </div>
+
 <div align="center">
 
 # 🎒 Retrospectiva Sprint 4
@@ -50,16 +51,18 @@ _A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre
 |                   |                             |
 | ----------------- | --------------------------- |
 | **🌱 Comenzar a hacer** | Asignar un tiempo específico para la revisión y mejora continua del código; y planificar más reuniones informativas. |
-| **🚀 Hacer más**     | Que las sesiones informativas que tengamos sean, algunas de ellas, destinadas específicamente al control y revisión de lo que hicimos, antes de entregar todo el sprint. También empezar a escribir los archicos entregables de las daily. |
+| **🚀 Hacer más**     | Que las sesiones informativas que tengamos sean, algunas de ellas, destinadas específicamente al control y revisión de lo que hicimos, antes de entregar todo el sprint. También empezar a escribir los archivos entregables de las daily. |
 | **👏 Continuar haciendo** | Este fue nuestro mejor sprint. Hubo una muy buena administración del tiempo, de las consignas y de las reuniones. Continuar con este ritmo, y comunicación abierta y efectiva, nos va a resultar muy favorecedor para todos. |
 | **👀 Hacer menos** | Tendríamos que dejar de dispersarnos en las daily/weekly standups, debido a que tenemos que presentar informes sobre estas reuniones, y distraernos solo nos aleja de cumplir ese objetivo |
 | **❌ Dejar de hacer** | Fue un buen trabajo en equipo, así que no encontramos nada que tendríamos que dejar de hacer. |
 
 </div>
-<div align="center">
-# 👨‍💻 Retrospectiva Sprint 5
 
-_A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre nuestro progreso y encontrar formas de mejorar continuamente._
+<div align="center">
+
+# **👨‍💻 Retrospectiva Sprint 5**
+
+_A medida que avanzamos hacia el quinto sprint, es fundamental reflexionar sobre nuestro progreso y encontrar formas de mejorar continuamente._
 
 </div>
 
@@ -68,10 +71,9 @@ _A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre
 |                   |                             |
 | ----------------- | --------------------------- |
 | **🌱 Comenzar a hacer** | Asignar un tiempo específico para la revisión y mejora continua del código; y planificar más reuniones informativas. |
-| **🚀 Hacer más**     | Que las sesiones informativas que tengamos sean, algunas de ellas, destinadas específicamente al control y revisión de lo que hicimos, antes de entregar todo el sprint. También empezar a escribir los archicos entregables de las daily. |
+| **🚀 Hacer más**     | Que las sesiones informativas que tengamos sean, algunas de ellas, destinadas específicamente al control y revisión de lo que hicimos, antes de entregar todo el sprint. También empezar a escribir los archivos entregables de las daily. |
 | **👏 Continuar haciendo** | Este fue nuestro mejor sprint. Hubo una muy buena administración del tiempo, de las consignas y de las reuniones. Continuar con este ritmo, y comunicación abierta y efectiva, nos va a resultar muy favorecedor para todos. |
 | **👀 Hacer menos** | Tendríamos que dejar de dispersarnos en las daily/weekly standups, debido a que tenemos que presentar informes sobre estas reuniones, y distraernos solo nos aleja de cumplir ese objetivo |
 | **❌ Dejar de hacer** | Fue un buen trabajo en equipo, así que no encontramos nada que tendríamos que dejar de hacer. |
 
 </div>
-<div align="center">
