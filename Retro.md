@@ -74,4 +74,4 @@ _A medida que avanzamos hacia el cuarto sprint, es fundamental reflexionar sobre
 | **❌ Dejar de hacer** | Fue un buen trabajo en equipo, así que no encontramos nada que tendríamos que dejar de hacer. |
 
 </div>
-
+<div align="center">
