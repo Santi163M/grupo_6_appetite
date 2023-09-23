@@ -5,6 +5,10 @@ const products = require("./routes/products");
 const app = express();
 const PORT = 3030;
 
+const methodOverride = require('method-override');
+
+app.use(methodOverride('_method'));
+
 app.use(express.static('public'));
 
 app.set("view engine", "ejs")
@@ -14,6 +18,6 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 app.use(home);
-app.use(products);
+app.use('/productos', products);
 
 app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}.`));

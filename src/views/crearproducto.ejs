@@ -13,36 +13,30 @@
 
 <main>
     <section class="create">
-        <form action="/productos/crear" method="post">
+        <form action="/productos/crear/<%= id %>" method="post">
             <div>
             <label for="Nombre">Nombre</label>
         <input class="input" type="text" name="nombre" placeholder="Ingresar Nombre del producto..."></input>
-        <br>
-        </div>
-
-        <div>
-            <label for="Descripción">Descripción</label>
-        <input type="text" name="descripción" placeholder="Ingresar Descripción del nuevo producto..."></input>
-        <br>
-        </div>
-        
-        <div>
-            <label for="Imagen">Imagen</label>
-        <input type="text" name="imagen" placeholder="Ingresar dirección de la imagen del producto..."></input>
-        <input type="image" name="Imagen" placeholder="Ingresar Imagen del nuevo producto..." ></input>
-        <br>
-        </div>
-        
-        <div>
-            <label for="Precio">Precio  $</label>
-            <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto..."></input>
-            <br>
         </div>
         
         <div>
             <label for="Categoría">Categoría</label>
             <input type="text" name="categoria" placeholder="Ingresar Categoría del nuevo producto..."></input>
-            <br>
+        </div>
+
+        <div>
+            <label for="Descripción">Descripción</label>
+        <input type="text" name="descripcion" placeholder="Ingresar Descripción del nuevo producto..."></input>
+        </div>
+
+        <div>
+            <label for="Precio">Precio  $</label>
+            <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto..."></input>
+        </div>
+        
+        <div>
+            <label for="Imagen">Imagen</label>
+        <input type="text" name="imagen" placeholder="Ingresar dirección de la imagen del producto..."></input>
         </div>
         
         <div class="button-container">

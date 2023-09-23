@@ -8,59 +8,50 @@
     <title>Document</title>
 </head>
 <body>
-    <%- include('partial/header.ejs') %>
+    <%- include('partials/header.ejs') %>
+
     <main>
-        <form action="/products/<%= productoelegido.id %>/edit" method="POST" class="formulario">
+        <form action="/productos/editar/<%= producto.id %>?_method=PUT" method="POST" class="formulario">
             <section class="product-information">
-                <h2>Editar Producto : <%= productoelegido.producto %></h2>
+                <h2>Editando producto "<%= producto.nombre %>" | ID <%= producto.id %></h2>
                 <div>
-                    <img class="product-image" src="<%= productoelegido.img %>" >
+                    <img class="product-image" src="<%= producto.img %>">
                 </div>
             </section> 
 
             <section class="edit">
                 <div class="form">
-                    <label for="Nombre">Nombre</label>
-                <input value="<%= productoelegido.producto %>" class="input" type="text" name="nombre" placeholder="Editar Nombre producto..."></input>
-                <br>
+                    <label for="nombre">Nombre</label>
+                    <input class="input" type="text" name="nombre" id="nombre" value="<%= producto.nombre %>"></input>
                 </div>
-    
-                <div>
-                    <label for="Descripción">Descripción</label>
-                <input value="<%= productoelegido.descripcion %>" type="text" name="Descripcion" placeholder="Editar Descripción del producto..."></input>
-                <br>
-                </div>
-                
-                <div>
-                    <label for="Imagen">Imagen</label>
-                <input value="<%= productoelegido.img %>" type="file" name="Imagen" placeholder="Editar Imagen del producto..."></input>
-                <br>
-                </div>
-                
-                <div>
-                    <label for="Precio">Precio  $</label>
-                    <input value="<%= productoelegido.precio %>" type="number" name="Precio"placeholder="Editar Precio del producto..."></input>
-                    <br>
-                </div>
-                
-                <div>
-                    <label for="Categoría">Categoría</label>
-                    <input type="text" name="Categoria" placeholder="Editar Categoría del producto..."></input>
-                    <br>
-                </div>
-                
-                <div>
-                    <button type="submit">Crear producto</button>
-                </div>
-                
-                </form>
 
-            </section>
+                <div>
+                    <label for="categoría">Categoría</label>
+                    <input type="text" name="categoria" id="categoria" value="<%= producto.categoria %>"></input>
+                </div>
             
+                <div>
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" name="descripcion" id="descripcion" value="<%= producto.descripcion %>"></input>
+                </div>
+
+                <div>
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio" value="<%= producto.precio %>"></input>
+                </div>
+                
+                <div>
+                    <label for="imagen">Imagen</label>
+                    <input type="text" name="imagen" id="imagen" value="<%= producto.img %>"></input>
+                </div>
+                
+                <div>
+                    <button type="submit">Editar producto</button>
+                </div>
+            </section>    
+        </form>
     </main>
     
-    
-    <%- include('partial/footer.ejs') %>
-    
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>
