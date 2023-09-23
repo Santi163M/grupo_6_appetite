@@ -1,76 +1,148 @@
-body{
-    box-sizing: content-box;
+* {
+    box-sizing: border-box;
 }
 
-.form-section{
-    padding-top:20px;
+/* Titulo Principal */
+.main-title {
+    font-size: 50px;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+/* Iconos de modos*/
+.modos {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.img1 {
+    height: 100px;
+    width: 100px;
+
+}
+
+.img2 {
+    height: 110px;
+    width: 150px;
+}
+
+/* Campos para llenar datos y sus contenedores */
+
+.main-container {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 70vh;
     margin-bottom: 100px;
 }
-.form-section .registro{
+
+.main-container form {
+    box-shadow: 1px 1px 10px 1px black;
+    background-color: #efff62;
+    width: 40%;
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 1px 1px 10px 1px black ;
-    background-color: #efff62;
-    padding: 35px;
-    width: 40%;
-    height: 100%;
-}
-.registro label{
-    font-size: large;
-}
-.registro input{
-    border: 1px solid gray;
-    font-size: large;
-    width: 80%;
-    padding: 5px;
-    margin-top: 10px ;
-    margin-bottom: 5px;
-}
-.boton{
-    display: flex;
-    justify-content: end;
-}
-.boton input{
-    border:none;
-    color: white;
-    background-color: rgb(5, 51, 255);
-    margin-top: 25px;
-    border-radius:8px;
-    font-size: 80%;
-    padding: 5px;
-    height: 50px;
-    width: 130px;
+    justify-content: center;
+    align-items: center;
 }
 
-.boton input:hover{
+.container {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.container input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+    border: 3px solid #b5b4b4;
+}
+
+.container input:focus {
     outline: none;
+    border-color: rgb(0, 140, 255);
+}
+
+
+.submit-button {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 9px;
+}
+
+.submit-button input {
+    color: white;
+    font-size: 15px;
+    margin-top: 8px;
+    background-color: rgb(5, 51, 255);
+    border-radius: 8px;
+    border: 2px rgb(5, 51, 255) solid;
+    padding: 15px;
+    width: 150px;
+}
+
+.submit-button input:hover {
     background-color: blue;
+    border-color: blue;
 }
-.login-link{
-    display: flex;
-    justify-content: end;
+
+.submit-button input:focus {
+    outline: none;
+    border-color: rgb(0, 0, 0);
 }
-.login-link a{
+
+.forgot-password {
     margin-top: 15px;
+    margin-bottom: 50px;
+}
+.forgot-password a{
     text-decoration: none;
     color: black;
 }
-.login-link a:hover{
-    color: blue;
+.forgot-password a:hover{
     text-decoration: underline;
+    color: blue;
+}
+@media (max-width: 790px) {
+    .submit-button input {
+        width: 80%;
+        font-size: 13px;
+    }
 }
 
-@media (max-width:780px){
-    .form-section{
-        margin-bottom: 120px;
-        height: 100vh;
+@media (max-width:480px) {
+    .modos {
+        width: 75%;
     }
-    .login-link a{
-        font-size: 15px;
+
+    .img1 {
+        margin-left: 15px;
     }
+
+    .container {
+        width: 70%;
+    }
+
+    .remember-button {
+        width: 70%;
+    }
+
+    .submit-button {
+        font-size: 10px;
+        width: 70%;
+    }
+
+    .forgot-password {
+        width: 70%;
+    }
+
 }
