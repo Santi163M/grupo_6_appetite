@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const { CategoryChannelChildManager } = require('discord.js');
+// const { CategoryChannelChildManager } = require('discord.js');
 
 let datosProductos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json'), 'utf-8'));
 
