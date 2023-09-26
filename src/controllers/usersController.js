@@ -9,7 +9,9 @@ const controller = {
         const usuarioEncontrado = readJson.find(user => user.email)
         if (usuarioEncontrado && usuarioEncontrado.password === password) {
             res.render("user", { user: usuarioEncontrado })
-        } 
+        } else {
+            res.redirect("/login")
+        }
         
     }
 }
