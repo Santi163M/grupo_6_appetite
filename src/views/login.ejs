@@ -15,19 +15,24 @@
     <h1 class="main-title">Iniciar sesión con:</h1>
     <%- include('partials/login-register-modes.ejs') %>
     <section class="main-container">
-        <form action="/user" method="POST">
+        <form action="/loginpost" method="POST">
+
             <div class="container">
                 <input type="text" placeholder="E-mail o nombre de usuario" class="username-field" name="email">
             </div>
+
             <div class="container">
                 <input type="password" placeholder="Contraseña" class="password-field" name="password">
             </div>
+
             <div class="remember-button">
-                <input type="checkbox" >Recordar sesión
+                <input type="checkbox" name="remember" value="true" >Recordar sesión
             </div>
+
             <div class="submit-button">
                 <input type="submit" value="Iniciar Sesion">
             </div>
+
             <div class="forgot-password">
                 <a href="#">¿Olvidaste tu contraseña?</a>
             </div>

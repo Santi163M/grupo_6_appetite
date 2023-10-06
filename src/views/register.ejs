@@ -15,21 +15,26 @@
     <h1 class="main-title">Iniciar sesión con:</h1>
     <%- include('partials/login-register-modes.ejs') %>
     <section class="main-container">
-        <form action="" method="POST">
+        <form action="/registerpost" method="POST">
+
             <div class="container">
-                <input type="text" placeholder="Nombre" class="username-field">
+                <input name="nombre" type="text" placeholder="Nombre" class="username-field">
+            </div>
+
+            <div class="container">
+                <input name="email" type="email" placeholder="Email" class="password-field">
             </div>
             <div class="container">
-                <input type="email" placeholder="Email" class="password-field">
+                <input name="foto" type="file" class="profile-photo">
             </div>
+
             <div class="container">
-                <input type="file" class="profile-photo">
-            </div>
-            <div class="container">
-                <input type="password" placeholder="Contraseña" class="password-field">
-            <div class="submit-button">
+                <input name="password" type="password" placeholder="Contraseña" class="password-field">
+            
+                <div class="submit-button">
                 <input type="submit" value="Registrarse">
             </div>
+
             <div class="forgot-password">
                 <a href="/login">¿Ya tenés una cuenta? Hace click aquí</a>
             </div>
