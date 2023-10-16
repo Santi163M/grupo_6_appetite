@@ -20,7 +20,7 @@ Nuestro servicio se mueve a la **Velocidad de tus Deseos**. Olvídate de esperas
 
 ## 👨‍🍳 Los Artífices del Sabor
 
-- [**Juan Villalobos**](https://discord.com/users/juanchovilla) 
+- [**Juan Villalobos**](https://github.com/JuanJoseVillalobos) 
 - [**Giuliana Nahir Bazzi**](https://discord.com/users/giuliananahirbazzi)
 - [**Santiago Martin**](https://discord.com/users/santi.martin)
 - [**Lucía Aymé Andrade**](https://discord.com/users/luciaaymeandrade)

@@ -64,13 +64,9 @@ const controller = {
 
     eliminarProducto: (req, res) => {
         let id = req.params.id;
-
         datosProductos = datosProductos.filter(producto => producto.id != id);
-
         datosProductos = JSON.stringify(datosProductos);
-
         fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
-
         res.redirect('/productos');
     }
 };
