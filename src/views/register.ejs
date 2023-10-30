@@ -15,7 +15,7 @@
     <h1 class="main-title">Iniciar sesión con:</h1>
     <%- include('partials/login-register-modes.ejs') %>
     <section class="main-container">
-        <form action="/registerpost" method="POST">
+        <form action="/register" method="POST" enctype="multipart/form-data">
 
             <div class="container">
                 <input name="nombre" type="text" placeholder="Nombre" class="username-field">
