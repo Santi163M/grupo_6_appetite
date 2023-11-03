@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 // const { CategoryChannelChildManager } = require('discord.js');
-
+const db = require("../../database/models")
 let datosProductos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json'), 'utf-8'));
 
 const controller = {
@@ -11,9 +11,10 @@ const controller = {
 
     detalleProducto: (req, res) => {
         let id = req.params.id;
-        producto = datosProductos.find(producto => producto.id == id);
-
-        res.render('productDetails', { producto });
+        db.Producto.findByPk(id)
+        .then((producto =>{
+            res.render("productDetails",{producto})
+        }))
     },
 
     crear: (req, res) => {
@@ -21,54 +22,50 @@ const controller = {
     },
 
     productoCreado: (req, res) => {
-        let producto = {
-            id: req.params.id,
+        let nuevoproducto = {
             nombre: req.body.nombre,
-            categoria: req.body.categoria,
+            categoria_id: req.body.categoria,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
-            img: req.body.imagen
+            foto: req.body.foto
         };
-
-        datosProductos.push(producto);
-        datosProductos = JSON.stringify(datosProductos);
-    
-        fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
-
-        res.redirect('/productos');
+        db.Producto.create({
+            ...nuevoproducto
+        })
+        res.redirect("/")
     },
 
     editar: (req, res) => {
         let id = req.params.id;
-        producto = datosProductos.find(producto => producto.id == id);
-        
-        res.render('editarProducto', { producto });
+        db.Producto.findByPk(id)
+        .then((producto)=>{
+            res.render("editarproducto",{producto})  
+        })
     },
 
     productoEditado: (req, res) => {
-        let id = req.params.id;
-        producto = datosProductos.find(producto => producto.id == id);
-
-        datosProductos[id - 1].nombre = req.body.nombre;
-        datosProductos[id - 1].categoria = req.body.categoria;
-        datosProductos[id - 1].descripcion = req.body.descripcion;
-        datosProductos[id - 1].precio = req.body.precio;
-        datosProductos[id - 1].img = req.body.imagen;
-
-        datosProductos = JSON.stringify(datosProductos);
-    
-        fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
-    
-        res.redirect('/productos');
+        let n = req.params.id;
+        let editproduct = {
+            nombre : req.body.nombre,
+            categoria_id : req.body.categoria_id,
+            descripcion : req.body.descripcion,
+            precio : req.body.precio
+        }
+        db.Producto.update({
+            ...editproduct
+        },
+        {
+            where: {id:n}
+        })
+        res.redirect('/');
     },
 
     eliminarProducto: (req, res) => {
-        let id = req.params.id;
-        datosProductos = datosProductos.filter(producto => producto.id != id);
-        datosProductos = JSON.stringify(datosProductos);
-        fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), datosProductos);
-        res.redirect('/productos');
+        let n = req.params.id
+        db.Producto.destroy({
+            where:{id:n}
+        })
+        res.redirect("/")
     }
 };
-
 module.exports = controller;
