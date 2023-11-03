@@ -13,30 +13,30 @@
 
 <main>
     <section class="create">
-        <form action="/productos/crear/<%= id %>" method="post">
+        <form action="/crear" method="post"enctype="multipart/form-data">
             <div>
-            <label for="Nombre">Nombre</label>
+            <label for="nombre">Nombre</label>
         <input class="input" type="text" name="nombre" placeholder="Ingresar Nombre del producto..."></input>
         </div>
         
         <div>
-            <label for="Categoría">Categoría</label>
+            <label for="categoría">Categoría</label>
             <input type="text" name="categoria" placeholder="Ingresar Categoría del nuevo producto..."></input>
         </div>
 
         <div>
-            <label for="Descripción">Descripción</label>
+            <label for="descripción">Descripción</label>
         <input type="text" name="descripcion" placeholder="Ingresar Descripción del nuevo producto..."></input>
         </div>
 
         <div>
-            <label for="Precio">Precio  $</label>
+            <label for="precio">Precio  $</label>
             <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto..."></input>
         </div>
         
         <div>
-            <label for="Imagen">Imagen</label>
-        <input type="text" name="imagen" placeholder="Ingresar dirección de la imagen del producto..."></input>
+            <label for="foto">Imagen</label>
+        <input type="file" name="foto" placeholder="Ingresar dirección de la imagen del producto..."></input>
         </div>
         
         <div class="button-container">
