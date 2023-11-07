@@ -4,6 +4,8 @@ const bcrypt = require('bcrypt')
 
 let usersjson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/MOCK_DATA.Usuarios.json'), 'utf-8'))
 const db = require("../../database/models")
+const op = db.Sequelize.Op
+const Sequelize = require("sequelize")
 
 let userControl = {
     create: (req, res) => {
@@ -13,12 +15,13 @@ let userControl = {
         let newuser = {
             nombre: req.body.nombre,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contraseña, 10),
+            contraseña: bcrypt.hashSync(req.body.contrasena,10),
             foto: req.body.foto
         }
         db.Usuario.create({
             ...newuser
         })
+        console.log(newuser);
         res.redirect("/")
     },
     login: (req, res) => {
@@ -30,6 +33,26 @@ let userControl = {
             password: req.body.password,
             remember: req.body.remember
         }
+        db.Usuario.findOne({
+            where : {
+                [Sequelize.Op.or]:[
+                    {nombre:recibido.emailorname},
+                    {email:recibido.emailorname}
+                ]
+            },
+            raw:true
+        })
+        //Leop12
+        .then(Usuario => {
+            console.log('Usuarios encontrados:', Usuario.email);
+            let check = bcrypt.compareSync(recibido.password,Usuario.contraseña)
+            if (check == true) {
+                req.session.usercertified = Usuario
+                res.redirect("/user")
+            }
+          })
+        
+
     },
     user: (req, res) => {
         let actualuser = req.session.usercertified
