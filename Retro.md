@@ -70,10 +70,12 @@ _A medida que avanzamos hacia el quinto sprint, es fundamental reflexionar sobre
 
 |                   |                             |
 | ----------------- | --------------------------- |
-| **🌱 Comenzar a hacer** |  |
-| **🚀 Hacer más**     |  |
-| **👏 Continuar haciendo** |  |
-| **👀 Hacer menos** |  |
-| **❌ Dejar de hacer** |  |
+| **🌱 Comenzar a hacer** | - Incorporar sesiones de revisión más frecuentes para abordar posibles bloqueos de manera anticipada.<br>- Documentar detalladamente la implementación de nuevas funcionalidades para facilitar futuras referencias.|
+| **🚀 Hacer más**     | - Realizar pruebas exhaustivas de las nuevas funcionalidades antes de considerarlas completas.<br>- Fomentar la comunicación constante entre los miembros del equipo para compartir conocimientos y resolver problemas de manera más eficiente.|
+| **👏 Continuar haciendo** | - Mantener reuniones de planificación y retrospectiva al inicio y al final de cada sprint.<br>- Asignar responsabilidades de manera clara y garantizar un seguimiento constante.|
+| **👀 Hacer menos** | - Evitar realizar cambios significativos en el código sin una revisión y aprobación adecuada del equipo.|
+| **❌ Dejar de hacer** | - Dejar de subestimar el tiempo necesario para abordar posibles problemas y desafíos técnicos.<br>- Dejar de procrastinar en la resolución de problemas; abordarlos de manera proactiva.|
 
 </div>
+
+
