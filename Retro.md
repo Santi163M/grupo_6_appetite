@@ -78,4 +78,24 @@ _A medida que avanzamos hacia el quinto sprint, es fundamental reflexionar sobre
 
 </div>
 
+<div align="center">
+
+# **💻 Retrospectiva Sprint 6**
+
+_Al cerrar el sexto sprint, es crucial reflexionar sobre nuestro desempeño y buscar oportunidades para mejorar en el próximo ciclo._
+
+</div>
+
+<div align="center">
+
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | - Programar sesiones de revisión más frecuentes durante la implementación de la base de datos para abordar posibles problemas de manera proactiva.<br>- Incorporar prácticas de revisión de código entre compañeros para garantizar la calidad del trabajo.|
+| **🚀 Hacer más**     | - Realizar pruebas integrales de la base de datos antes de considerarla lista para la implementación.<br>- Fortalecer la colaboración entre los miembros del equipo mediante sesiones de pair programming o revisión conjunta de código.|
+| **👏 Continuar haciendo** | - Mantener reuniones de planificación y retrospectiva al inicio y al final de cada sprint para evaluar el progreso y ajustar el enfoque si es necesario.<br>- Asignar claramente responsabilidades y seguir de cerca el progreso de cada tarea.|
+| **👀 Hacer menos** | - Evitar realizar cambios significativos en la estructura de la base de datos sin una revisión y aprobación adecuada del equipo.<br>- Minimizar la dependencia de soluciones temporales y buscar abordar los problemas de raíz.|
+| **❌ Dejar de hacer** | - Dejar de subestimar el tiempo necesario para la implementación de la base de datos; asignar tiempos realistas para evitar retrasos.<br>- Dejar de procrastinar en la resolución de problemas técnicos; abordarlos de manera proactiva y eficiente.<br><br>**Notas Adicionales:**<br>- Se logró un avance significativo en la transición de la estructura basada en JSON a una implementación profesional con SQL y Sequelize.<br>- La planificación y asignación de tareas fueron fundamentales para el éxito del sprint.<br>- Las pruebas exhaustivas son esenciales para garantizar la integridad de la base de datos.<br>- La comunicación constante y la colaboración entre los miembros del equipo deben seguir siendo prioridad.|
+
+</div>
+
 
