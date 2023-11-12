@@ -98,4 +98,24 @@ _Al cerrar el sexto sprint, es crucial reflexionar sobre nuestro desempeño y bu
 
 </div>
 
+<div align="center">
+  
+# **🔍 Retrospectiva Sprint 7**
 
+_A medida que nos adentramos en el séptimo sprint, es esencial reflexionar sobre nuestras experiencias y buscar maneras de seguir mejorando._
+
+</div>
+
+<div align="center">
+
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | - Programar sesiones adicionales de revisión para anticipar y abordar bloqueos de manera más eficiente.<br>- Detallar cuidadosamente la implementación de nuevas funcionalidades para facilitar futuras referencias.|
+| **🚀 Hacer más**     | - Realizar pruebas exhaustivas de las nuevas funcionalidades antes de considerarlas completas.<br>- Fomentar aún más la comunicación entre los miembros del equipo para compartir conocimientos y resolver problemas de manera eficaz.|
+| **👏 Continuar haciendo** | - Mantener las reuniones de planificación y retrospectiva al inicio y al final de cada sprint.<br>- Asignar responsabilidades de manera clara y garantizar un seguimiento constante.|
+| **👀 Hacer menos** | - Evitar realizar cambios significativos en el código sin una revisión y aprobación adecuada del equipo.|
+| **❌ Dejar de hacer** | - Dejar de subestimar el tiempo necesario para abordar posibles problemas y desafíos técnicos.<br>- Abandonar la procrastinación en la resolución de problemas; abordarlos de manera proactiva.|
+
+</div>
+
+<div align="center">
