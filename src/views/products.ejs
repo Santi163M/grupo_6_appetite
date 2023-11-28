@@ -33,15 +33,15 @@
                     </div>
 
                     <div class="botones">
-                        <form action="/productos/<%= producto.id %>" method="get">
+                        <form action="/products/<%= producto.id %>" method="GET">
                             <button type="submit">Ver detalles</button>
                         </form>
 
-                        <form action="/productos/editar/<%= producto.id %>" method="get">
+                        <form action="/products/editar/<%= producto.id %>" method="get">
                             <button type="submit">Editar producto</button>
                         </form>
 
-                        <form action="/productos/eliminar/<%= producto.id %>?_method=DELETE" method="post">
+                        <form action="/products/eliminar/<%= producto.id %>?_method=DELETE" method="post">
                             <button type="submit">Eliminar producto</button>
                         </form>
                     </div>

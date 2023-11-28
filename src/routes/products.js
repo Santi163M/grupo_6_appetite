@@ -12,15 +12,15 @@ let storag=multer.diskStorage({
     },
     filename: (req, file, cb)=>{
         console.log(file)
-        let newFileName='product-'+Date.now()+path.extname(file.originalname)
+        let newFileName='product-' + Date.now()+path.extname(file.originalname)
         cb(null, newFileName)
 }})
 
 let upload=multer({storage:storag})
 
 
-router.get('/', productosController.productos);
-router.get('/product/:id', productosController.detalleProducto);
+router.get('/products', productosController.productos);
+router.get('/products/:id', productosController.detalleProducto);
 router.get('/crear', productosController.crear);
 
 router.post('/crear',upload.single('foto'), productosController.productoCreado);

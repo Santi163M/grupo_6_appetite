@@ -4,7 +4,7 @@ const methodOverride = require('method-override');
 const home = require("./routes/home");
 const products = require("./routes/products");
 const users = require("./routes/users")
-const session=require('express-session')
+const session = require('express-session')
 // ---- Server settings ---- //
 const app = express();
 const PORT = 3030;
@@ -20,5 +20,5 @@ app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}.`));
 // ---- ROUTES MIDDLEWARES ---- //
 app.use(home);
 app.use(users)
-app.use('/products', products);
+app.use(products);
 
