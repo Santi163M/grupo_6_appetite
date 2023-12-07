@@ -2,10 +2,12 @@ const fs = require("fs")
 const path = require("path")
 const bcrypt = require('bcrypt')
 
-let usersjson = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/MOCK_DATA.Usuarios.json'), 'utf-8'))
+let Usuarios = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/MOCK_DATA.Usuarios.json'), 'utf-8'))
 const db = require("../../database/models")
 const op = db.Sequelize.Op
 const Sequelize = require("sequelize")
+const { count } = require("console")
+
 
 let userControl = {
     create: (req, res) => {
@@ -15,7 +17,7 @@ let userControl = {
         let newuser = {
             nombre: req.body.nombre,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contrasena,10),
+            contraseña: bcrypt.hashSync(req.body.contrasena, 10),
             foto: req.body.foto
         }
         db.Usuario.create({
@@ -34,24 +36,24 @@ let userControl = {
             remember: req.body.remember
         }
         db.Usuario.findOne({
-            where : {
-                [Sequelize.Op.or]:[
-                    {nombre:recibido.emailorname},
-                    {email:recibido.emailorname}
+            where: {
+                [Sequelize.Op.or]: [
+                    { nombre: recibido.emailorname },
+                    { email: recibido.emailorname }
                 ]
             },
-            raw:true
+            raw: true
         })
-        //Leop12
-        .then(Usuario => {
-            console.log('Usuarios encontrados:', Usuario.email);
-            let check = bcrypt.compareSync(recibido.password,Usuario.contraseña)
-            if (check == true) {
-                req.session.usercertified = Usuario
-                res.redirect("/user")
-            }
-          })
-        
+            //Leop12
+            .then(Usuario => {
+                console.log('Usuarios encontrados:', Usuario.email);
+                let check = bcrypt.compareSync(recibido.password, Usuario.contraseña)
+                if (check == true) {
+                    req.session.usercertified = Usuario
+                    res.redirect("/user")
+                }
+            })
+
 
     },
     user: (req, res) => {
@@ -70,5 +72,19 @@ let userControl = {
          }
          
      }*/
+    cantidadUsuarios: (req, res) => {
+        const count = Usuarios.length
+        res.send({ 
+            count,
+            Usuarios,
+        })
+    },
+    usuarioInfo: (req, res) => {
+        const Id = req.params.id;
+        db.Usuario.findByPk(Id)
+        .then((usuario)=>{
+            res.send({usuario:usuario})
+        })
+    }
 }
 module.exports = userControl
