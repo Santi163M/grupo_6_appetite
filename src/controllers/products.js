@@ -29,9 +29,13 @@ const controller = {
             precio: req.body.precio,
             foto: req.body.foto
         };
-        db.Producto.create({
-            ...nuevoproducto
-        })
+        db.Producto.create(nuevoproducto, (err, productoCreado) => {
+            if (err) {
+                console.error('Error al crear el producto:', err);
+            } else {
+                console.log('Producto creado con éxito:', productoCreado);
+            }
+        });
         res.redirect("/")
     },
 
@@ -66,7 +70,22 @@ const controller = {
             where:{id:n}
         })
         res.redirect("/")
+    },
+    productApi: (req,res)=>{
+        db.Producto.findAll()
+        .then( products => {
+            return res.status(200).json({
+                count: products.length,
+
+            })
+        })
     }
+    /* const userActualizado = users.map((usuario)=>{
+        return {
+          nombre: usuario.nombre,
+          apellido: usuario.apellido,
+        }
+      }) */
 };
 module.exports = controller;
 

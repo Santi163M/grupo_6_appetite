@@ -1,5 +1,5 @@
 CREATE DATABASE appetite
-
+USE appetite;
 CREATE TABLE usuarios (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(30) NOT NULL,

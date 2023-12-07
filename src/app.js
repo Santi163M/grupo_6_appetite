@@ -20,5 +20,5 @@ app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}.`));
 // ---- ROUTES MIDDLEWARES ---- //
 app.use(home);
 app.use(users)
-app.use(products);
+app.use('/products', products);
 

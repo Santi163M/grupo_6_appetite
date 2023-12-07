@@ -19,13 +19,14 @@ let storag=multer.diskStorage({
 let upload=multer({storage:storag})
 
 
-router.get('/products', productosController.productos);
-router.get('/products/:id', productosController.detalleProducto);
-router.get('/crear', productosController.crear);
-
+router.get('/', productosController.productos);
+router.get('/:id', productosController.detalleProducto);
+router.get('/crear/:id', productosController.crear);
 router.post('/crear',upload.single('foto'), productosController.productoCreado);
 router.get('/editar/:id', productosController.editar);
 router.put('/editar/:id', productosController.productoEditado);
 router.delete('/eliminar/:id', productosController.eliminarProducto);
+router.get("/api/products")
+router.get("/api/products")
 
 module.exports = router;
