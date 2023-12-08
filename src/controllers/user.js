@@ -82,7 +82,7 @@ let userControl = {
                         id: usuario.id,
                         name: usuario.nombre,
                         email: usuario.email,
-                        detail: "/api/users/" + usuario.id
+                       detail: "/api/users/" + usuario.id
                     }
                 })
                 res.json({
@@ -97,7 +97,15 @@ let userControl = {
         const Id = req.params.id;
         db.Usuario.findByPk(Id)
             .then((usuario) => {
-                res.json({ usuario: usuario })
+                const User={
+                    id: usuario.id,
+                    name: usuario.nombre,
+                    email: usuario.email,
+                    foto: '/api/users/'+usuario.id+req.body.foto
+                }
+
+                res.json({ User })
+                console.log(foto)
             })
     }
 }
