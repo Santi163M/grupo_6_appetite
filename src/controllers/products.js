@@ -74,18 +74,29 @@ const controller = {
     productApi: (req,res)=>{
         db.Producto.findAll()
         .then( products => {
-            return res.status(200).json({
-                count: products.length,
-
+                const product = products.map( (prod) => {
+                    return {
+                        id: prod.id,
+                        name: prod.nombre,
+                        description: prod.descripcion,
+                        user_id: prod.usuario_id,
+                        category_id: prod.categoria_id
+                    }
+                })
+                /*const countByCategory = products.forEach( producto => {
+                const categoriaId = producto.categoriaId;
+                })*/               
+                return res.json({
+                    count: products.length,
+                    product
             })
         })
-    }
+    }}
     /* const userActualizado = users.map((usuario)=>{
         return {
           nombre: usuario.nombre,
           apellido: usuario.apellido,
         }
       }) */
-};
 module.exports = controller;
 

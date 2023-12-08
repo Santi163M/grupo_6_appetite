@@ -72,19 +72,33 @@ let userControl = {
          }
          
      }*/
+
     cantidadUsuarios: (req, res) => {
-        const count = Usuarios.length
-        res.send({ 
-            count,
-            Usuarios,
-        })
+
+        db.Usuario.findAll()
+            .then((usuarios) => {
+                const users = usuarios.map((usuario) => {
+                    return {
+                        id: usuario.id,
+                        name: usuario.nombre,
+                        email: usuario.email,
+                        detail: "/api/users/" + usuario.id
+                    }
+                })
+                res.json({
+                    count: usuarios.length,
+                    users,
+                })
+            })
+
     },
+
     usuarioInfo: (req, res) => {
         const Id = req.params.id;
         db.Usuario.findByPk(Id)
-        .then((usuario)=>{
-            res.send({usuario:usuario})
-        })
+            .then((usuario) => {
+                res.json({ usuario: usuario })
+            })
     }
 }
 module.exports = userControl

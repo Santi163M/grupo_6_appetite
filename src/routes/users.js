@@ -38,5 +38,4 @@ userrouter.get("/api/users", usercontroller.cantidadUsuarios)
 
 userrouter.get("/api/users/:id", usercontroller.usuarioInfo)
 
-
 module.exports = userrouter 
