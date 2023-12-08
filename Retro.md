@@ -119,3 +119,25 @@ _A medida que nos adentramos en el séptimo sprint, es esencial reflexionar sobr
 </div>
 
 <div align="center">
+
+
+
+# **🔍 Retrospectiva Sprint 8**
+
+_A medida que nos adentramos en el final del proyecto, y buscamos reflexionar sobre nuestro desempeño en este largo camino y formas de seguir creciendo._
+
+</div>
+
+<div align="center">
+
+|                   |                             |
+| ----------------- | --------------------------- |
+| **🌱 Comenzar a hacer** | -Programar sesiones de revisión final para asegurar que el proyecto cumpla con los requisitos y expectativas del cliente.<br>- Preparar una presentación profesional y atractiva que muestre el valor y el impacto de nuestra solución. |
+| **🚀 Hacer más**     | - Realizar pruebas finales de todas las funcionalidades y corregir cualquier error o inconsistencia.<br>- Solicitar feedback y sugerencias al cliente y al mentor para mejorar la calidad y la usabilidad de nuestra solución.|
+| **👏 Continuar haciendo** | - Mantener las reuniones de planificación y retrospectiva al inicio y al final de cada sprint para celebrar los logros y aprender de los desafíos.<br>- Comunicar de manera efectiva y transparente el estado y el progreso de cada tarea.|
+| **👀 Hacer menos** | - No hemos encontrado aspectos para realizar menos.|
+| **❌ Dejar de hacer** | - En esta instancia consideramos que no hay acciones para dejar de realizar.|
+
+</div>
+
+<div align="center">
