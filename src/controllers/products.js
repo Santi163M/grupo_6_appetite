@@ -29,9 +29,13 @@ const controller = {
             precio: req.body.precio,
             foto: req.body.foto
         };
-        db.Producto.create({
-            ...nuevoproducto
-        })
+        db.Producto.create(nuevoproducto, (err, productoCreado) => {
+            if (err) {
+                console.error('Error al crear el producto:', err);
+            } else {
+                console.log('Producto creado con éxito:', productoCreado);
+            }
+        });
         res.redirect("/")
     },
 
@@ -66,7 +70,33 @@ const controller = {
             where:{id:n}
         })
         res.redirect("/")
-    }
-};
+    },
+    productApi: (req,res)=>{
+        db.Producto.findAll()
+        .then( products => {
+                const product = products.map( (prod) => {
+                    return {
+                        id: prod.id,
+                        name: prod.nombre,
+                        description: prod.descripcion,
+                        user_id: prod.usuario_id,
+                        category_id: prod.categoria_id
+                    }
+                })
+                /*const countByCategory = products.forEach( producto => {
+                const categoriaId = producto.categoriaId;
+                })*/               
+                return res.json({
+                    count: products.length,
+                    product
+            })
+        })
+    }}
+    /* const userActualizado = users.map((usuario)=>{
+        return {
+          nombre: usuario.nombre,
+          apellido: usuario.apellido,
+        }
+      }) */
 module.exports = controller;
 
