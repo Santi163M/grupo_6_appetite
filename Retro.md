@@ -122,7 +122,7 @@ _A medida que nos adentramos en el séptimo sprint, es esencial reflexionar sobr
 
 
 
-# **🔍 Retrospectiva Sprint 8**
+# **🤓 Retrospectiva Sprint 8**
 
 _A medida que nos adentramos en el final del proyecto, y buscamos reflexionar sobre nuestro desempeño en este largo camino y formas de seguir creciendo._
 
