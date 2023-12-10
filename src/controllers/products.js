@@ -72,8 +72,24 @@ const controller = {
         res.redirect("/")
     },
     productApi: (req,res)=>{
-        db.Producto.findAll()
+        db.Producto.findAll({include: [{
+            model: db.Categoria,
+            as: 'categoria', 
+            attributes: ["nombre"], 
+          }]})
         .then( products => {
+            const countByCategory = {};
+
+            products.map(product => {
+              const nombreCategoria = product.categoria ? product.categoria.nombre : 'Sin categoría';
+        
+              if (countByCategory[nombreCategoria]) {
+                countByCategory[nombreCategoria]++;
+              } else {
+                countByCategory[nombreCategoria] = 1;
+              }
+            });
+            console.log(countByCategory)
                 const product = products.map( (prod) => {
                     return {
                         id: prod.id,
@@ -82,21 +98,12 @@ const controller = {
                         user_id: prod.usuario_id,
                         category_id: prod.categoria_id
                     }
-                })
-                /*const countByCategory = products.forEach( producto => {
-                const categoriaId = producto.categoriaId;
-                })*/               
+                })            
                 return res.json({
                     count: products.length,
+                    countByCategory,
                     product
             })
         })
     }}
-    /* const userActualizado = users.map((usuario)=>{
-        return {
-          nombre: usuario.nombre,
-          apellido: usuario.apellido,
-        }
-      }) */
 module.exports = controller;
-
