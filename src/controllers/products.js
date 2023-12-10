@@ -89,21 +89,23 @@ const controller = {
                 countByCategory[nombreCategoria] = 1;
               }
             });
-            console.log(countByCategory)
-                const product = products.map( (prod) => {
+                const product = products.map( (product) => {
                     return {
-                        id: prod.id,
-                        name: prod.nombre,
-                        description: prod.descripcion,
-                        user_id: prod.usuario_id,
-                        category_id: prod.categoria_id
-                    }
-                })            
+                        id: product.id,
+                        name: product.nombre,
+                        description: product.descripcion,
+                        categories: product.categoria ? product.categoria.nombre : "sin categoria",
+                        detail: "/api/products/" + product.id
+                    }})            
                 return res.json({
                     count: products.length,
                     countByCategory,
                     product
             })
         })
-    }}
+    },
+    productApiDetail: (req,res)=>{
+        
+    }
+}
 module.exports = controller;

@@ -27,6 +27,6 @@ router.get('/products/editar/:id', productosController.editar);
 router.put('/products/editar/:id', productosController.productoEditado);
 router.delete('/products/eliminar/:id', productosController.eliminarProducto);
 router.get("/api/products", productosController.productApi);
-router.get("/api/products/:id")
+router.get("/api/products/:id", productosController.productApiDetail)
 
 module.exports = router;
