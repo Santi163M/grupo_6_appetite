@@ -105,7 +105,10 @@ const controller = {
         })
     },
     productApiDetail: (req,res)=>{
-        
+        db.Producto.findByPk(req.params.id)
+        .then((product)=>{
+            res.json(product)
+        })
     }
 }
 module.exports = controller;
