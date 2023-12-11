@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/register.css">
     <title>Registro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
     <%- include('partials/header.ejs') %>
 
-    <main class="formulario">
-    <h1 class="main-title">Iniciar sesión con:</h1>
-    <%- include('partials/login-register-modes.ejs') %>
-    <section class="main-container">
-        <form action="/register" method="POST" enctype="multipart/form-data">
+        <main class="formulario">
+            <h1 class="main-title">Iniciar sesión con:</h1>
+            <%- include('partials/login-register-modes.ejs') %>
+                <section class="main-container">
+                    <form action="/register" method="POST" enctype="multipart/form-data">
 
-            <div class="container">
-                <input name="nombre" type="text" placeholder="Nombre" class="username-field">
-            </div>
+                        <div class="container">
+                            <input name="nombre" type="text" placeholder="Nombre" class="username-field">
+                        </div>
 
-            <div class="container">
-                <input name="email" type="email" placeholder="Email" class="password-field">
-            </div>
-            <div class="container">
-                <input name="foto" type="file" class="profile-photo">
-            </div>
+                        <div class="container">
+                            <input name="email" type="email" placeholder="Email" class="password-field">
+                        </div>
 
-            <div class="container">
-                <input name="contrasena" type="password" placeholder="contrasena" class="password-field">
-            
-                <div class="submit-button">
-                <input type="submit" value="Registrarse">
-            </div>
+                        <div class="container">
+                            <input name="foto" type="file" class="profile-photo">
+                        </div>
 
-            <div class="forgot-password">
-                <a href="/login">¿Ya tenés una cuenta? Hace click aquí</a>
-            </div>
-        </form>
-    </section>
-</main>
+                        <div class="container">
+                            <input name="contraseña" type="password" placeholder="contraseña" class="password-field">
 
-    <%- include('partials/footer.ejs') %>
+                            <div class="submit-button">
+                                <input type="submit" value="Registrarse">
+                            </div>
+
+                            <div class="forgot-password">
+                                <a href="/login">¿Ya tenés una cuenta? Hace click aquí</a>
+                            </div>
+                    </form>
+                </section>
+        </main>
+
+        <%- include('partials/footer.ejs') %>
 </body>
+
 </html>

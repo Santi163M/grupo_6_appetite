@@ -17,7 +17,7 @@ let userControl = {
         let newuser = {
             nombre: req.body.nombre,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contrasena, 10),
+            contraseña: bcrypt.hashSync(req.body.contraseña, 10),
             foto: req.body.foto
         }
         db.Usuario.create({
@@ -101,11 +101,10 @@ let userControl = {
                     id: usuario.id,
                     name: usuario.nombre,
                     email: usuario.email,
-                    foto: '/api/users/'+usuario.id+req.body.foto
+                    foto: '/api/users/' + usuario.id + '/' + usuario.foto
                 }
 
                 res.json({ User })
-                console.log(foto)
             })
     }
 }
