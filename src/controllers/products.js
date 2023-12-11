@@ -72,31 +72,43 @@ const controller = {
         res.redirect("/")
     },
     productApi: (req,res)=>{
-        db.Producto.findAll()
+        db.Producto.findAll({include: [{
+            model: db.Categoria,
+            as: 'categoria', 
+            attributes: ["nombre"], 
+          }]})
         .then( products => {
-                const product = products.map( (prod) => {
+            const countByCategory = {};
+
+            products.map(product => {
+              const nombreCategoria = product.categoria ? product.categoria.nombre : 'Sin categoría';
+        
+              if (countByCategory[nombreCategoria]) {
+                countByCategory[nombreCategoria]++;
+              } else {
+                countByCategory[nombreCategoria] = 1;
+              }
+            });
+                const product = products.map( (product) => {
                     return {
-                        id: prod.id,
-                        name: prod.nombre,
-                        description: prod.descripcion,
-                        user_id: prod.usuario_id,
-                        category_id: prod.categoria_id
-                    }
-                })
-                /*const countByCategory = products.forEach( producto => {
-                const categoriaId = producto.categoriaId;
-                })*/               
+                        id: product.id,
+                        name: product.nombre,
+                        description: product.descripcion,
+                        categories: product.categoria ? product.categoria.nombre : "sin categoria",
+                        detail: "/api/products/" + product.id
+                    }})            
                 return res.json({
                     count: products.length,
+                    countByCategory,
                     product
             })
         })
-    }}
-    /* const userActualizado = users.map((usuario)=>{
-        return {
-          nombre: usuario.nombre,
-          apellido: usuario.apellido,
-        }
-      }) */
+    },
+    productApiDetail: (req,res)=>{
+        db.Producto.findByPk(req.params.id)
+        .then((product)=>{
+            res.json(product)
+        })
+    }
+}
 module.exports = controller;
-
