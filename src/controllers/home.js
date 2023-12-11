@@ -1,10 +1,14 @@
 const { AsyncLocalStorage } = require('async_hooks');
 const fs = require('fs');
 const path = require('path');
+const db = require('../../database/models')
 
 const controller = {
     home : (req,res)=>{
-        res.render("home")
+        db.Categoria.findAll({limit: 5})
+        .then((categoria)=>{
+            res.render("home", {categoria:categoria})
+        })
        /* if (req.session.usercertified) {
             let actualuser = req.session.usercertified
             res.render("home",{actualuser})

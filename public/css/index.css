@@ -83,6 +83,7 @@
     margin-bottom: 30px;
 }
 .categorias-producto div {
+    margin-bottom: 5%;
     transition: transform 0.3s ease-in-out
 }
 .categorias-producto div:hover{
@@ -92,6 +93,7 @@
     width: 100%;
     padding: 10px 0;
     font-size: 2em;
+    margin-bottom: 5px;
 }
 
 .img-categoria {
@@ -128,6 +130,7 @@
     justify-content: space-between;
 }
 .menu-producto div{
+    margin-bottom: 5%;
     transition: transform 0.3s ease-in-out
 }
 .menu-producto div:hover{
