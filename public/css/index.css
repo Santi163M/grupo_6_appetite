@@ -82,7 +82,12 @@
     width: 45%;
     margin-bottom: 30px;
 }
-
+.categorias-producto div {
+    transition: transform 0.3s ease-in-out
+}
+.categorias-producto div:hover{
+    transform: scale(1.1)
+}
 .texto-categorias {
     width: 100%;
     padding: 10px 0;
@@ -122,7 +127,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.menu-producto div{
+    transition: transform 0.3s ease-in-out
+}
+.menu-producto div:hover{
+    transform: scale(1.1)
+}
 .img-menu {
     width: 100%;
 }
@@ -167,7 +177,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.combos-producto div{
+    margin-bottom: 5%;
+    transition: transform 0.3s ease-in-out
+}
+.combos-producto div:hover{
+    transform: scale(1.1)
+}
 .img-combo {
     width: 100%;
 }
