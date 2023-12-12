@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Producto.associate = function(models){
     Producto.belongsTo(models.Categoria, {
-      as: "categorias",
+      as: "categoria",
       foreignKey: "categoria_id",
     });
   };

@@ -17,6 +17,7 @@ CREATE TABLE productos (
     precio INT NOT NULL,
     usuario_id INT,
     categoria_id INT
+    img TEXT 
 );
 
 CREATE TABLE categoria (
@@ -41,6 +42,9 @@ INSERT INTO usuarios(nombre, apellido, email, contraseña) VALUES ('Kelcie', 'Wa
 INSERT INTO usuarios(nombre, apellido, email, contraseña) VALUES ('Albertina', 'Fatscher', 'afatscher2@live.com', 'qB3&h>');
 INSERT INTO usuarios(nombre, apellido, email, contraseña) VALUES ('Hayley', 'Ruller', 'hruller3@nba.com', 'xT3&Y(s4yt');
 INSERT INTO usuarios(nombre, apellido, email, contraseña) VALUES ('Janenna', 'Matveyev', 'jmatveyev4@virginia.edu', 'lJ8>w');
+
+
+
 
 INSERT INTO productos(nombre, descripcion, precio, usuario_id, categoria_id) VALUES ('pizza', '(DESCRIPCION DE PIZZA)', 4000, NULL, 1);
 INSERT INTO productos(nombre, descripcion, precio, usuario_id, categoria_id) VALUES ('hamburguesa simple', '(DESCRIPCION DE HAMBURGUESA SIMPLE)', 3000, NULL, 2);

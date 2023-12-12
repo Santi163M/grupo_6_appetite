@@ -5,51 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de productos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/products.css">
 </head>
 
 <body>
     <%- include('partials/header') %>
-      
-       <main>
-        <section class="productos">
-            <div class="main-button">
-                <a href="/product/crear"> 
-                    <button class="create-button">Crear nuevo producto</button>
-                </a>
-            </div>
-            
 
-            <% for (let i = 0; i < products.length; i++){ %>
-                <article>        
-                    <div class="datos">
-                        <h3>ID: <%= products[i].id %></h3>
-                        <h3>Nombre: <%= products[i].nombre %></h3>
-                        <h3>Categoría: <%= products[i].categoria.nombre %></h3>
-                        <h3>Descripción: <%= products[i].descripcion %></h3>
-                        <h3>Precio: $<%= products[i].precio %></h3>
-                    </div>
+        <main>
+            <section class="productos">
+                <div class="main-button">
+                    <a href="/product/crear">
+                        <button class="create-button">Crear nuevo producto</button>
+                    </a>
+                </div>
 
-                    <div class="botones">
-                        <form action="/products/<%= products[i].id %>" method="GET">
-                            <button type="submit">Ver detalles</button>
-                        </form>
 
-                        <form action="/products/editar/<%= products[i].id %>" method="get">
-                            <button type="submit">Editar producto</button>
-                        </form>
+                <% for (let i=0; i < products.length; i++){ %>
+                    <article>
+                        <div class="datos">
+                            <h3>ID: <%= products[i].id %>
+                            </h3>
+                            <h3>Nombre: <%= products[i].nombre %>
+                            </h3>
+                            <img src="" alt=""> <%= products[i].img %>  </img>  
+                            <h3>Categoría: <%= products[i].categoria.nombre %>
+                            </h3>
+                            <h3>Descripción: <%= products[i].descripcion %>
+                            </h3>
+                            <h3>Precio: $<%= products[i].precio %>
+                            </h3>
+                        </div>
 
-                        <form action="/products/eliminar/<%= products[i].id %>?_method=DELETE" method="post">
-                            <button type="submit">Eliminar producto</button>
-                        </form>
-                    </div>
-                </article>
-            <% } %>
+                        <div class="botones">
+                            <form action="/products/<%= products[i].id %>" method="GET">
+                                <button type="submit">Ver detalles</button>
+                            </form>
 
-        </section>
-    </main> 
-    <%- include('partials/footer') %>
+                            <form action="/products/editar/<%= products[i].id %>" method="get">
+                                <button type="submit">Editar producto</button>
+                            </form>
+
+                            <form action="/products/eliminar/<%= products[i].id %>?_method=DELETE" method="post">
+                                <button type="submit">Eliminar producto</button>
+                            </form>
+                        </div>
+                    </article>
+                    <% } %>
+
+            </section>
+        </main>
+        <%- include('partials/footer') %>
 </body>
 
 </html>
