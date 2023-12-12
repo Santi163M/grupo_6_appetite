@@ -20,17 +20,23 @@ let upload=multer({storage:storag})
 
 
 router.get('/products', productosController.productos);
-router.get('/products/:id', productosController.detalleProducto);
 
-router.get('/product/crear', productosController.crear);
-router.post('/product/crear',upload.single('foto'), productosController.productoCreado);
+
+router.get('/products/crear', productosController.crear);
+
+router.post('/products/crear',upload.single('img'), productosController.productoCreado);
 
 router.get('/products/editar/:id', productosController.editar);
+
 router.put('/products/editar/:id', productosController.productoEditado);
+
 router.delete('/products/eliminar/:id', productosController.eliminarProducto);
+
 router.get("/api/products", productosController.productApi);
+
 router.get("/api/products/:id", productosController.productApiDetail)
 
+router.get('/products/:id', productosController.detalleProducto);
 /* -----------------> Carrito Routes <------------------- */
 router.get('/carrito', productosController.carrito);
 router.get("/carrito/agregar", productosController.sumar)
