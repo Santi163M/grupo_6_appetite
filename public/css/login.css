@@ -2,52 +2,52 @@
     box-sizing: border-box;
 }
 
-/* Titulo Principal */
+/* Main Title */
 .main-title {
-    font-size: 50px;
-    padding-left: 30px;
-    margin-top: 30px;
+    font-size: 3em;
+    padding-left: 1.5em;
+    margin-top: 2em;
+    color: #000000;
+    text-align: center;
 }
 
-/* Iconos de modos*/
+/* Mode Icons */
 .modos {
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 20px;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    padding: 1em 0;
+    margin: 0.5em 0;
 }
 
-.img1 {
+
+.img1,
+.img2 {
     height: 100px;
     width: 100px;
-
 }
 
 .img2 {
-    height: 110px;
     width: 150px;
 }
 
-/* Campos para llenar datos y sus contenedores */
-
+/* Data Input Fields and Containers */
 .main-container {
-    padding-top: 20px;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 70vh;
-    margin-bottom: 100px;
+    margin-bottom: 5em;
 }
 
 .main-container form {
-    box-shadow: 1px 1px 10px 1px black;
-    background-color: #efff62;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
     width: 40%;
-    padding-top: 35px;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,98 +55,82 @@
 }
 
 .container {
-    width: 50%;
-    margin-bottom: 35px;
+    width: 70%;
+    margin-bottom: 2em;
 }
 
 .container input {
     border-radius: 5px;
     width: 100%;
-    padding: 15px;
+    padding: 1.5em;
     z-index: 1;
-    border: 3px solid #b5b4b4;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
 }
 
 .container input:focus {
     outline: none;
-    border-color: rgb(0, 140, 255);
+    border-color: #3498db;
 }
 
-.remember-button {
-    width: 50%;
-    margin-top: -15px;
-    margin-bottom: 10px;
-}
-
+.remember-button,
 .submit-button {
-    width: 50%;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .submit-button input {
     color: white;
-    font-size: 15px;
-    background-color: rgb(5, 51, 255);
+    font-size: 1em;
+    background-color: #3498db;
     border-radius: 8px;
-    border: 2px rgb(5, 51, 255) solid;
-    padding: 15px;
+    border: 2px #3498db solid;
+    padding: 1.5em;
     width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .submit-button input:hover {
-    background-color: blue;
-    border-color: blue;
+    background-color: #217dbb;
+    border-color: #217dbb;
 }
 
 .submit-button input:focus {
     outline: none;
-    border-color: rgb(0, 0, 0);
+    border-color: #000;
 }
 
 .forgot-password {
-    margin-top: 15px;
-    margin-bottom: 50px;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    text-align: center;
 }
-.forgot-password a{
+
+.forgot-password a {
     text-decoration: none;
-    color: black;
+    color: #333;
+    transition: color 0.3s;
 }
-.forgot-password a:hover{
+
+.forgot-password a:hover {
     text-decoration: underline;
-    color: blue;
+    color: #3498db;
 }
-@media (max-width: 790px) {
-    .submit-button input {
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container form {
         width: 80%;
-        font-size: 13px;
-    }
-}
-
-@media (max-width:480px) {
-    .modos {
-        width: 75%;
-    }
-
-    .img1 {
-        margin-left: 15px;
     }
 
     .container {
-        width: 70%;
+        width: 80%;
     }
 
-    .remember-button {
-        width: 70%;
-    }
-
+    .remember-button,
     .submit-button {
-        font-size: 10px;
-        width: 70%;
+        width: 80%;
     }
-
-    .forgot-password {
-        width: 70%;
-    }
-
 }

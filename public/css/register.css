@@ -90,6 +90,29 @@
     width: 150px;
 }
 
+/* En tu archivo CSS (por ejemplo, footer.css) */
+.logo-imagen {
+    float: left; /* Hace que la imagen flote a la izquierda del texto */
+    margin-right: 10px; /* Añade un espacio a la derecha de la imagen para separarla del texto */
+}
+
+/* Estilos adicionales para el footer, ajusta según sea necesario */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.contactos,
+.informacion {
+    margin-top: 10px;
+}
+
+.cuentas a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
+    margin-bottom: 5px; /* Añade un espacio entre los enlaces */
+}
+
+
 .submit-button input:hover {
     background-color: blue;
     border-color: blue;
@@ -104,14 +127,17 @@
     margin-top: 15px;
     margin-bottom: 50px;
 }
-.forgot-password a{
+
+.forgot-password a {
     text-decoration: none;
     color: black;
 }
-.forgot-password a:hover{
+
+.forgot-password a:hover {
     text-decoration: underline;
     color: blue;
 }
+
 @media (max-width: 790px) {
     .submit-button input {
         width: 80%;
