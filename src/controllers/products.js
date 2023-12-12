@@ -19,7 +19,7 @@ const controller = {
     },
 
     crear: (req, res) => {
-        res.render('crearProducto', { id: datosProductos.length + 1 });
+        res.render('crearproducto');
     },
 
     productoCreado: (req, res) => {

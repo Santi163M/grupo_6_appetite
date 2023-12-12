@@ -14,9 +14,11 @@
       
        <main>
         <section class="productos">
-            <form action="/products/crear/<%= products.id %>" method="get">
+            <a href="/product/crear"> 
                 <button class="crear-producto">Crear nuevo producto</button>
-            </form>
+            </a>
+
+            
 
             <% for (let i = 0; i < products.length; i++){ %>
                 <article>        
