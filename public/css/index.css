@@ -223,6 +223,7 @@ footer {
     gap: 10px;
 }
 
+
 .informacion {
     width: 35%;
     display: flex;
@@ -304,4 +305,24 @@ footer {
     .combos {
         justify-content: space-around;
     }
+
+
+    
+  .añadir{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  .añadir:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+  }
 }
