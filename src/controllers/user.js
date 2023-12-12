@@ -16,10 +16,12 @@ let userControl = {
     createpost: (req, res) => {
         let newuser = {
             nombre: req.body.nombre,
+            apellido: req.body.apellido,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contraseña, 10),
+            password: bcrypt.hashSync(req.body.password, 10),
             foto: req.body.foto
         }
+        console.log(newuser);
         db.Usuario.create({
             ...newuser
         })
@@ -47,7 +49,7 @@ let userControl = {
             //Leop12
             .then(Usuario => {
                 console.log('Usuarios encontrados:', Usuario.email);
-                let check = bcrypt.compareSync(recibido.password, Usuario.contraseña)
+                let check = bcrypt.compareSync(recibido.password, Usuario.password)
                 if (check == true) {
                     req.session.usercertified = Usuario
                     res.redirect("/user")
