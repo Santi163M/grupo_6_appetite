@@ -12,46 +12,23 @@
 <%- include('partials/header.ejs')%>
 
 <body>
-    <!-- Carrusel Imagenes Footer -->
-<div id="carousel-container">
-    <img id="carousel-image" src="/img/image1.jpg">
-    <div id="carousel-text">TU CARRITO DE COMPRAS APPETITE</div>
-</div>
-
-<!-- Carrusel Animacion Footer -->
-<script>
-    const images = ["/img/image1.jpg", "/img/image2.jpeg", "/img/image3.jpeg"];
-    let currentIndex = 0;
-
-    function showNextImage() {
-        currentIndex++;
-        if (currentIndex >= images.length) {
-            currentIndex = 0;
-        }
-        showImage(currentIndex);
-    }
-
-    function showImage(index) {
-        document.getElementById("carousel-image").src = images[index];
-    }
-
-    // Cambiar imagen 1seg.
-    setInterval(showNextImage, 1000);
-</script>
-
+    <%- include('partials/carrousel.ejs')%>
 
     <!-- Contenedor de productos -->
     <div class="productos-container">
         <!-- Producto 1 -->
             <div class="producto">
                 <div class="producto-info">
-                    <img src="/img/hamburguesa.jpg" alt="Pizza">
+                    <div class="img-container">
+                        <img src="/img/menu-del-dia/lampriado.jpg" alt="Lampreado">
+                    </div>
                     <div class="producto-detalle">
-                        <h2 class="descripciones">
+                        <h2 class="descripciones"> Lampreado
                         </h2>
-                        <p class="precios"></p>
-                        <p class="descuentos">Nuestras hamburguesas son deliciosas y accesibles, hechas con
-                            ingredientes de alta calidad para garantizar el mejor sabor en cada bocado</p>
+                        <p class="precios">
+                        </p>
+                        <p class="descuentos"> El lampreado o payaguá mascada es un platillo de la gastronomía de Paraguay. Está hecho de mandioca, carne molida, ajo, cebolla y aceite. Pueden existir variaciones que incluyan grasa vacuna o porcina, almidón y la mezcla de mandioca con carne cruda. El lampreado es conocido por su durabilidad, siendo ideal para viajeros, ya que puede conservarse por varios días.
+                        </p>
                         <!-- Contenedor de los botones y el contador -->
                         <div class="cantidad-productos" id="count">
                             <form action="/carrito/restar" method="GET">
@@ -65,7 +42,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <a href="/">
+            <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i>
+            </button>
         </a>
-        <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i></button>
-       
+        <a href="/confirmation">
+            <button class="buy-btn">Comprar Producto<i class="fa-solid fa-cart-shopping"></i></button>
+        </a>
         <%- include('partials/footer.ejs') %>

@@ -197,6 +197,15 @@ body {
   .producto-info:hover {
     transform: scale(1.05); /* Agrandar al pasar el mouse por encima */
   }
+  .img-container{
+    width: 250px;
+    height: 250px;
+  }
+  .img-container img{
+    width: 250px;
+    height: 250px;
+  }
+
   
   .producto-detalle {
     margin-left: 10px;
@@ -245,7 +254,22 @@ body {
     margin-top: 25px;
     margin-left: 15px;
   }
-
+  .buy-btn{
+    background-color: rgb(39, 141, 13);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+  .buy-btn:hover{
+    background-color: white;
+    color: rgb(39, 141, 13);
+    transform: scale(1.1);
+  }
   .empty-btn:hover {
     background-color: white;
     color: red;

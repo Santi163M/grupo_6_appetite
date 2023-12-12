@@ -121,11 +121,17 @@ const controller = {
     },
     sumar: (req,res)=>{
         req.session.count = (req.session.count || 0) + 1;
-        res.redirect("/carrito/#count")
+        res.redirect("/carrito/lampreado/#count")
     },
     restar: (req,res)=>{
         req.session.count = Math.max((req.session.count || 0) - 1, 0)
-        res.redirect("/carrito/#count")
+        res.redirect("/carrito/lampreado/#count")
+    },
+    confirmation: (req,res)=>{
+        res.render("confirmation")
+    },
+    lampreado: (req,res)=>{
+        res.render("carrito-1", { count: req.session.count || 0 })
     }
 }
 

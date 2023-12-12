@@ -30,7 +30,22 @@ router.put('/products/editar/:id', productosController.productoEditado);
 router.delete('/products/eliminar/:id', productosController.eliminarProducto);
 router.get("/api/products", productosController.productApi);
 router.get("/api/products/:id", productosController.productApiDetail)
+
+/* -----------------> Carrito Routes <------------------- */
 router.get('/carrito', productosController.carrito);
 router.get("/carrito/agregar", productosController.sumar)
 router.get("/carrito/restar", productosController.restar)
+/* -----------------> Carrito products examples <------------------- */
+router.get("/carrito/lampreado", productosController.lampreado)
+router.get("/carrito/milanesa-con-papas")
+router.get("/carrito/pollo-con-papas")
+router.get("/carrito/ensalada")
+/* -----------------> Carrito Combos details <------------------- */
+router.get("/carrito/hamburguesa-con-papas")
+router.get("/carrito/pizza-con-cocacola")
+router.get("/carrito/pechuga-de-pollo-con-ensalada-rusa")
+router.get("/carrito/papas-con-cocacola")
+/* -----------------> Confirmacion de compra <------------------- */
+router.get("/confirmation",productosController.confirmation)
+
 module.exports = router;
