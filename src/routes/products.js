@@ -35,9 +35,11 @@ router.get("/api/products/:id", productosController.productApiDetail)
 router.get('/carrito', productosController.carrito);
 router.get("/carrito/agregar", productosController.sumar)
 router.get("/carrito/restar", productosController.restar)
+router.get("/carrito/agregar-2", productosController.sumar_2)
+router.get("/carrito/restar-2", productosController.restar_2)
 /* -----------------> Carrito products examples <------------------- */
 router.get("/carrito/lampreado", productosController.lampreado)
-router.get("/carrito/milanesa-con-papas")
+router.get("/carrito/milanesa-con-papas", productosController.milanesa)
 router.get("/carrito/pollo-con-papas")
 router.get("/carrito/ensalada")
 /* -----------------> Carrito Combos details <------------------- */
