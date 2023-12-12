@@ -117,7 +117,15 @@ const controller = {
     },
 
     carrito:(req, res)=>{
-        res.render('carrito')
+        res.render("carrito", { count: req.session.count || 0 })
+    },
+    sumar: (req,res)=>{
+        req.session.count = (req.session.count || 0) + 1;
+        res.redirect("/carrito/#count")
+    },
+    restar: (req,res)=>{
+        req.session.count = Math.max((req.session.count || 0) - 1, 0)
+        res.redirect("/carrito/#count")
     }
 }
 

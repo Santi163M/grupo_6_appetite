@@ -11,7 +11,8 @@
 
 <%- include('partials/header.ejs')%>
 
-<!-- Carrusel Imagenes Footer -->
+<body>
+    <!-- Carrusel Imagenes Footer -->
 <div id="carousel-container">
     <img id="carousel-image" src="/img/image1.jpg">
     <div id="carousel-text">TU CARRITO DE COMPRAS APPETITE</div>
@@ -39,7 +40,6 @@
 </script>
 
 
-
     <!-- Contenedor de productos -->
     <div class="productos-container">
         <!-- Producto 1 -->
@@ -53,10 +53,14 @@
                         <p class="descuentos">Nuestras hamburguesas son deliciosas y accesibles, hechas con
                             ingredientes de alta calidad para garantizar el mejor sabor en cada bocado</p>
                         <!-- Contenedor de los botones y el contador -->
-                        <div class="cantidad-productos">
-                            <button class="disminuir-btn">Menos Productos</button>
-                            <span class="contador">1</span>
-                            <button class="aumentar-btn">Mas Productos</button>
+                        <div class="cantidad-productos" id="count">
+                            <form action="/carrito/restar" method="GET">
+                                <button type="submit" class="disminuir-btn">Menos productos</button>
+                            </form>
+                            <span class="contador"><%= count %></span>
+                            <form action="/carrito/agregar" method="GET">
+                                <button type="submit" class="aumentar-btn">Mas productos</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -64,8 +68,4 @@
         </a>
         <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i></button>
        
-
-
-
-<body>
         <%- include('partials/footer.ejs') %>
