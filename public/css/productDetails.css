@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
 .producto {
     width: 80%;
     margin: 20px auto;
@@ -16,13 +18,41 @@
 .producto article {
     width: 50%;
     margin: 30px auto;
-    background-color: #ccc;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
-
+.datos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .datos h3 {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .return button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  .return button:hover{
+    background-color: #2980b9
+  }
 .img {
     width: 50%;
 }
