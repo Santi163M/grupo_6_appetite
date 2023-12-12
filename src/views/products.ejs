@@ -11,45 +11,41 @@
 
 <body>
     <%- include('partials/header') %>
-
-    <main>
+      
+       <main>
         <section class="productos">
-            <form action="/products/crear/<%= id %>" method="get">
+            <form action="/products/crear/<%= products.id %>" method="get">
                 <button class="crear-producto">Crear nuevo producto</button>
             </form>
 
-            <% for (producto of datosProductos) { %>
-                <article>
-                    <div class="img">
-                        <img src="<%= producto.img %>" alt="">
-                    </div>
-                    
+            <% for (let i = 0; i < products.length; i++){ %>
+                <article>        
                     <div class="datos">
-                        <h3>ID: <%= producto.id %></h3>
-                        <h3>Nombre: <%= producto.nombre %></h3>
-                        <h3>Categoría: <%= producto.categoria %></h3>
-                        <h3>Descripción: <%= producto.descripcion %></h3>
-                        <h3>Precio: $<%= producto.precio %></h3>
+                        <h3>ID: <%= products[i].id %></h3>
+                        <h3>Nombre: <%= products[i].nombre %></h3>
+                        <h3>Categoría: <%= products[i].categoria.nombre %></h3>
+                        <h3>Descripción: <%= products[i].descripcion %></h3>
+                        <h3>Precio: $<%= products[i].precio %></h3>
                     </div>
 
                     <div class="botones">
-                        <form action="/products/<%= producto.id %>" method="GET">
+                        <form action="/products/<%= products[i].id %>" method="GET">
                             <button type="submit">Ver detalles</button>
                         </form>
 
-                        <form action="/products/editar/<%= producto.id %>" method="get">
+                        <form action="/products/editar/<%= products[i].id %>" method="get">
                             <button type="submit">Editar producto</button>
                         </form>
 
-                        <form action="/products/eliminar/<%= producto.id %>?_method=DELETE" method="post">
+                        <form action="/products/eliminar/<%= products[i].id %>?_method=DELETE" method="post">
                             <button type="submit">Eliminar producto</button>
                         </form>
                     </div>
                 </article>
             <% } %>
-        </section>
-    </main>
 
+        </section>
+    </main> 
     <%- include('partials/footer') %>
 </body>
 

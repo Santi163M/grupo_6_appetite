@@ -15,14 +15,11 @@
     <main>
         <section class="producto">
             <article>
-                <div class="img">
-                    <img src="<%= producto.img %>" alt="">
-                </div>
                 
                 <div class="datos">
                     <h3>ID: <%= producto.id %></h3>
                     <h3>Nombre: <%= producto.nombre %></h3>
-                    <h3>Categoría: <%= producto.categoria %></h3>
+                    <h3>Categoría: <%= producto.categoria.nombre %></h3>
                     <h3>Descripción: <%= producto.descripcion %></h3>
                     <h3>Precio: $<%= producto.precio %></h3>
                 </div>

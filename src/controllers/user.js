@@ -17,7 +17,7 @@ let userControl = {
         let newuser = {
             nombre: req.body.nombre,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contrasena, 10),
+            contraseña: bcrypt.hashSync(req.body.contraseña, 10),
             foto: req.body.foto
         }
         db.Usuario.create({
@@ -82,7 +82,7 @@ let userControl = {
                         id: usuario.id,
                         name: usuario.nombre,
                         email: usuario.email,
-                        detail: "/api/users/" + usuario.id
+                       detail: "/api/users/" + usuario.id
                     }
                 })
                 res.json({
@@ -97,7 +97,14 @@ let userControl = {
         const Id = req.params.id;
         db.Usuario.findByPk(Id)
             .then((usuario) => {
-                res.json({ usuario: usuario })
+                const User={
+                    id: usuario.id,
+                    name: usuario.nombre,
+                    email: usuario.email,
+                    foto: '/api/users/' + usuario.id + '/' + usuario.foto
+                }
+
+                res.json({ User })
             })
     }
 }

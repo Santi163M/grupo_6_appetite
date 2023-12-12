@@ -7,8 +7,7 @@ CREATE TABLE usuarios (
     nombre VARCHAR(30) NOT NULL,
     apellido VARCHAR(30) NOT NULL,
     email TEXT NOT NULL,
-    contraseña TEXT NOT NULL,
-    foto TEXT NOT NULL 
+    contraseña TEXT NOT NULL
 );
 
 
@@ -42,15 +41,15 @@ VALUES (4,"acompañamientos");
 INSERT INTO categoria(id,nombre)
 VALUES (5,"panchos");
 
-INSERT INTO usuarios(id,nombre,apellido,email,contraseña)
+INSERT INTO usuarios(id,nombre,apellido,email, contraseña)
 VALUES (1,"Almeta","Hawthorne","ahawthorne0@storify.com","uC2)boFu%3");
-INSERT INTO usuarios(id,nombre,apellido,email,contraseña)
+INSERT INTO usuarios(id,nombre,apellido,email, contraseña)
 VALUES (2,"Kelcie","Wallis","kwallis1@reference.com","wI9{JI");
-INSERT INTO usuarios(id,nombre,apellido,email,contraseña)
+INSERT INTO usuarios(id,nombre,apellido,email, contraseña)
 VALUES (3,"Albertina","Fatscher","afatscher2@live.com","qB3&h>");
-INSERT INTO usuarios(id,nombre,apellido,email,contraseña)
+INSERT INTO usuarios(id,nombre,apellido,email, contraseña)
 VALUES (4,"Hayley","Ruller","hruller3@nba.com","xT3&Y(s4yt");
-INSERT INTO usuarios(id,nombre,apellido,email,contraseña)
+INSERT INTO usuarios(id,nombre,apellido,email, contraseña)
 VALUES (5,"Janenna","Matveyev","jmatveyev4@virginia.edu","lJ8>w");
 
 INSERT INTO productos(id,nombre,descripcion,precio,usuario_id,categoria_id)
