@@ -14,13 +14,13 @@
         <section class="create">
             <form action="/product/crear" method="POST" enctype="multipart/form-data">
                 <div>
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre:</label>
             <input class="input" type="text" name="nombre" placeholder="Ingresar Nombre del producto..."></input>
             </div>
             
             <div>
                 <label>Categoria:</label>
-                <select name="categoria">
+                <select name="categoria" class="categoria">
                     <% for (let i= 0; i < categoria.length; i++) { %>
                         <option value="<%=categoria[i].id%>">
                             <%=categoria[i].nombre%>
@@ -30,13 +30,13 @@
             </div>
     
             <div>
-                <label for="descripción">Descripción</label>
+                <label for="descripción">Descripción:</label>
             <input type="text" name="descripcion" placeholder="Ingresar Descripción del nuevo producto..."></input>
             </div>
     
             <div>
-                <label for="precio">Precio  $</label>
-                <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto..."></input>
+                <label for="precio">Precio:</label>
+                <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto... $" ></input>
             </div>
             
             <div>
