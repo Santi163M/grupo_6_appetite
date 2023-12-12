@@ -110,6 +110,12 @@ const controller = {
         .then((product)=>{
             res.json(product)
         })
+    },
+
+    carrito:(req, res)=>{
+        res.render('carrito')
     }
 }
+
+
 module.exports = controller;
