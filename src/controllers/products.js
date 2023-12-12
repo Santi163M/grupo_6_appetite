@@ -6,12 +6,13 @@ let datosProductos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data
 
 const controller = {
     productos: (req, res) => {
-        res.render('products', { datosProductos, id: datosProductos.length + 1 });
+        db.Producto.findAll({include: [{ association: "categoria" }]})
+        .then((products)=>{res.render('products', {products:products})});
     },
 
     detalleProducto: (req, res) => {
         let id = req.params.id;
-        db.Producto.findByPk(id)
+        db.Producto.findByPk(id,{include: [{ association: "categoria" }]})
         .then((producto =>{
             res.render("productDetails",{producto})
         }))
@@ -109,6 +110,12 @@ const controller = {
         .then((product)=>{
             res.json(product)
         })
+    },
+
+    carrito:(req, res)=>{
+        res.render('carrito')
     }
 }
+
+
 module.exports = controller;

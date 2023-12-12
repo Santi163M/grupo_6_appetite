@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/carrito.css">
+</head>
+
+<%- include('partials/header.ejs')%>
+
+<!-- Carrusel Imagenes Footer -->
+<div id="carousel-container">
+    <img id="carousel-image" src="/img/image1.jpg">
+    <div id="carousel-text">TU CARRITO DE COMPRAS APPETITE</div>
+</div>
+
+<!-- Carrusel Animacion Footer -->
+<script>
+    const images = ["/img/image1.jpg", "/img/image2.jpeg", "/img/image3.jpeg"];
+    let currentIndex = 0;
+
+    function showNextImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        showImage(currentIndex);
+    }
+
+    function showImage(index) {
+        document.getElementById("carousel-image").src = images[index];
+    }
+
+    // Cambiar imagen 1seg.
+    setInterval(showNextImage, 1000);
+</script>
+
+<body>
+        <%- include('partials/footer.ejs') %>
