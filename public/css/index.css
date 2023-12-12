@@ -124,7 +124,6 @@
 
 .menu-producto {
     width: 80%;
-    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -146,12 +145,13 @@
 
 .precio {
     font-size: 20px;
+    margin-top: 27px;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
-.añadir {
-    width: 50%;
+.link .añadir {
+    width: 100%;
     padding: 10px;
     right: 0;
 }
