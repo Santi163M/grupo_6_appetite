@@ -1,4 +1,18 @@
-<%- include('partials/header.ejs')%>
-    <h2>Su producto ha sido comprado exitosamente</h2>
-    <a href="/"><button>Volver</button></a>
-<%- include('partials/footer.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/confirmatio.css"> 
+    <title>Compra Exitosa</title>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
+    <div class="success-container">
+        <h2>¡Su compra fue exitosa!</h2>
+        <p>Gracias por elegir nuestros productos. Su pedido ha sido procesado con éxito.</p>
+        <a href="/" class="back-link"><button>Volver a la página principal</button></a>
+    </div>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
