@@ -26,13 +26,14 @@ const controller = {
     },
 
     productoCreado: (req, res) => {
+        let foto = req.file.filename
         let nuevoproducto = {
             nombre: req.body.nombre,
             categoria_id: req.body.categoria,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
-            foto: req.body.foto
-        };
+            img: "/img/products/"+ foto
+        }
         db.Producto.create(nuevoproducto, (err, productoCreado) => {
             if (err) {
                 console.error('Error al crear el producto:', err);
