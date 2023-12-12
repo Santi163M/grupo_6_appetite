@@ -5,10 +5,10 @@ const db = require('../../database/models')
 
 const controller = {
     home : (req,res)=>{
-        db.Categoria.findAll({limit: 5})
-        .then((categoria)=>{
-            res.render("home", {categoria:categoria})
-        })
+        /*db.Categoria.findAll()
+        .then((categoria)=>{})*/
+            res.render("home")
+        
        /* if (req.session.usercertified) {
             let actualuser = req.session.usercertified
             res.render("home",{actualuser})
