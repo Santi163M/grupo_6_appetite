@@ -1,50 +1,67 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 footer {
     display: flex;
-    background-color: #aac5d2 ;
-    border-top: 2px solid black;
-}
-
-
-
-.contactos {
-    margin-bottom: 10px;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    color: white;
+    border-top: 2px solid black;
+    padding: 20px;
 }
 
-.texto-contactos {
-    text-align: center;
-}
-
-.cuentas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-.cuentas a{
-    color: black;
-}
-
+.contactos,
 .informacion {
     width: 50%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     margin-bottom: 10px;
 }
 
+.texto-contactos,
 .informacion a {
-    color: black;
     text-align: center;
+}
+
+.cuentas,
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cuentas a,
+.informacion a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cuentas a:hover,
+.informacion a:hover {
+    color: #ffd700;
+}
+
+
+.contactos {
+    height: 100%;
+}
+
+.burger-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffd700; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactos,
+    .informacion {
+        width: 100%;
+    }
 }
