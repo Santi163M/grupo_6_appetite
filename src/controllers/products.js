@@ -117,7 +117,8 @@ const controller = {
     },
 
     carrito:(req, res)=>{
-        res.render('carrito')
+        req.session.count =  req.session.count? ++  req.session.count : 1
+        res.render("carrito",{count:req.session.count })
     }
 }
 

@@ -11,7 +11,8 @@
 
 <%- include('partials/header.ejs')%>
 
-<!-- Carrusel Imagenes Footer -->
+<body>
+    <!-- Carrusel Imagenes Footer -->
 <div id="carousel-container">
     <img id="carousel-image" src="/img/image1.jpg">
     <div id="carousel-text">TU CARRITO DE COMPRAS APPETITE</div>
@@ -37,6 +38,13 @@
     // Cambiar imagen 1seg.
     setInterval(showNextImage, 1000);
 </script>
-
-<body>
+        <section>
+            <acrticle>
+                <h1>Visitas</h1>
+                <h2>Contador: <%= count %></h2>
+                <script>
+                    
+                </script>
+            </acrticle>
+        </section>
         <%- include('partials/footer.ejs') %>

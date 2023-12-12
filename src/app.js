@@ -12,7 +12,11 @@ app.use(express.static('public'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
-app.use(session({secret: 'Secreto!!!'}))
+app.use(session({
+    secret: 'Secreto!!!',
+    resave: true,
+    saveUninitialized: true
+}))
 app.set("view engine", "ejs")
 app.set("views", "src/views");
 app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}.`));
