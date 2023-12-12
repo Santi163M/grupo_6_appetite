@@ -32,8 +32,9 @@ const controller = {
             categoria_id: req.body.categoria,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
-            img: "/img/products/"+ foto
+            img: "/img/products/"+foto
         }
+        
         db.Producto.create(nuevoproducto, (err, productoCreado) => {
             if (err) {
                 console.error('Error al crear el producto:', err);
@@ -41,6 +42,7 @@ const controller = {
                 console.log('Producto creado con éxito:', productoCreado);
             }
         });
+        
         res.redirect("/")
     },
 
@@ -54,12 +56,12 @@ const controller = {
     },
 
     productoEditado: (req, res) => {
-
+        let foto = req.file.filename
         let editproduct = {
             nombre : req.body.nombre,
             categoria_id : req.body.categoria,
             descripcion : req.body.descripcion,
-            precio : req.body.precio
+            precio : req.body.precio,
         }
         db.Producto.update({
             ...editproduct
