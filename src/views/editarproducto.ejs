@@ -11,7 +11,7 @@
     <%- include('partials/header.ejs') %>
 
     <main>
-        <form action="/productos/editar/<%= producto.id %>?_method=PUT" method="POST" class="formulario">
+        <form action="/products/editar/<%= producto.id %>?_method=PUT" method="POST" class="formulario">
             <section class="product-information">
                 <h2>Editando producto "<%= producto.nombre %>" | ID <%= producto.id %></h2>
                 <div>
@@ -26,8 +26,20 @@
                 </div>
 
                 <div>
-                    <label for="categoría">Categoría</label>
-                    <input type="text" name="categoria" id="categoria" value="<%= producto.categoria %>"></input>
+                    <label>Categoria:</label>
+                    <select name="categoria">
+                        <% for (let i= 0; i < categoria.length; i++) { %>
+                            <% if (categoria[i].id === producto.categoria_id) { %>
+                                <option value="<%=categoria[i].id%>" selected>
+                                    <%=categoria[i].nombre%>
+                                </option>
+                            <% } else { %>
+                                <option value="<%=categoria[i].id%>">
+                                    <%=categoria[i].nombre%>
+                                </option>
+                            <% } %>
+                       <% } %>
+                    </select>
                 </div>
             
                 <div>

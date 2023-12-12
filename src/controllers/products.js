@@ -45,17 +45,18 @@ const controller = {
 
     editar: (req, res) => {
         let id = req.params.id;
-        db.Producto.findByPk(id)
-        .then((producto)=>{
-            res.render("editarproducto",{producto})  
-        })
+        let producto = db.Producto.findByPk(id, {include:[{association:'categoria'}]})
+        let categoria = db.Categoria.findAll()
+        Promise.all([producto,categoria])
+            .then(([producto,categoria])=>{res.render("editarproducto",{producto:producto, categoria:categoria})})  
+        
     },
 
     productoEditado: (req, res) => {
-        let n = req.params.id;
+
         let editproduct = {
             nombre : req.body.nombre,
-            categoria_id : req.body.categoria_id,
+            categoria_id : req.body.categoria,
             descripcion : req.body.descripcion,
             precio : req.body.precio
         }
@@ -63,7 +64,7 @@ const controller = {
             ...editproduct
         },
         {
-            where: {id:n}
+            where: {id:req.params.id}
         })
         res.redirect('/');
     },
