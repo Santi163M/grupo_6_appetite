@@ -19,8 +19,14 @@
             </div>
             
             <div>
-                <label for="categoría">Categoría</label>
-                <input type="text" name="categoria" placeholder="Ingresar Categoría del nuevo producto..."></input>
+                <label>Categoria:</label>
+                <select name="categoria">
+                    <% for (let i= 0; i < categoria.length; i++) { %>
+                        <option value="<%=categoria[i].id%>">
+                            <%=categoria[i].nombre%>
+                        </option>
+                   <% } %>
+                </select>
             </div>
     
             <div>

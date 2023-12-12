@@ -19,7 +19,10 @@ const controller = {
     },
 
     crear: (req, res) => {
-        res.render('crearproducto');
+        db.Categoria.findAll()
+        .then((categoria)=>{
+            res.render('crearproducto', {categoria:categoria})
+        });
     },
 
     productoCreado: (req, res) => {
