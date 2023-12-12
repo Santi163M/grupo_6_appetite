@@ -19,7 +19,7 @@ app.use(session({
 }))
 app.set("view engine", "ejs")
 app.set("views", "src/views");
-app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}.`));
+app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}. http://localhost:${PORT}.`));
 
 // ---- ROUTES MIDDLEWARES ---- //
 app.use(home);

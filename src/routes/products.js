@@ -31,5 +31,6 @@ router.delete('/products/eliminar/:id', productosController.eliminarProducto);
 router.get("/api/products", productosController.productApi);
 router.get("/api/products/:id", productosController.productApiDetail)
 router.get('/carrito', productosController.carrito);
-router.post("/carrito/añadir", productosController.carritoCount)
+router.get("/carrito/agregar", productosController.sumar)
+router.get("/carrito/restar", productosController.restar)
 module.exports = router;

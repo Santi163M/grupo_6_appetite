@@ -38,12 +38,6 @@
     // Cambiar imagen 1seg.
     setInterval(showNextImage, 1000);
 </script>
-        <section>
-            <acrticle>
-                <h1>Visitas</h1>
-                <h2>Contador: <%= count %></h2>
-                <script>
-                    
 
 
     <!-- Contenedor de productos -->
@@ -59,10 +53,14 @@
                         <p class="descuentos">Nuestras hamburguesas son deliciosas y accesibles, hechas con
                             ingredientes de alta calidad para garantizar el mejor sabor en cada bocado</p>
                         <!-- Contenedor de los botones y el contador -->
-                        <div class="cantidad-productos">
-                            <button class="disminuir-btn">Menos Productos</button>
-                            <span class="contador">1</span>
-                            <button class="aumentar-btn">Mas Productos</button>
+                        <div class="cantidad-productos" id="count">
+                            <form action="/carrito/restar" method="GET">
+                                <button type="submit" class="disminuir-btn">Menos productos</button>
+                            </form>
+                            <span class="contador"><%= count %></span>
+                            <form action="/carrito/agregar" method="GET">
+                                <button type="submit" class="aumentar-btn">Mas productos</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -70,10 +68,4 @@
         </a>
         <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i></button>
        
-
-
-
-                </script>
-            </acrticle>
-        </section>
         <%- include('partials/footer.ejs') %>
