@@ -5,15 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/carrito.css">
     <title>Appetite</title>
 </head>
 <body>
     <%- include('partials/header.ejs') %>
     
     <main>
-        <div class="banner">
-            <img src="img/banner.png" alt="banner">
-        </div>
+       
+1500  500
+
+<!-- Carrusel Imagenes Footer -->
+<div id="carousel-container">
+    <img id="carousel-image" src="/img/banner.png">
+    <div id="carousel-text"> </div>
+</div>
+
+<!-- Carrusel Animacion Footer -->
+<script>
+    const images = ["/img/banner.png", "/img/Captura de pantalla 2023-12-12 090824.png", "/img/dietas.jpg"];
+    let currentIndex = 0;
+
+    function showNextImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        showImage(currentIndex);
+    }
+
+    function showImage(index) {
+        document.getElementById("carousel-image").src = images[index];
+    }
+
+    // Cambiar imagen 1seg.
+    setInterval(showNextImage, 3000);
+</script>
 
         <section class="categorias">
             <h3 class="texto-categorias">Categorías</h3>
