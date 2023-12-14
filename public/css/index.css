@@ -353,7 +353,7 @@ body {
 .imagen::before {
     content: "";
     display: block;
-    padding-top: 75%; /* Controla la relación de aspecto de la imagen */
+    padding-top: 75%; 
 }
 
 .imagen img {

@@ -90,13 +90,13 @@
     width: 150px;
 }
 
-/* En tu archivo CSS (por ejemplo, footer.css) */
+
 .logo-imagen {
-    float: left; /* Hace que la imagen flote a la izquierda del texto */
-    margin-right: 10px; /* Añade un espacio a la derecha de la imagen para separarla del texto */
+    float: left; 
+    margin-right: 10px; 
 }
 
-/* Estilos adicionales para el footer, ajusta según sea necesario */
+
 footer {
     background-color: #f0f0f0;
     padding: 20px;
@@ -108,8 +108,8 @@ footer {
 }
 
 .cuentas a {
-    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
-    margin-bottom: 5px; /* Añade un espacio entre los enlaces */
+    display: block; 
+    margin-bottom: 5px; 
 }
 
 
