@@ -58,7 +58,6 @@ footer {
     color: #ffd700; 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .contactos,
     .informacion {
