@@ -9,11 +9,16 @@
 </head>
 <body>
     <%- include('partials/header.ejs') %>
-
     <main>
         <form action="/products/editar/<%= producto.id %>?_method=PUT" method="POST" class="formulario"> 
+            
             <section class="edit">
-                <h2>Editando producto "<%= producto.nombre %>" | ID <%= producto.id %></h2>
+                <div class="main-title">
+                    <h2>Editando producto "<%= producto.nombre %>" | ID <%= producto.id %></h2>
+                </div>
+                <div class="product-image">
+                    <img src="<%=producto.imagen%>" alt="<%=producto.nombre%>">
+                </div>
                 <div>
                     <img class="product-image" src="<%= producto.img %>">
                 </div>
@@ -48,12 +53,6 @@
                     <label for="precio">Precio</label>
                     <input type="number" name="precio" id="precio" value="<%= producto.precio %>"></input>
                 </div>
-                
-                <div>
-                    <label for="imagen">Imagen</label>
-                    <input type="text" name="imagen" id="imagen" value="<%= producto.img %>"></input>
-                </div>
-                
                 <div>
                     <button type="submit">Editar producto</button>
                 </div>

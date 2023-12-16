@@ -38,49 +38,16 @@
     
     setInterval(showNextImage, 3000);
 </script>
-
         <section class="categorias">
             <h3 class="texto-categorias">Categorías</h3>
-
-            <article class="categorias-producto">
+            <% for(let i = 0; i < categoria.length; i++ ) { %>
+                 <article class="categorias-producto">
                 <div>
-                    <img src="/img/categorias/pizza.jpeg" alt="Categoría nombre" class="img-categoria">
+                    <img src="/img/categorias/<%=categoria[i].imagen%>" alt="<%= categoria[i].nombre %>" class="img-categoria">
                 </div>
-
-                <h4 class="nombre-categoria">Pizzas</h4>
+                <h4 class="nombre-categoria"><%= categoria[i].nombre %></h4>
             </article>
-
-            <article class="categorias-producto">
-                <div>
-                    <img src="/img/categorias/hamburguesa.jpeg" alt="Categoría nombre" class="img-categoria">
-                </div>
-
-                <h4 class="nombre-categoria">Hamburguesas</h4>
-            </article>
-
-            <article class="categorias-producto">
-                <div>
-                    <img src="/img/categorias/bebidas.jpg" alt="Categoría nombre" class="img-categoria">
-                </div>
-
-                <h4 class="nombre-categoria">Bebidas</h4>
-            </article>
-
-            <article class="categorias-producto">
-                <div>
-                    <img src="/img/categorias/papas-fritas.jpeg" alt="Categoría nombre" class="img-categoria">
-                </div>
-
-                <h4 class="nombre-categoria">Snacks</h4>
-            </article>
-
-            <article class="categorias-producto">
-                <div>
-                    <img src="/img/categorias/panchos.jpeg" alt="Categoría nombre" class="img-categoria">
-                </div>
-
-                <h4 class="nombre-categoria">Panchos</h4>
-            </article>
+            <% } %>
         </section>
 
         <section class="menu-del-dia">

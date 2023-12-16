@@ -5,9 +5,8 @@ const db = require('../../database/models')
 
 const controller = {
     home : (req,res)=>{
-        /*db.Categoria.findAll()
-        .then((categoria)=>{})*/
-            res.render("home")
+        db.Categoria.findAll()
+        .then((categoria)=>{ res.render("home", {categoria:categoria})})
         
        /* if (req.session.usercertified) {
             let actualuser = req.session.usercertified

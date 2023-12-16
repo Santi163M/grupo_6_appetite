@@ -13,9 +13,9 @@
     <main>
         <section class="create">
             <form action="/product/crear" method="POST" enctype="multipart/form-data">
-                <div>
+            <div>
                 <label for="nombre">Nombre:</label>
-            <input class="input" type="text" name="nombre" placeholder="Ingresar Nombre del producto..."></input>
+                <input class="input" type="text" name="nombre" placeholder="Ingresar Nombre del producto..."></input>
             </div>
             <div>
                 <label>Categoria:</label>
@@ -36,6 +36,10 @@
             <div>
                 <label for="precio">Precio:</label>
                 <input type="number" name="precio" placeholder="Ingresar Precio del nuevo producto... $" ></input>
+            </div>
+            <div>
+                <label for="images"> Seleccionar imágen:</label>
+                <input type="file" name="images" id="images" accept=".jpg, .jpeg, .png" required><br>
             </div>
             <div class="button-container">
                 <button type="submit">Crear producto</button>

@@ -8,18 +8,14 @@ main{
     display: flex;
     justify-content: center;
     padding-bottom: 50px ;
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: #f4f4f4;
 }
-/*
-.product-information{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+
 .product-image{
     width: 30%;
-}*/
+}
 .edit{
     height: 85vh;
     display: flex;
@@ -30,6 +26,7 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 400px;
+    margin-bottom: 20px;
 }
 .edit>div{
     display: flex;
