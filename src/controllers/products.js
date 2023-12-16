@@ -26,13 +26,15 @@ const controller = {
     },
 
     productoCreado: (req, res) => {
+        let foto = req.file.filename
         let nuevoproducto = {
             nombre: req.body.nombre,
             categoria_id: req.body.categoria,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
-            foto: req.body.foto
-        };
+            img: "/img/products/"+foto
+        }
+        
         db.Producto.create(nuevoproducto, (err, productoCreado) => {
             if (err) {
                 console.error('Error al crear el producto:', err);
@@ -40,6 +42,7 @@ const controller = {
                 console.log('Producto creado con éxito:', productoCreado);
             }
         });
+        
         res.redirect("/")
     },
 
@@ -53,12 +56,12 @@ const controller = {
     },
 
     productoEditado: (req, res) => {
-
+        let foto = req.file.filename
         let editproduct = {
             nombre : req.body.nombre,
             categoria_id : req.body.categoria,
             descripcion : req.body.descripcion,
-            precio : req.body.precio
+            precio : req.body.precio,
         }
         db.Producto.update({
             ...editproduct
@@ -119,6 +122,12 @@ const controller = {
     carrito:(req, res)=>{
         res.render("carrito", { count: req.session.count || 0 })
     },
+    confirmation: (req,res)=>{
+        res.render("confirmation")
+    },
+    lampreado: (req,res)=>{
+        res.render("carrito-1", { count: req.session.count || 0 })
+    },
     sumar: (req,res)=>{
         req.session.count = (req.session.count || 0) + 1;
         res.redirect("/carrito/lampreado/#count")
@@ -127,12 +136,17 @@ const controller = {
         req.session.count = Math.max((req.session.count || 0) - 1, 0)
         res.redirect("/carrito/lampreado/#count")
     },
-    confirmation: (req,res)=>{
-        res.render("confirmation")
+    milanesa: (req,res)=>{
+        res.render("carrito-2", { count: req.session.count || 0 } )
     },
-    lampreado: (req,res)=>{
-        res.render("carrito-1", { count: req.session.count || 0 })
-    }
+    sumar_2: (req,res)=>{
+        req.session.count = (req.session.count || 0) + 1;
+        res.redirect("/carrito/milanesa-con-papas/#count")
+    },
+    restar_2: (req,res)=>{
+        req.session.count = Math.max((req.session.count || 0) - 1, 0)
+        res.redirect("/carrito/milanesa-con-papas/#count")
+    },
 }
 
 
