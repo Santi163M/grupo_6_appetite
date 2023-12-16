@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require('fs');
-// const { CategoryChannelChildManager } = require('discord.js');
 const db = require("../../database/models")
 let datosProductos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json'), 'utf-8'));
 
@@ -26,13 +25,13 @@ const controller = {
     },
 
     productoCreado: (req, res) => {
-        let foto = req.file.filename
+        const imageFilename = req.file.filename
         let nuevoproducto = {
             nombre: req.body.nombre,
             categoria_id: req.body.categoria,
             descripcion: req.body.descripcion,
             precio: req.body.precio,
-            img: "/img/products/"+foto
+            imagen: "/img/products/"+imageFilename
         }
         
         db.Producto.create(nuevoproducto, (err, productoCreado) => {
@@ -43,7 +42,7 @@ const controller = {
             }
         });
         
-        res.redirect("/")
+        res.redirect("/products")
     },
 
     editar: (req, res) => {
@@ -56,12 +55,13 @@ const controller = {
     },
 
     productoEditado: (req, res) => {
-        let foto = req.file.filename
+        const imageFilename = req.file ? req.file.filename : null;
         let editproduct = {
             nombre : req.body.nombre,
             categoria_id : req.body.categoria,
             descripcion : req.body.descripcion,
             precio : req.body.precio,
+            imagen: "/img/products/" + imageFilename
         }
         db.Producto.update({
             ...editproduct
@@ -69,7 +69,7 @@ const controller = {
         {
             where: {id:req.params.id}
         })
-        res.redirect('/');
+        res.redirect('/products');
     },
 
     eliminarProducto: (req, res) => {
@@ -77,7 +77,7 @@ const controller = {
         db.Producto.destroy({
             where:{id:n}
         })
-        res.redirect("/")
+        res.redirect("/products")
     },
     productApi: (req,res)=>{
         db.Producto.findAll({include: [{

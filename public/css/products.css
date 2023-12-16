@@ -37,7 +37,10 @@ body {
 .datos h3 {
   color: #666;
 }
-
+.datos img {
+  width: 35%;
+  height: 35%;
+}
 .botones button {
   background-color: #3498db;
   color: #fff;
