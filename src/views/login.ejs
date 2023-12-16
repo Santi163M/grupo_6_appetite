@@ -9,19 +9,22 @@
 </head>
 <body>
     
+    <div class="login-box"></div>
     <%- include('partials/header.ejs') %>
 
     <main class="formulario">
-    <h1 class="main-title">Iniciar sesión con:</h1>
+    <h1 class="main-title">Iniciar sesi🍔n con:</h1>
     <%- include('partials/login-register-modes.ejs') %>
     <section class="main-container">
         <form action="/loginpost" method="POST">
 
             <div class="container">
+                <label>Introduzca su E-mail</label>
                 <input type="text" placeholder="E-mail o nombre de usuario" class="username-field" name="email">
             </div>
 
             <div class="container">
+                <label>Contraseña</label>
                 <input type="password" placeholder="Contraseña" class="password-field" name="password">
             </div>
 

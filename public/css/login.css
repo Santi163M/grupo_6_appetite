@@ -1,28 +1,52 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-image: url(/img/AdobeStock_209317774-scaled.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-/* Main Title */
 .main-title {
     font-size: 3em;
     padding-left: 1.5em;
     margin-top: 2em;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
+    animation: bounce 10s ease-in-out infinite; 
 }
 
-/* Mode Icons */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.empty-btn{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
 .modos {
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1em 0;
+    padding: 2em 0;
     margin: 0.5em 0;
 }
-
-
 .img1,
 .img2 {
     height: 100px;
@@ -33,7 +57,6 @@
     width: 150px;
 }
 
-/* Data Input Fields and Containers */
 .main-container {
     padding-top: 2em;
     display: flex;
@@ -41,18 +64,24 @@
     align-items: center;
     height: 70vh;
     margin-bottom: 5em;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main-container form {
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-    background-color: #f8f8f8;
-    width: 40%;
+    border-radius: 20px;
+    width: 45%;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 5);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
 }
+
 
 .container {
     width: 70%;
@@ -70,7 +99,7 @@
 
 .container input:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: #000000;
 }
 
 .remember-button,
@@ -81,26 +110,39 @@
 }
 
 .submit-button input {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1em;
-    background-color: #3498db;
+    background-color: #ff0000;
     border-radius: 8px;
-    border: 2px #3498db solid;
+    border: 2px #ff3700 solid;
     padding: 1.5em;
     width: 150px;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
+  
 .submit-button input:hover {
-    background-color: #217dbb;
-    border-color: #217dbb;
+    border-color: #ff0000;
+    animation: brillo 0.5s infinite;
+    background-color: #ffa200;
 }
 
-.submit-button input:focus {
-    outline: none;
-    border-color: #000;
+
+@keyframes brillo {
+    0% {
+        filter: brightness(100%);
+    }
+
+    50% {
+        filter: brightness(130%);
+    }
+
+    100% {
+        filter: brightness(100%);
+    }
 }
+
 
 .forgot-password {
     margin-top: 1.5em;
@@ -110,16 +152,16 @@
 
 .forgot-password a {
     text-decoration: none;
-    color: #333;
+    color: #ff000057;
     transition: color 0.3s;
 }
 
 .forgot-password a:hover {
     text-decoration: underline;
-    color: #3498db;
+    color: #ff0000;
+    font-size: 17px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .main-container form {
         width: 80%;
@@ -134,3 +176,4 @@
         width: 80%;
     }
 }
+
