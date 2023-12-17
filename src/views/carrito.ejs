@@ -17,20 +17,21 @@
     <!-- Contenedor de productos -->
     <div class="productos-container">
         <!-- Producto 1 -->
+        <% for (let i = 0; i < usuario.productos.length; i++) { %>
             <div class="producto">
                 <div class="producto-info">
                     <div class="img-container">
-                        <img src="/img/menu-del-dia/lampriado.jpg" alt="Lampreado">
+                        <img src="<%= usuario.productos[i].imagen %>" alt="<%= usuario.productos[i].nombre %>">
                     </div>
                     <div class="producto-detalle">
-                        <h2 class="descripciones"> Lampreado
+                        <h2 class="descripciones">
+                            <%= usuario.productos[i].nombre %>
                         </h2>
                         <p class="precios">
                             <i class="fa-solid fa-dollar-sign"></i>
-                            2750
-
+                            <%= usuario.productos[i].precio %>
                         </p>
-                        <p class="descuentos"> El lampreado o payaguá mascada es un platillo de la gastronomía de Paraguay. Está hecho de mandioca, carne molida, ajo, cebolla y aceite. Pueden existir variaciones que incluyan grasa vacuna o porcina, almidón y la mezcla de mandioca con carne cruda. El lampreado es conocido por su durabilidad, siendo ideal para viajeros, ya que puede conservarse por varios días.
+                        <p class="descuentos">    
                         </p>
                         <!-- Contenedor de los botones y el contador -->
                         <div class="cantidad-productos" id="count">
@@ -45,6 +46,8 @@
                     </div>
                 </div>
             </div>
+          <% } %>
+            
         </div>
         <a href="/">
             <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i>
