@@ -309,7 +309,25 @@ footer {
 
 
     
-  .añadir{
+  .details-button{
+    background-color: rgb(255, 239, 90);
+    color: rgb(120, 110, 21);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  .details-button:hover {
+    background-color: white;
+    color: rgb(255, 213, 0);
+    transform: scale(1.1);
+  }
+}
+.añadir{
     background-color: red;
     color: white;
     padding: 10px 20px;
@@ -326,8 +344,6 @@ footer {
     color: red;
     transform: scale(1.1);
   }
-}
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f4f4;

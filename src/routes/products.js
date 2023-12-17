@@ -41,18 +41,6 @@ router.get('/products/:id', productosController.detalleProducto);
 router.get('/carrito', productosController.carrito);
 router.get("/carrito/agregar", productosController.sumar)
 router.get("/carrito/restar", productosController.restar)
-router.get("/carrito/agregar-2", productosController.sumar_2)
-router.get("/carrito/restar-2", productosController.restar_2)
-/* -----------------> Carrito products examples <------------------- */
-router.get("/carrito/lampreado", productosController.lampreado)
-router.get("/carrito/milanesa-con-papas", productosController.milanesa)
-router.get("/carrito/pollo-con-papas")
-router.get("/carrito/ensalada")
-/* -----------------> Carrito Combos details <------------------- */
-router.get("/carrito/hamburguesa-con-papas")
-router.get("/carrito/pizza-con-cocacola")
-router.get("/carrito/pechuga-de-pollo-con-ensalada-rusa")
-router.get("/carrito/papas-con-cocacola")
 /* -----------------> Confirmacion de compra <------------------- */
 router.get("/confirmation",productosController.confirmation)
 
