@@ -36,6 +36,7 @@ let userControl = {
             password: req.body.password,
             remember: req.body.remember
         }
+
         db.Usuario.findOne({
             where: {
                 [Sequelize.Op.or]: [
@@ -47,7 +48,10 @@ let userControl = {
         })
             //Leop12
             .then(Usuario => {
-                console.log('Usuarios encontrados:', Usuario.email);
+                if (req.body.remember === 'on') {
+                    res.cookie('remember', 'true', { maxAge: 7 * 24 * 60 * 60 * 1000 }); 
+                  }
+
                 let check = bcrypt.compareSync(recibido.password, Usuario.password)
                 if (check == true) {
                     req.session.usercertified = Usuario
