@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs')%>
+
+<h2>Resultados de Búsqueda</h2>
+<% if (productos.length > 0) { %>
+    <ul>
+        <% productos.forEach(productos => { %>
+            <a href="/products/<%= productos.id %>"><li><%= productos.nombre %></li></a>
+        <% }); %>
+    </ul>
+<% } else { %>
+    <p>No se encontraron resultados.</p>
+<% } %>
+<%- include('partials/footer.ejs') %>
