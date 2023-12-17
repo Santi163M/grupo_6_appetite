@@ -31,10 +31,11 @@
                             <i class="fa-solid fa-dollar-sign"></i>
                             <%= usuario.productos[i].precio %>
                         </p>
-                        <p class="descuentos">    
+                        <p class="descuentos">   
+                            <%= usuario.productos[i].descripcion %> 
                         </p>
                         <!-- Contenedor de los botones y el contador -->
-                        <div class="cantidad-productos" id="count">
+                      <!--   <div class="cantidad-productos" id="count">
                             <form action="/carrito/restar" method="GET">
                                 <button type="submit" class="disminuir-btn">Menos productos</button>
                             </form>
@@ -42,14 +43,15 @@
                             <form action="/carrito/agregar" method="GET">
                                 <button type="submit" class="aumentar-btn">Mas productos</button>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <a href="/">
+                <form action="/delete">
                     <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i>
                     </button>
-                </a>
+                </form>
             </div>
+            
           <% } %>
             
         </div>

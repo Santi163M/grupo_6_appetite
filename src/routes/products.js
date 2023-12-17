@@ -39,8 +39,12 @@ router.get("/api/products/:id", productosController.productApiDetail)
 
 /* -----------------> Carrito Routes <------------------- */
 router.get('/carrito', productosController.carrito);
-router.get("/carrito/agregar", productosController.sumar)
-router.get("/carrito/restar", productosController.restar)
+
+// Rutas inhabilitadas momentaneamente
+/* router.get("/carrito/agregar", productosController.sumar)
+router.get("/carrito/restar", productosController.restar) */
+
+router.post("/add-prod",productosController.carrito_add)
 /* -----------------> Confirmacion de compra <------------------- */
 router.get("/confirmation",productosController.confirmation)
 

@@ -145,9 +145,21 @@ const controller = {
             })
 
     },
+    carrito_add:(req,res)=>{
+        let user = req.session.usercertified
+        let product = req.body.producto_id
+        console.log(user,product)
+        db.User_product.create({
+            usuario_id: user,
+            producto_id: product
+          })
+          .then((user)=>{
+            res.redirect("/carrito")
+          })
+    },
     confirmation: (req, res) => {
         res.render("confirmation")
-    },
+    }/* ,
     sumar: (req, res) => {
         req.session.count = (req.session.count || 0) + 1;
         res.redirect("/carrito/#count")
@@ -155,7 +167,7 @@ const controller = {
     restar: (req, res) => {
         req.session.count = Math.max((req.session.count || 0) - 1, 0)
         res.redirect("/carrito/#count")
-    }
+    } */
 }
 
 
