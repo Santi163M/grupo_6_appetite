@@ -25,7 +25,6 @@ let userControl = {
         db.Usuario.create({
             ...newuser
         })
-        console.log(newuser);
         res.redirect("/")
     },
     login: (req, res) => {
