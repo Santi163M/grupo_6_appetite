@@ -55,13 +55,12 @@ const controller = {
     },
 
     productoEditado: (req, res) => {
-        const imageFilename = req.file ? req.file.filename : null;
         let editproduct = {
             nombre : req.body.nombre,
             categoria_id : req.body.categoria,
             descripcion : req.body.descripcion,
-            precio : req.body.precio,
-            imagen: "/img/products/" + imageFilename
+            precio : req.body.precio
+
         }
         db.Producto.update({
             ...editproduct

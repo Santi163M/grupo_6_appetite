@@ -54,8 +54,13 @@
                     <input type="number" name="precio" id="precio" value="<%= producto.precio %>"></input>
                 </div>
                 <div>
-                    <button type="submit">Editar producto</button>
+                    <button type="submit" onclick="goBack()">Editar producto</button>
                 </div>
+                <script>
+                    function goBack() {
+                      window.history.back();
+                    }
+                  </script>
             </section>    
         </form>
     </main>
