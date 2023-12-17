@@ -111,12 +111,13 @@ body{
 
 .submit-button input {
     color: rgb(255, 255, 255);
+    font-weight: bold;
     font-size: 1em;
     background-color: #ff0000;
-    border-radius: 8px;
+    border-radius: 25px;
     border: 2px #ff3700 solid;
     padding: 1.5em;
-    width: 150px;
+    width: 50%;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
 }

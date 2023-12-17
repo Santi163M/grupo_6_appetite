@@ -1,13 +1,32 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-image: url(/img/ilya-mashkov-mkVa2hLJgnI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 /* Titulo Principal */
 .main-title {
-    font-size: 50px;
-    padding-left: 30px;
-    margin-top: 30px;
+    font-size: 3em;
+    padding-left: 1.5em;
+    margin-top: 2em;
+    color: #ffffff;
+    text-align: center;
+    animation: bounce 10s ease-in-out infinite; 
 }
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 
 /* Iconos de modos*/
 .modos {
@@ -24,7 +43,6 @@
 .img1 {
     height: 100px;
     width: 100px;
-
 }
 
 .img2 {
@@ -33,7 +51,6 @@
 }
 
 /* Campos para llenar datos y sus contenedores */
-
 .main-container {
     padding-top: 20px;
     display: flex;
@@ -44,14 +61,17 @@
 }
 
 .main-container form {
-    box-shadow: 1px 1px 10px 1px black;
-    background-color: #efff62;
-    width: 40%;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: #ff0000;
+    width: 45%;
     padding-top: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    opacity: 0.9;
 }
 
 .container {
@@ -69,33 +89,31 @@
 
 .container input:focus {
     outline: none;
-    border-color: rgb(0, 140, 255);
+    border-color: rgb(255, 0, 0);
 }
 
-
 .submit-button {
-    width: 50%;
-    margin-top: 5px;
-    margin-bottom: 9px;
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .submit-button input {
     color: white;
-    font-size: 15px;
-    margin-top: 8px;
+    font-weight: bold;
+    font-size: 1em;
     background-color: rgb(5, 51, 255);
-    border-radius: 8px;
+    border-radius: 25px;
     border: 2px rgb(5, 51, 255) solid;
-    padding: 15px;
-    width: 150px;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
 }
-
 
 .logo-imagen {
     float: left; 
     margin-right: 10px; 
 }
-
 
 footer {
     background-color: #f0f0f0;
@@ -111,7 +129,6 @@ footer {
     display: block; 
     margin-bottom: 5px; 
 }
-
 
 .submit-button input:hover {
     background-color: blue;
@@ -170,5 +187,4 @@ footer {
     .forgot-password {
         width: 70%;
     }
-
 }

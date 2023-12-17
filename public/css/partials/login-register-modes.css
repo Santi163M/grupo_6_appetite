@@ -3,7 +3,24 @@
     padding-left: 30px;
     margin-top: 30px;
 }
-/* Iconos de modos*/
+
+.modos {
+    display: flex;
+  }
+  
+  .img1,
+  .img2 {
+    width: 100px; 
+    height: 100px;
+    margin: 10px; 
+    transition: transform 0.9s ease-in-out, box-shadow 0.9s ease-in-out;
+  }
+  
+  .img1:hover,
+  .img2:hover {
+    transform: rotate(360deg);
+  }
+  
 .modos{
     width:50%;
     margin: auto;
