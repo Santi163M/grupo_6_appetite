@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    background-color: #ffffff; 
 }
 
 .logo {
@@ -34,6 +35,11 @@
     border: 1px solid black;
     border-radius: 10px;
     width: 90%;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.buscar:focus {
+    border-color: #e44d26; 
 }
 
 .icono-busqueda {
@@ -42,6 +48,12 @@
     border: 1px solid black;
     border-radius: 10px;
     display: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.icono-busqueda:hover {
+    background-color: #e44d26; 
 }
 
 .accesos {
@@ -55,17 +67,31 @@
 
 .accesos a {
     color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+.accesos a:hover {
+    color: #e44d26; 
 }
 
 .accesos i {
     font-size: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.accesos i:hover {
+    transform: scale(1.2); 
+}
 
 /* -------------------- MAIN -------------------- */
 
 .banner img {
     width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.banner img:hover {
+    opacity: 0.8; 
 }
 
 /* ----- categorías ----- */
@@ -81,14 +107,17 @@
 .categorias-producto {
     width: 45%;
     margin-bottom: 30px;
+    overflow: hidden; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.categorias-producto div {
-    margin-bottom: 5%;
-    transition: transform 0.3s ease-in-out
+
+.categorias-producto:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
 }
-.categorias-producto div:hover{
-    transform: scale(1.1)
-}
+
 .texto-categorias {
     width: 100%;
     padding: 10px 0;
@@ -107,7 +136,10 @@
 
 /* ----- menú del día ----- */
 
-.menu-del-dia {
+.menu-del-dia,
+.menu-producto,
+.combos,
+.combos-producto {
     width: 90%;
     margin: auto;
     display: flex;
@@ -115,27 +147,36 @@
     justify-content: center;
 }
 
-.texto-menu {
+.texto-menu,
+.texto-combos {
     width: 100%;
     text-align: left;
     padding: 10px;
     font-size: 2em;
 }
 
-.menu-producto {
+.menu-producto,
+.combos-producto {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.menu-producto div{
+
+.menu-producto div,
+.combos-producto div {
     margin-bottom: 5%;
-    transition: transform 0.3s ease-in-out
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.menu-producto div:hover{
-    transform: scale(1.1)
+
+.menu-producto div:hover,
+.combos-producto div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
 }
-.img-menu {
+
+.img-menu,
+.img-combo {
     width: 100%;
     height: 200px;
 }
@@ -167,13 +208,6 @@
     justify-content: center;
 }
 
-.texto-combos {
-    width: 100%;
-    text-align: left;
-    padding: 10px;
-    font-size: 2em;
-}
-
 .combos-producto {
     width: 80%;
     margin-bottom: 50px;
@@ -181,22 +215,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.combos-producto div{
-    margin-bottom: 5%;
-    transition: transform 0.3s ease-in-out
-}
-.combos-producto div:hover{
-    transform: scale(1.1)
-}
-.img-combo {
-    width: 100%;
-}
-
-.combo-nombre {
-    width: 100%;
-    text-align: center;
-}
-
 
 /* -------------------- FOOTER -------------------- */
 
@@ -224,7 +242,6 @@ footer {
     gap: 10px;
 }
 
-
 .informacion {
     width: 35%;
     display: flex;
@@ -239,7 +256,6 @@ footer {
     text-align: center;
 }
 
-
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media (min-width: 481px) {
@@ -247,7 +263,10 @@ footer {
         width: 30%;
     }
 
-    .menu-del-dia {
+    .menu-del-dia,
+    .menu-producto,
+    .combos,
+    .combos-producto {
         justify-content: space-around;
     }
 
@@ -257,10 +276,6 @@ footer {
 
     .combos-producto {
         width: 40%;
-    }
-
-    .combos {
-        justify-content: space-around;
     }
 }
 
@@ -269,20 +284,16 @@ footer {
         width: 22.5%;
     }
 
-    .menu-del-dia {
+    .menu-del-dia,
+    .menu-producto,
+    .combos,
+    .combos-producto {
         justify-content: space-around;
     }
 
-    .menu-producto {
-        width: 26.6%;
-    }
-
+    .menu-producto,
     .combos-producto {
         width: 26.6%;
-    }
-
-    .combos {
-        justify-content: space-around;
     }
 }
 
@@ -291,43 +302,40 @@ footer {
         width: 18%;
     }
 
-    .menu-del-dia {
+    .menu-del-dia,
+    .menu-producto,
+    .combos,
+    .combos-producto {
         justify-content: space-around;
     }
 
-    .menu-producto {
-        width: 20%;
-    }
-
+    .menu-producto,
     .combos-producto {
         width: 20%;
     }
 
-    .combos {
-        justify-content: space-around;
+    .details-button,
+    .añadir {
+        background-color: rgb(255, 239, 90);
+        color: rgb(120, 110, 21);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-left: 15px;
     }
 
-
-    
-  .details-button{
-    background-color: rgb(255, 239, 90);
-    color: rgb(120, 110, 21);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-bottom: 50px;
-    margin-top: 25px;
-    margin-left: 15px;
-  }
-
-  .details-button:hover {
-    background-color: white;
-    color: rgb(255, 213, 0);
-    transform: scale(1.1);
-  }
+    .details-button:hover,
+    .añadir:hover {
+        background-color: white;
+        color: rgb(255, 213, 0);
+        transform: scale(1.1);
+    }
 }
-.añadir{
+
+.añadir {
     background-color: red;
     color: white;
     padding: 10px 20px;
@@ -337,13 +345,14 @@ footer {
     margin-bottom: 50px;
     margin-top: 25px;
     margin-left: 15px;
-  }
+}
 
-  .añadir:hover {
+.añadir:hover {
     background-color: white;
     color: red;
     transform: scale(1.1);
-  }
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f4f4;
@@ -359,6 +368,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.producto:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .imagen {
@@ -370,7 +384,7 @@ body {
 .imagen::before {
     content: "";
     display: block;
-    padding-top: 75%; 
+    padding-top: 75%;
 }
 
 .imagen img {
