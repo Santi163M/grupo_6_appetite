@@ -3,27 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
+
 .main-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
+
 .main-button .create-button {
   padding: 15px 30px;
-  font-size: 18px; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
-  background-color: #004d80; 
-  color: #fff; 
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #004d80;
+  color: #fff;
 }
-.main-button .create-button:hover{
-    background-color: #2980b9
+
+.main-button .create-button:hover {
+  background-color: #2980b9;
 }
+
 .datos {
   width: 100%;
   max-width: 1200px;
@@ -34,13 +42,20 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .datos h3 {
   color: #666;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+
 .datos img {
-  width: 35%;
-  height: 35%;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
+
 .botones button {
   background-color: #3498db;
   color: #fff;
@@ -58,6 +73,7 @@ body {
 .botones button:hover {
   background-color: #2980b9;
 }
+
 .productos {
   width: 80%;
   margin: 20px auto;
@@ -75,6 +91,12 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.productos article:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
 .img {
@@ -83,4 +105,6 @@ body {
 
 .img img {
   width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
