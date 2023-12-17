@@ -5,9 +5,13 @@ const db = require('../../database/models')
 
 const controller = {
     home : (req,res)=>{
-        db.Categoria.findAll()
-        .then((categoria)=>{ res.render("home", {categoria:categoria})})
-        
+        Promise.all([
+            db.Categoria.findAll(),
+            db.Producto.findAll({ limit: 4 })
+          ])
+          .then(([categoria, producto]) => {
+            res.render("home", { categoria:categoria, producto:producto })
+          })
        /* if (req.session.usercertified) {
             let actualuser = req.session.usercertified
             res.render("home",{actualuser})
