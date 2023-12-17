@@ -53,32 +53,27 @@
         <section class="menu-del-dia">
             <h3 class="texto-menu">Menú del día</h3>
 
-            
-                <% for ( let i = 0; i < producto.length; i++) { %>
-                    <article class="menu-producto">
-                        <div>
-                            <img src="<%=producto[i].imagen%>" alt="<%=producto[i].nombre%>" class="img-menu">
-                        </div>
-                        <h4><%=producto[i].nombre%></h4>
-                        <p class="descripcion">
-                            <%= producto[i].descripcion %>
-                        </p>
-                        <h5 class="precio">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <%= producto[i].precio %>
-                        </h5>
-                        <a class="link" href="/products/<%=producto[i].id%>">
-                            <button class="details-button">
-                                <i class="fa-solid fa-square-arrow-up-right"></i>
-                                Detalles
-                            </button>
-                        </a>
-                        
-                    </article>
-                <% } %>
-            
+            <article class="menu-producto">
+                <div>
+                    <img src="/img/menu-del-dia/lampriado.jpg" alt="Producto" class="img-menu">
+                </div>
+                <h4>Lampreado</h4>
+                <p class="descripcion">
+                    El lampreado o payaguá mascada es un platillo de la gastronomía de Paraguay. Está hecho de mandioca, carne molida, ajo, cebolla y aceite. Pueden existir variaciones que incluyan grasa vacuna o porcina, almidón y la mezcla de mandioca con carne cruda. El lampreado es conocido por su durabilidad, siendo ideal para viajeros, ya que puede conservarse por varios días.
+                </p>
+
+                <h5 class="precio">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    2750
+                </h5>
+                <a class="link" href="/carrito/lampreado">
+                    <button class="añadir">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Agregar
+                    </button>
+                </a>
             </article>
-<!-- 
+
             <article class="menu-producto">
                 <div>
                     <img src="/img/menu-del-dia/milanesa-con-papas.jpg" alt="Producto" class="img-menu">
@@ -132,7 +127,7 @@
                 </h5>
 
                 <%- include('partials/agregarbutton.ejs') %>
-            </article> -->
+            </article>
         </section>
 
         <section class="combos">
