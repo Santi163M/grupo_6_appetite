@@ -125,28 +125,14 @@ const controller = {
     confirmation: (req,res)=>{
         res.render("confirmation")
     },
-    lampreado: (req,res)=>{
-        res.render("carrito-1", { count: req.session.count || 0 })
-    },
     sumar: (req,res)=>{
         req.session.count = (req.session.count || 0) + 1;
-        res.redirect("/carrito/lampreado/#count")
+        res.redirect("/carrito/#count")
     },
     restar: (req,res)=>{
         req.session.count = Math.max((req.session.count || 0) - 1, 0)
-        res.redirect("/carrito/lampreado/#count")
-    },
-    milanesa: (req,res)=>{
-        res.render("carrito-2", { count: req.session.count || 0 } )
-    },
-    sumar_2: (req,res)=>{
-        req.session.count = (req.session.count || 0) + 1;
-        res.redirect("/carrito/milanesa-con-papas/#count")
-    },
-    restar_2: (req,res)=>{
-        req.session.count = Math.max((req.session.count || 0) - 1, 0)
-        res.redirect("/carrito/milanesa-con-papas/#count")
-    },
+        res.redirect("/carrito/#count")
+    }
 }
 
 

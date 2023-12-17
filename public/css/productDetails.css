@@ -37,6 +37,23 @@ body {
     color: #666;
     margin-bottom: 10px;
   }
+  .añadir{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  .añadir:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+  }
   .return button{
     background-color: #3498db;
     color: #fff;

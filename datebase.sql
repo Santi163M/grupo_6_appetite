@@ -9,7 +9,6 @@ CREATE TABLE `categorias` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-
 INSERT INTO `categorias` (`id`, `nombre`, `imagen`) VALUES
 (1, 'Pizzas', 'pizza.jpeg'),
 (2, 'Hamburguesas', 'hamburguesa.jpeg'),
@@ -27,7 +26,6 @@ CREATE TABLE `productos` (
   `categoria_id` int(11) DEFAULT NULL,
   `imagen` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 
 
 INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `usuario_id`, `categoria_id`, `imagen`) VALUES
@@ -48,7 +46,6 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `usuario_id`, 
 (24, 'Pancho Especial', 'Pancho con ingredientes especiales y salsas únicas', 7, 1, 5, NULL);
 
 
-
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nombre` varchar(30) NOT NULL,
@@ -56,7 +53,6 @@ CREATE TABLE `usuarios` (
   `email` varchar(255) NOT NULL,
   `contraseña` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 
 
 INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `email`, `contraseña`) VALUES
@@ -81,15 +77,10 @@ ALTER TABLE `usuarios`
 ALTER TABLE `categorias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
---
--- AUTO_INCREMENT for table `productos`
---
+
 ALTER TABLE `productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
---
--- AUTO_INCREMENT for table `usuarios`
---
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
