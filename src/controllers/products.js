@@ -168,7 +168,15 @@ const controller = {
             ) 
     },
     carrito_delete:(req,res)=>{
-
+        const userId = req.session.usercertified.id;
+        const productId = req.body.producto_id;
+        db.User_product.destroy({
+            where: {
+                usuario_id: userId,
+                producto_id: productId
+            }
+        }).then(() => {
+            res.redirect('/carrito')})
     },
     confirmation: (req, res) => {
         res.render("confirmation")

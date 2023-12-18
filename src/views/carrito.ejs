@@ -47,12 +47,13 @@
                         </div> -->
                         <div>
                             <label>Cantidad de productos:</label>
-                            <input type="number" value="1" >
+                            <input type="number" value="1" min="1">
                         </div>
                     </div>
                 </div>
-                <form action="/delete">
-                    <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i>
+                <form action="/delete?_method=DELETE" method="POST">
+                    <input type="hidden" name="producto_id" value="<%= usuario.productos[i].id %>">
+                    <button class="empty-btn" type="submit">Eliminar Producto<i class="fas fa-trash"></i>
                     </button>
                 </form>
             </div>

@@ -26,7 +26,6 @@ CREATE TABLE `productos` (
   `imagen` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
 INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `precio`, `usuario_id`, `categoria_id`, `imagen`) VALUES
 (10, 'Pizza Margarita', 'Deliciosa pizza con tomate, mozzarella y albahaca', 3700, 1, 1, '/img/products/product-1702757305702.jpg'),
 (11, 'Pizza Pepperoni', 'Pizza clásica con pepperoni y queso derretido', 4100, NULL, 1, '/img/products/product-1702757424396.jpeg'),
@@ -61,18 +60,21 @@ INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `email`, `password`, `produc
 (4, 'Test', 'Test', 'a123@gmail.com', '$2b$10$SSOV2Py/9.vU1UrxFQNrUeOgedBiOxWF7KOwtw879p41ErFxlSqUO', NULL);
 
 
-
 CREATE TABLE `usuarios_productos` (
   `id` int(11) NOT NULL,
   `usuario_id` int(11) DEFAULT NULL,
   `producto_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-
-
 INSERT INTO `usuarios_productos` (`id`, `usuario_id`, `producto_id`) VALUES
 (1, 4, 15),
-(2, 4, 12);
+(2, 4, 12),
+(3, 4, 10),
+(5, 4, 11),
+(7, 4, 13),
+(10, 4, 14),
+(11, 4, 22),
+(12, 4, 18);
 
 
 ALTER TABLE `categorias`
@@ -83,6 +85,7 @@ ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`),
   ADD KEY `usuario_id` (`usuario_id`),
   ADD KEY `categoria_id` (`categoria_id`);
+
 
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
@@ -99,14 +102,17 @@ ALTER TABLE `usuarios_productos`
 ALTER TABLE `categorias`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
+
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
 
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
+
 ALTER TABLE `usuarios_productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 
 ALTER TABLE `productos`
@@ -116,8 +122,8 @@ ALTER TABLE `productos`
 ALTER TABLE `usuarios`
   ADD CONSTRAINT `fk_usuario_producto` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`);
 
-
 ALTER TABLE `usuarios_productos`
+  ADD CONSTRAINT `fk_producto` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `usuarios_productos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
   ADD CONSTRAINT `usuarios_productos_ibfk_2` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`);
 COMMIT;

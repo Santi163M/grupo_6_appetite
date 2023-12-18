@@ -44,6 +44,7 @@ router.get('/carrito', productosController.carrito);
 router.get("/carrito/restar", productosController.restar) */
 
 router.post("/add-prod",productosController.carrito_add)
+router.delete("/delete", productosController.carrito_delete)
 /* -----------------> Confirmacion de compra <------------------- */
 router.get("/confirmation",productosController.confirmation)
 
