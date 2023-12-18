@@ -5,7 +5,9 @@ body{
     opacity: 5;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.section{
+  height: 500px;
+}
 :root {
     --color-rojo: #000000;
     --color-naranja: #000000;
