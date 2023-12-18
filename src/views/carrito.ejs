@@ -17,23 +17,26 @@
     <!-- Contenedor de productos -->
     <div class="productos-container">
         <!-- Producto 1 -->
+    
+        <% for (let i = 0; i < usuario.productos.length; i++) { %>
             <div class="producto">
                 <div class="producto-info">
                     <div class="img-container">
-                        <img src="/img/menu-del-dia/lampriado.jpg" alt="Lampreado">
+                        <img src="<%= usuario.productos[i].imagen %>" alt="<%= usuario.productos[i].nombre %>">
                     </div>
                     <div class="producto-detalle">
-                        <h2 class="descripciones"> Lampreado
+                        <h2 class="descripciones">
+                            <%= usuario.productos[i].nombre %>
                         </h2>
                         <p class="precios">
                             <i class="fa-solid fa-dollar-sign"></i>
-                            2750
-
+                            <%= usuario.productos[i].precio %>
                         </p>
-                        <p class="descuentos"> El lampreado o payaguá mascada es un platillo de la gastronomía de Paraguay. Está hecho de mandioca, carne molida, ajo, cebolla y aceite. Pueden existir variaciones que incluyan grasa vacuna o porcina, almidón y la mezcla de mandioca con carne cruda. El lampreado es conocido por su durabilidad, siendo ideal para viajeros, ya que puede conservarse por varios días.
+                        <p class="descuentos">   
+                            <%= usuario.productos[i].descripcion %> 
                         </p>
                         <!-- Contenedor de los botones y el contador -->
-                        <div class="cantidad-productos" id="count">
+                      <!--   <div class="cantidad-productos" id="count">
                             <form action="/carrito/restar" method="GET">
                                 <button type="submit" class="disminuir-btn">Menos productos</button>
                             </form>
@@ -41,15 +44,24 @@
                             <form action="/carrito/agregar" method="GET">
                                 <button type="submit" class="aumentar-btn">Mas productos</button>
                             </form>
+                        </div> -->
+                        <div>
+                            <label>Cantidad de productos:</label>
+                            <input type="number" value="1" min="1">
                         </div>
                     </div>
                 </div>
+                <form action="/delete?_method=DELETE" method="POST">
+                    <input type="hidden" name="producto_id" value="<%= usuario.productos[i].id %>">
+                    <button class="empty-btn" type="submit">Eliminar Producto<i class="fas fa-trash"></i>
+                    </button>
+                </form>
             </div>
+            
+          <% } %>
+            
         </div>
-        <a href="/">
-            <button class="empty-btn">Eliminar Producto<i class="fas fa-trash"></i>
-            </button>
-        </a>
+
         <a href="/confirmation">
             <button class="buy-btn">Comprar Producto<i class="fa-solid fa-cart-shopping"></i></button>
         </a>

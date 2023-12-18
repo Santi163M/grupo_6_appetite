@@ -21,10 +21,9 @@ let upload=multer({storage:storag})
 
 router.get('/products', productosController.productos);
 
-router.get('/products/:id', productosController.detalleProducto);
 
 router.get('/products/crear', productosController.crear);
-
+router.get('/products/:id', productosController.detalleProducto);
 router.post('/product/crear',upload.single('images'), productosController.productoCreado);
 
 router.get('/products/editar/:id', productosController.editar);
@@ -39,8 +38,13 @@ router.get("/api/products/:id", productosController.productApiDetail)
 
 /* -----------------> Carrito Routes <------------------- */
 router.get('/carrito', productosController.carrito);
-router.get("/carrito/agregar", productosController.sumar)
-router.get("/carrito/restar", productosController.restar)
+
+// Rutas inhabilitadas momentaneamente
+/* router.get("/carrito/agregar", productosController.sumar)
+router.get("/carrito/restar", productosController.restar) */
+
+router.post("/add-prod",productosController.carrito_add)
+router.delete("/delete", productosController.carrito_delete)
 /* -----------------> Confirmacion de compra <------------------- */
 router.get("/confirmation",productosController.confirmation)
 
