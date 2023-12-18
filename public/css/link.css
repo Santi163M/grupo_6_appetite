@@ -1,0 +1,104 @@
+body{
+    background-image: url(/img/AdobeStock_209317774-scaled.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+:root {
+    --color-rojo: #e74c3c;
+    --color-naranja: #f39c12;
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-titulo: bold 1.75rem var(--fuente-principal);
+    --fuente-enlace: bold var(--fuente-principal);
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--fuente-principal);
+    background-color: #f2f2f2;
+  }
+  
+  h2 {
+    color: var(--color-rojo);
+    border-bottom: 2px solid var(--color-naranja);
+    padding-bottom: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+    font: var(--fuente-titulo);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  
+  .pprodu {
+    list-style: none;
+  }
+  
+  .pprodu a {
+    text-decoration: none;
+    color: #fff;
+    font: var(--fuente-enlace);
+    display: block;
+    background: linear-gradient(to top, var(--color-naranja), var(--color-rojo) 80%);
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  
+  .pprodu a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-naranja);
+  }
+  
+  
+  .pprodu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .pprodu i {
+    font-size: 1.2rem;
+    color: var(--color-naranja);
+    margin-right: 5px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .pprodu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .pprodu a {
+      width: 48%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .pprodu a {
+      width: 32%;
+    }
+  }
+  .pprodu a {
+    text-align: center;
+  }
+  
+  .pprodu a span {
+    font-family: var(--fuente-botones);
+  }
+  

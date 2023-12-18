@@ -10,9 +10,7 @@
 </head>
 <body>
     <%- include('partials/header.ejs') %>
-    
     <main>
-
 <!-- Carrusel Imagenes Footer -->
 <div id="carousel-container">
     <img id="carousel-image" src="/img/banner.png">
@@ -52,82 +50,29 @@
 
         <section class="menu-del-dia">
             <h3 class="texto-menu">Menú del día</h3>
-
-            <article class="menu-producto">
-                <div>
-                    <img src="/img/menu-del-dia/lampriado.jpg" alt="Producto" class="img-menu">
-                </div>
-                <h4>Lampreado</h4>
-                <p class="descripcion">
-                    El lampreado o payaguá mascada es un platillo de la gastronomía de Paraguay. Está hecho de mandioca, carne molida, ajo, cebolla y aceite. Pueden existir variaciones que incluyan grasa vacuna o porcina, almidón y la mezcla de mandioca con carne cruda. El lampreado es conocido por su durabilidad, siendo ideal para viajeros, ya que puede conservarse por varios días.
-                </p>
-
-                <h5 class="precio">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    2750
-                </h5>
-                <a class="link" href="/carrito/lampreado">
-                    <button class="añadir">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        Agregar
-                    </button>
-                </a>
-            </article>
-
-            <article class="menu-producto">
-                <div>
-                    <img src="/img/menu-del-dia/milanesa-con-papas.jpg" alt="Producto" class="img-menu">
-                </div>
-                <h4>Milanesa con papas</h4>
-                <p class="descripcion">
-                    La milanesa con papas es un plato clásico y reconfortante que combina tierna carne empanizada con papas fritas. La carne, ya sea de res, pollo o cerdo, se sumerge en huevo batido y se cubre con migas de pan antes de ser cocida hasta obtener una textura crujiente y dorada. Las papas, fritas o asadas, complementan este plato simple y delicioso. 
-                </p>
-                <h5 class="precio">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    2950
-                </h5>
-                <a class="link" href="/carrito/milanesa-con-papas">
-                    <button class="añadir">
-                        <i class="fa-solid fa-cart-plus"></i>
-                        Agregar
-                    </button>
-                </a>
-                
-            </article>
-
-            <article class="menu-producto">
-                <div>
-                    <img src="/img/menu-del-dia/pollo-con-papas.jpg" alt="Producto" class="img-menu">
-                </div>
-                <h4>Pollo con papas</h4>
-                <p class="descripcion">
-                    El pollo con papas es un plato reconfortante que combina tiernas piezas de pollo con papas suavemente sazonadas. El pollo se prepara con especias que realzan su sabor y se cocina a la perfección, resultando jugoso y delicioso. Las papas, ya sea asadas o en rodajas, complementan el plato con su textura suave. Una opción simple y satisfactoria.
-                </p>
-
-                <h5 class="precio">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    3100
-                </h5>
-
-                <%- include('partials/agregarbutton.ejs') %>
-            </article>
-
-            <article class="menu-producto">
-                <div>
-                    <img src="/img/menu-del-dia/ensalada.jpg" alt="Producto" class="img-menu">
-                </div>
-                <h4>Ensalada</h4>
-                <p class="descripcion">
-                   La ensalada fresca es una deliciosa mezcla de hojas verdes, tomates jugosos y pepinos refrescantes. Aderezada con una vinagreta suave, resalta la frescura de los ingredientes. Las hojas verdes aportan textura, mientras que los tomates y pepinos añaden un toque crujiente y vibrante. Una opción ligera y saludable que combina sabores para una experiencia deliciosa.
-                </p>
-
-                <h5 class="precio">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    1100
-                </h5>
-
-                <%- include('partials/agregarbutton.ejs') %>
-            </article>
+            <% for(let i = 0; i < producto.length; i++ ) { %>
+                <article class="menu-producto">
+                    <div>
+                        <img src="<%=producto[i].imagen%>" alt="Producto" class="img-menu">
+                    </div>
+                    <h4><%=producto[i].nombre%></h4>
+                    <p class="descripcion">
+                        <%=producto[i].descripcion%>
+                    </p>
+    
+                    <h5 class="precio">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <%=producto[i].precio%>
+                    </h5>
+                    <a class="link" href="/products/<%=producto[i].id%>">
+                        <button class="details-button">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Detalles
+                        </button>
+                    </a>
+                </article>
+           <% } %>
+           
         </section>
 
         <section class="combos">
@@ -149,7 +94,7 @@
                     3500
                 </h5>
 
-                <%- include('partials/agregarbutton.ejs') %>
+
             </article>
             
             <article class="combos-producto">
@@ -167,7 +112,7 @@
                     <i class="fa-solid fa-dollar-sign"></i>
                     3600
                 </h5>
-                <%- include('partials/agregarbutton.ejs') %>
+   
             </article>
 
             <article class="combos-producto">
@@ -186,7 +131,6 @@
                     2900
                 </h5>
 
-                <%- include('partials/agregarbutton.ejs') %>
             </article>
 
             <article class="combos-producto">
@@ -205,11 +149,9 @@
                     2000
                 </h5>
 
-                <%- include('partials/agregarbutton.ejs') %>
             </article>
         </section>
     </main>
-
     <%- include('partials/footer.ejs') %>
 </body>
 </html>
