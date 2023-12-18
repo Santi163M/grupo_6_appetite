@@ -1,8 +1,16 @@
-<%- include('partials/header.ejs')%>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Busqueda</title>
+    <head><link rel="stylesheet" href="/css/link.css"></head>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
 <h2>Resultados de Búsqueda</h2>
 <% if (productos.length > 0) { %>
-    <ul>
+    <ul class="pprodu">
         <% productos.forEach(productos => { %>
             <a href="/products/<%= productos.id %>"><li><%= productos.nombre %></li></a>
         <% }); %>
@@ -10,5 +18,7 @@
 <% } else { %>
     <p>No se encontraron resultados.</p>
 <% } %>
-
 <%- include('partials/footer.ejs') %>
+</body>
+</html>
+

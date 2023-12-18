@@ -42,12 +42,6 @@ footer {
     transition: color 0.3s ease;
 }
 
-.cuentas a:hover,
-.informacion a:hover {
-    color: #ffd700;
-}
-
-
 .contactos {
     height: 100%;
 }
@@ -58,4 +52,72 @@ footer {
     .informacion {
         width: 100%;
     }
+}
+
+.fa-brands {
+    font-size: 24px; 
+    margin-right: 8px;
+}
+
+
+.informacion a:hover{
+    color: #ffd700;
+}
+.cuentas a:hover{
+    color: #007bff;
+}
+
+.cuentas a:hover .fa-brands {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease;
+}
+
+.fa-google{
+    color: #333;
+}
+.cuentas a:hover .fa-google{
+    color:#ffd700; 
+}
+
+.fa-instagram{
+    color:#333;
+}
+.cuentas a:hover .fa-instagram{
+    color:#c13584; 
+}
+
+.fa-facebook{
+    color: #333;
+}
+.cuentas a:hover .fa-facebook{
+    color:#1100ff; 
+}
+
+.fa-twitter{
+    color: #333;
+}
+
+.cuentas a:hover .fa-twitter{
+    color:#007bff; 
+}
+
+.fa-phone{
+    color: #333;
+}
+
+.fa-phone a:hover {
+    color:#007bff; 
+}
+
+.fa-google{
+    color: #333;
+}
+
+.cuentas a:hover .fa-phone{
+    color:#23e720; 
+}
+
+.cuentas a:hover .fa-phone {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease;
 }
