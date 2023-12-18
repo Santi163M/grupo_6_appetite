@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs')%>
+
+<head>
+    <link rel="stylesheet" href="css/404.css">
+    <title>Centrar Imagen</title>
+</head>
+<section class="body-section">
+    <div class="container">
+        <img src="/img/404.png" width="35%" height="85%" class="img">
+    </div>
+    <div class="mensaje">
+        <h1 class="title">ERROR 404: Pagina no encontrada</h1>
+        <p class="text">
+            ¡Oops! Parece que esta página se derritió más rápido que un helado bajo el sol de verano. 🍦☀️
+
+            ¿Cómo llegaste aquí? Parece que el camino se convirtió en un charco de helado derretido. Pero no te preocupes, estamos trabajando duro para limpiar este desorden y llevarte de vuelta al delicioso mundo de nuestras páginas web.
+            
+            Mientras tanto, ¿por qué no disfrutas de un verdadero helado para levantar el ánimo? 🍨
+            
+            Y si tienes curiosidad, aquí tienes una imagen de cómo se ve una página 404 con sabor a vainilla derretida. ¡Estamos trabajando para poner las cosas en orden!
+        </p>
+        <h2 class="error">
+            Error:
+            <%=err%>
+        </h2>
+    </div>
+</section>
+
+
+<%- include('partials/footer.ejs') %>

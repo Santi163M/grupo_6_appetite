@@ -27,4 +27,8 @@ app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}. http://loc
 app.use(home);
 app.use(users)
 app.use(products);
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).render('error',{err:err.stack});
+  });
 
