@@ -146,7 +146,7 @@ const controller = {
 
     },
     carrito_add:(req,res)=>{
-        let user = req.session.usercertified
+        let user = req.session.usercertified.id
         let product = req.body.producto_id
         console.log(user,product)
         db.User_product.create({
