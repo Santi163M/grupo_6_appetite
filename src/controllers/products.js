@@ -145,17 +145,30 @@ const controller = {
             })
 
     },
-    carrito_add:(req,res)=>{
-        let user = req.session.usercertified.id
-        let product = req.body.producto_id
-        console.log(user,product)
-        db.User_product.create({
-            usuario_id: user,
-            producto_id: product
-          })
-          .then((user)=>{
-            res.redirect("/carrito")
-          })
+    carrito_add: (req, res) => {
+        let userId = req.session.usercertified.id;
+        let productId = req.body.producto_id;
+        console.log(userId,productId)
+
+        db.User_product.findOne({
+            where: {
+                usuario_id: userId,
+                producto_id: productId
+            }
+        }).then((existingEntry) => {
+            if (existingEntry) {
+                res.redirect("/products/" +productId )
+            } else {
+                db.User_product.create({
+                    usuario_id: userId,
+                    producto_id: productId
+                }).then(() => {
+                    res.redirect("/carrito");
+                })}}
+            ) 
+    },
+    carrito_delete:(req,res)=>{
+
     },
     confirmation: (req, res) => {
         res.render("confirmation")

@@ -17,6 +17,7 @@
     <!-- Contenedor de productos -->
     <div class="productos-container">
         <!-- Producto 1 -->
+    
         <% for (let i = 0; i < usuario.productos.length; i++) { %>
             <div class="producto">
                 <div class="producto-info">
@@ -44,6 +45,10 @@
                                 <button type="submit" class="aumentar-btn">Mas productos</button>
                             </form>
                         </div> -->
+                        <div>
+                            <label>Cantidad de productos:</label>
+                            <input type="number" value="1" >
+                        </div>
                     </div>
                 </div>
                 <form action="/delete">
