@@ -1,21 +1,19 @@
 body{
-    background-image: url(/img/AdobeStock_209317774-scaled.webp);
+    background-image: url(/img/i3gb-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 5;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 :root {
-    --color-rojo: #e74c3c;
-    --color-naranja: #f39c12;
+    --color-rojo: #000000;
+    --color-naranja: #000000;
     --fuente-principal: 'Roboto', sans-serif;
     --fuente-titulo: bold 1.75rem var(--fuente-principal);
     --fuente-enlace: bold var(--fuente-principal);
   }
   
-
   * {
     margin: 0;
     padding: 0;
@@ -28,8 +26,8 @@ body{
   }
   
   h2 {
-    color: var(--color-rojo);
-    border-bottom: 2px solid var(--color-naranja);
+    color: white;
+    border-bottom: 2px solid red;
     padding-bottom: 0.5em;
     margin-top: 1em;
     text-align: center;
@@ -37,30 +35,32 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
-  
-  
+ 
   .pprodu {
     list-style: none;
   }
   
   .pprodu a {
     text-decoration: none;
-    color: #fff;
-    font: var(--fuente-enlace);
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: block;
     background: linear-gradient(to top, var(--color-naranja), var(--color-rojo) 80%);
     margin: 10px 0;
     padding: 15px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 0, 0, 0.2);
     border-radius: 8px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    box-shadow: 0 6px 10px rgba(255, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    opacity: 0.8;
   }
   
   .pprodu a:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--color-naranja);
+    border: 2px solid rgba(255, 153, 0, 0.849);
+    opacity: 15;
+    font-family: fantasy;
   }
   
   
